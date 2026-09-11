@@ -1,10 +1,10 @@
-# TempoFound-RASP
+# HRCSR: Hierarchical Risk-Controlled Source Routing
 
 This repository is the unified implementation for the manuscript on
-target-conditioned source composition in cross-dataset temporal graph
-pre-training. The original Forward-Pair path remains reproducible. The RASP
-path adds uncertainty-calibrated portfolio search, target-affinity compute
-allocation, conflict-aware optimization, and fixed-negative ranking evaluation.
+hierarchical risk-controlled source routing in cross-dataset temporal graph
+pre-training. The RASP path adds uncertainty-calibrated portfolio search,
+target-affinity compute allocation, conflict-aware optimization, and
+fixed-negative ranking evaluation.
 
 ## What is unified
 
@@ -15,7 +15,7 @@ allocation, conflict-aware optimization, and fixed-negative ranking evaluation.
 - target-affinity weighted batches and projected conflicting source gradients;
 - collision-free temporal negatives and fixed-negative MRR evaluation;
 - exact global per-epoch update budgets across source sets;
-- deterministic Forward-Pair selection with exactly `2K-1` candidates;
+- deterministic target-conditioned source screening with a fixed candidate budget;
 - frozen, full, and scratch transfer protocols;
 - a GraphMixer-style backbone and Random-7/exhaustive/greedy controls;
 - paper `paper_sincos` and released-checkpoint `legacy_cos` time modes.

@@ -11,15 +11,15 @@ RCSR 保留已训练 source expert bank，以 RASP source affinity 为全局先�
 
 # TempoFound-RASP 统一研究代码
 
-本项目按照论文当前主线把两个原仓库整理为一个可运行工程：先用
-Forward-Pair 在目标域训练期内部筛选源域，再用 TempoFound 对所选源域
+本项目按照论文当前主线整理为一个可运行工程：系统先在目标域训练期内部
+筛选源域，再用 TempoFound 对所选源域
 进行跨数据集时序图预训练，最后在目标域完成冻结编码器迁移评测。新版 RASP
 在保留原版基线的同时，引入风险校准组合搜索、目标亲和度预算、冲突梯度投影、
 领域对抗学习和固定负例 MRR 协议。
 
 ## 关键保证
 
-- 默认主流程只运行论文中的 Forward-Pair，不再误跑旧版 `proposed` 或
+- 默认主流程只运行论文中的风险感知源筛选，不再误跑旧版 `proposed` 或
   leave-one 选择器。
 - K=4 与 K=6 共用一份源码，只切换 YAML 配置。
 - 代理阶段只读取目标训练期；训练期按时间顺序切成前 80% 校准和后 20%
@@ -31,7 +31,7 @@ Forward-Pair 在目标域训练期内部筛选源域，再用 TempoFound 对所�
 - 旧版只有 4 个自适应任务权重时会确定性迁移：原值不变，新增 NPP 权重置零。
 - v2 的 5 权重检查点会显式重排，旧领域分类权重不会被误当作 EDC；新增 TIP
   权重置零，新检查点记录目标名称并使用格式版本 3。
-- Forward-Pair 必须得到 K 个单源和 K-1 个锚点配对，共 `2K-1` 个有效候选；
+- 源筛选必须得到固定数量的单源与组合候选；
   缺失、重复、NaN、目标/种子不一致或配置摘要过期都会立即报错。
 - RASP 使用多个连续时间窗口估计代理分数不确定性，并在固定候选预算内搜索
   非锚点组合；最终训练按目标亲和度分配同一全局预算并记录梯度冲突统计。
@@ -61,14 +61,14 @@ nohup env \
 ```
 
 先完成服务器验收与数据预检，再启动正式任务。RASP、全源、原版
-Forward-Pair 必须使用同一全局批次数上限、相同种子和同一固定负例文件。
+所有源筛选变体必须使用同一全局批次数上限、相同种子和同一固定负例文件。
 
 ## 正式 K=4 实验
 
 ```bash
 nohup env \
   PROCESSED_DIR=/root/autodl-tmp/temp/processed \
-  OUTPUT_ROOT=/root/autodl-tmp/temp/server_runs/tempofound_forward_pair_k4 \
+  OUTPUT_ROOT=/root/autodl-tmp/temp/server_runs/tempofound_k4 \
   DEVICE=cuda:0 \
   bash experiments/run_k4_primary.sh \
   > /root/autodl-tmp/temp/k4.log 2>&1 &
@@ -82,7 +82,7 @@ nohup env \
 ```bash
 nohup env \
   PROCESSED_DIR=/root/autodl-tmp/temp/processed \
-  OUTPUT_ROOT=/root/autodl-tmp/temp/server_runs/tempofound_forward_pair_k6 \
+  OUTPUT_ROOT=/root/autodl-tmp/temp/server_runs/tempofound_k6 \
   DEVICE=cuda:0 \
   bash experiments/run_k6_scalability.sh \
   > /root/autodl-tmp/temp/k6.log 2>&1 &
@@ -97,9 +97,9 @@ MOOC 使用 0、1、42 三个种子；Wikipedia 与 Reddit 使用 seed 42 诊断
 
 - `candidates/`：单源和锚点配对的 checkpoint 与训练期代理分数；
 - `selection/selection.json`：锚点、最佳配对、增益、阈值和最终源集合；
-- `final/forward_pair/` 与 `final/all_sources/`：同预算最终预训练模型；
+- `final/selected/` 与 `final/all_sources/`：同预算最终预训练模型；
 - `transfer/`：冻结编码器迁移结果；
-- `summary.json`：Forward-Pair 与全源 AP 对照。
+- `summary.json`：源筛选与全源 AP 对照。
 
 RASP 运行额外记录 `selection/domain_weights.json`、逐候选风险效用、固定负例
 排名结果，以及 checkpoint 中的源域预算与梯度冲突诊断。

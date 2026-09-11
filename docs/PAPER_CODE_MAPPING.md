@@ -13,13 +13,13 @@
 | Target-affinity weighted fixed budget | `tempofound.optimization.source_affinities` and `allocate_weighted_batch_budget` |
 | Conflict-aware multi-source gradients | `tempofound.optimization.project_conflicting_gradients` |
 | Target-training-only proxy | `forward_pair.proxy.score_target_train_proxy` |
-| Forward-Pair, exactly 2K-1 candidates | `forward_pair.selector.select_forward_pair` |
+| Deterministic target-conditioned portfolio screening | `forward_pair.selector.select_forward_pair` |
 | RASP uncertainty-aware portfolio search | `forward_pair.uncertainty` and `forward_pair.portfolio` |
 | Collision-free fixed negatives and MRR | `tempofound.sampling.TemporalNegativeSampler` and `tempofound.evaluation.evaluate_link_ranking` |
 | Frozen/full/scratch transfer | `tempofound.transfer.run_transfer` |
 | K=4 and K=6 protocols | `configs/k4_primary.yaml`, `configs/k6_scalability.yaml` |
 | GraphMixer control | `configs/graphmixer_control.yaml` and `GraphMixerTemporalEncoder` |
-| Random-7, exhaustive, greedy controls | `forward_pair.controls` and `experiments/controls/` |
+| Candidate-policy controls | `forward_pair.controls` and `experiments/controls/` |
 
 The manuscript's node-classification paragraph is a supplementary limitation
 statement rather than a primary result table. The unified default pipeline
