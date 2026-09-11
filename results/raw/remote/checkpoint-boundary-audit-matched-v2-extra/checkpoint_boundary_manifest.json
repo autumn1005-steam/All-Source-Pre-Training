@@ -1,0 +1,242 @@
+[
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/uci/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/uci/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/uci/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/uci/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/uci/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/uci/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/uci/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/uci/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/uci/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/uci/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/uci/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/uci/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/uci/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/uci/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/uci/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "uci"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/enron/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/enron/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/enron/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/enron/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/enron/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/enron/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/enron/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/enron/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/enron/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/enron/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/enron/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/enron/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/validation/enron/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/fixed_epoch/enron/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "enron"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-extra/prefix_only/enron/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "enron"
+  }
+]

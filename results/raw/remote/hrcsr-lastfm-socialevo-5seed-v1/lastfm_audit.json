@@ -1,0 +1,125 @@
+{
+  "target": "lastfm",
+  "rows": 1293103,
+  "users": 980,
+  "items": 1000,
+  "timestamp_range": [
+    0.0,
+    137107267.0
+  ],
+  "split_quantiles": {
+    "0.7": 103764807.2,
+    "0.8": 115147271.80000001,
+    "0.85": 120235472.99999999,
+    "0.9": 124576326.0,
+    "0.95": 128691924.39999999
+  },
+  "edge_features_shape": [
+    1293104,
+    2
+  ],
+  "node_features_shape": [
+    1981,
+    172
+  ],
+  "edge_features_all_zero": true,
+  "node_features_all_zero": true,
+  "edge_feature_std": 0.0,
+  "node_feature_std": 0.0,
+  "duplicate_edges": 0,
+  "strict_summaries": [
+    {
+      "seed": 0,
+      "rasp_test_mrr": 0.09090911597013474,
+      "all_sources_test_mrr": 0.09090911597013474,
+      "test_mrr_delta": 0.0,
+      "selected_sources": [
+        "wikipedia"
+      ]
+    },
+    {
+      "seed": 1,
+      "rasp_test_mrr": 0.09090911597013474,
+      "all_sources_test_mrr": 0.14550955593585968,
+      "test_mrr_delta": -0.054600439965724945,
+      "selected_sources": [
+        "reddit"
+      ]
+    },
+    {
+      "seed": 2,
+      "rasp_test_mrr": 0.09090911597013474,
+      "all_sources_test_mrr": 0.16265498101711273,
+      "test_mrr_delta": -0.071745865046978,
+      "selected_sources": [
+        "reddit"
+      ]
+    },
+    {
+      "seed": 3,
+      "rasp_test_mrr": 0.31646937131881714,
+      "all_sources_test_mrr": 0.20657092332839966,
+      "test_mrr_delta": 0.10989844799041748,
+      "selected_sources": [
+        "reddit"
+      ]
+    },
+    {
+      "seed": 42,
+      "rasp_test_mrr": 0.09090911597013474,
+      "all_sources_test_mrr": 0.09090911597013474,
+      "test_mrr_delta": 0.0,
+      "selected_sources": [
+        "socialevo"
+      ]
+    }
+  ],
+  "hrcsr_summaries": [
+    {
+      "seed": 0,
+      "rasp_test_mrr": 0.09090911597013474,
+      "all_sources_test_mrr": 0.09090911597013474,
+      "test_mrr_delta": 0.0,
+      "selected_sources": [
+        "mooc"
+      ]
+    },
+    {
+      "seed": 1,
+      "rasp_test_mrr": 0.09090911597013474,
+      "all_sources_test_mrr": 0.09090911597013474,
+      "test_mrr_delta": 0.0,
+      "selected_sources": [
+        "mooc",
+        "wikipedia"
+      ]
+    },
+    {
+      "seed": 2,
+      "rasp_test_mrr": 0.09090911597013474,
+      "all_sources_test_mrr": 0.09090911597013474,
+      "test_mrr_delta": 0.0,
+      "selected_sources": [
+        "wikipedia"
+      ]
+    },
+    {
+      "seed": 3,
+      "rasp_test_mrr": 0.09090911597013474,
+      "all_sources_test_mrr": 0.09090911597013474,
+      "test_mrr_delta": 0.0,
+      "selected_sources": [
+        "mooc"
+      ]
+    },
+    {
+      "seed": 42,
+      "rasp_test_mrr": 0.09090911597013474,
+      "all_sources_test_mrr": 0.09090911597013474,
+      "test_mrr_delta": 0.0,
+      "selected_sources": [
+        "enron"
+      ]
+    }
+  ]
+}

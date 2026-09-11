@@ -1,0 +1,11 @@
+{
+  "config_digest": "9c5fb89135999b90f33dcdc78ad15d56eba7904d01c43201573f5981da91032f",
+  "seed": 0,
+  "source_weights": {
+    "mooc": 1.0
+  },
+  "sources": [
+    "mooc"
+  ],
+  "target": "socialevo"
+}

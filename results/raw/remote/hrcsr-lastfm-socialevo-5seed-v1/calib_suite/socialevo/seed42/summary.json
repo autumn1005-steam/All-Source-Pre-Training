@@ -1,0 +1,16 @@
+{
+  "all_sources_test_mrr": 0.7648874521255493,
+  "candidate_count": 8,
+  "config_digest": "5923860d83e56111ce93d6be9e80e843282e53669598a8ebd105ee7708aa9d46",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.8199987411499023,
+  "seed": 42,
+  "selected_sources": [
+    "lastfm",
+    "reddit"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-lastfm-socialevo-5seed-v1/calib_suite/socialevo/seed42/selection/selection.json",
+  "target": "socialevo",
+  "test_mrr_delta": 0.05511128902435303
+}

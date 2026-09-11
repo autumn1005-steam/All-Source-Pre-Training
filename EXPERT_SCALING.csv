@@ -1,0 +1,5 @@
+sources,shared_dim,batch_size,expert_bank_parameters,router_parameters,total_module_parameters,peak_gpu_allocated_mb,peak_gpu_reserved_mb,latency_ms_per_batch_mean,latency_ms_per_batch_std,latency_ms_per_query,throughput_queries_per_second,timing_repetitions,warmup_repetitions,profile_scope,performance_metric
+1,64,128,16802,17732,34534,9.6552734375,22.0,0.5346118286252022,0.0136517413018135,0.004176654911134392,239426.052972233,100,20,synthetic_expert_routing_only,not_applicable
+2,64,128,33603,17732,51335,9.85107421875,22.0,0.6795186549425125,0.01113818433580408,0.005308739491738379,188368.63280939483,100,20,synthetic_expert_routing_only,not_applicable
+4,64,128,67205,17732,84937,10.291015625,24.0,0.9339364245533943,0.1984396710080891,0.007296378316823393,137054.29688236993,100,20,synthetic_expert_routing_only,not_applicable
+6,64,128,100807,17732,118539,10.8037109375,24.0,1.241130530834198,0.5077251372245573,0.009696332272142172,103131.77930927835,100,20,synthetic_expert_routing_only,not_applicable

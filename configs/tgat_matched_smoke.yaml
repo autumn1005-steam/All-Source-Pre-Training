@@ -1,0 +1,29 @@
+name: tgat_matched_smoke
+datasets: [wikipedia, reddit, mooc, uci, enron]
+targets: [mooc]
+seeds: [0]
+time_encoding_mode: paper_sincos
+model:
+  backbone: tgat
+  shared_dim: 64
+  time_dim: 32
+  num_layers: 1
+  num_heads: 2
+  num_neighbors: 5
+  dropout: 0.1
+training:
+  pretrain_epochs: 1
+  transfer_epochs: 1
+  batch_size: 64
+  total_batches_per_epoch: 2
+proxy:
+  calibration_fraction: 0.8
+  calibration_steps: 2
+  proxy_batch_size: 64
+  proxy_batches: 1
+  margin: 0.002
+evaluation:
+  evaluation_protocol: ranking
+  negative_policy: historical
+  negatives_per_positive: 5
+  evaluation_batch_size: 32

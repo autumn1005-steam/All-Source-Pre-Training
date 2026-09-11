@@ -1,0 +1,362 @@
+[
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/wikipedia/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/wikipedia/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/wikipedia/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/wikipedia/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/wikipedia/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/wikipedia/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/wikipedia/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/wikipedia/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/wikipedia/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/wikipedia/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/wikipedia/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/wikipedia/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/wikipedia/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/wikipedia/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/wikipedia/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "wikipedia"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/reddit/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/reddit/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/reddit/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/reddit/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/reddit/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/reddit/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/reddit/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/reddit/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/reddit/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/reddit/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/reddit/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/reddit/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/reddit/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/reddit/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/reddit/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/reddit/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "reddit"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/mooc/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/mooc/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed0/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/mooc/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/mooc/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/mooc/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed1/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/mooc/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/mooc/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/mooc/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed2/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/mooc/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/mooc/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/mooc/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed3/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/mooc/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "validation",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/validation/mooc/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "fixed_epoch",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/fixed_epoch/mooc/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "mooc"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/mooc/seed42/final/rasp/pretrained.pth",
+    "checkpoint_selection_mode": "prefix_only",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/checkpoint-boundary-audit-matched-v2-main/prefix_only/mooc/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "mooc"
+  }
+]

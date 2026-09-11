@@ -1,0 +1,947 @@
+[
+  {
+    "method": "rasp",
+    "target": "wikipedia",
+    "seed": 0,
+    "candidate_count": 8,
+    "selected_sources": [
+      "mooc",
+      "reddit"
+    ],
+    "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_identity/wikipedia/seed0/selection/selection.json",
+    "evaluation_protocol": "ranking",
+    "rasp_test_mrr": 0.3701556622982025,
+    "all_sources_test_mrr": 0.41193926334381104,
+    "test_mrr_delta": -0.04178360104560852,
+    "config_digest": "66766346d1d325a4e94aeee2371b1c0986a7584c51df32e4f6e1c305500b30ef",
+    "safety_diagnostics": {
+      "rasp": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 0.0016124523509284557,
+        "target_gate_calibration_mrr_delta": 0.0025452512449451853,
+        "target_gate_routed_calibration_mrr": 0.44192140597552687,
+        "target_gate_reference_calibration_mrr": 0.43937615473058167,
+        "raw_routed_test_mrr": 0.3705626130104065,
+        "router_off_reference_test_mrr": 0.3701556622982025,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 1.0,
+            "test_mrr": 0.3705626130104065
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.3701556622982025
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.3705626130104065
+          },
+          "soft": {
+            "gate": 0.1489166699865786,
+            "test_mrr": 0.36983421444892883
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      },
+      "all_sources": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 0.0,
+        "target_gate_calibration_mrr_delta": 0.0002626050420168067,
+        "target_gate_routed_calibration_mrr": 0.4304684865437135,
+        "target_gate_reference_calibration_mrr": 0.4302058815016967,
+        "raw_routed_test_mrr": 0.4119435250759125,
+        "router_off_reference_test_mrr": 0.41193926334381104,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 0.0,
+            "test_mrr": 0.41193926334381104
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.41193926334381104
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.4119435250759125
+          },
+          "soft": {
+            "gate": 0.0,
+            "test_mrr": 0.41193926334381104
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      }
+    },
+    "gate_policy_test_mrr_deltas": {
+      "route": -0.04138091206550598,
+      "identity": -0.04178360104560852,
+      "hard": -0.04137665033340454,
+      "soft": -0.0421050488948822
+    },
+    "training_diagnostics": {
+      "rasp": {
+        "trainable_parameters": 304570,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 33603,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "mooc",
+          "reddit"
+        ],
+        "seed": 0,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "mooc": 95,
+          "reddit": 65
+        },
+        "epoch_mean_losses": [
+          68.22726857662201,
+          47.51869869232178,
+          38.860087513923645,
+          32.922002375125885,
+          31.064666509628296
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "mooc": 0.5785335879920926,
+          "reddit": 0.4214664120079074
+        },
+        "optimizer_step_counts": [
+          19,
+          19,
+          19,
+          19,
+          19
+        ],
+        "conflict_pairs": 40,
+        "gradient_pairs": 65,
+        "conflict_rate": 0.6153846153846154,
+        "mean_cosine_before": -0.03883024520025803,
+        "mean_cosine_after": 0.21982815883194023
+      },
+      "all_sources": {
+        "trainable_parameters": 373310,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 67205,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "enron",
+          "mooc",
+          "reddit",
+          "uci"
+        ],
+        "seed": 0,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "enron": 45,
+          "mooc": 45,
+          "reddit": 30,
+          "uci": 40
+        },
+        "epoch_mean_losses": [
+          121.07049882411957,
+          92.2842823266983,
+          65.96491420269012,
+          58.398330092430115,
+          54.916130781173706
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "enron": 0.28528559262729347,
+          "mooc": 0.27042187467647955,
+          "reddit": 0.197004529406693,
+          "uci": 0.24728800328953404
+        },
+        "optimizer_step_counts": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "conflict_pairs": 103,
+        "gradient_pairs": 215,
+        "conflict_rate": 0.4790697674418605,
+        "mean_cosine_before": 0.018418923627888394,
+        "mean_cosine_after": 0.2158591481519939
+      }
+    },
+    "elapsed_seconds": 167.38841125369072
+  },
+  {
+    "method": "rasp",
+    "target": "wikipedia",
+    "seed": 1,
+    "candidate_count": 8,
+    "selected_sources": [
+      "enron",
+      "uci"
+    ],
+    "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_identity/wikipedia/seed1/selection/selection.json",
+    "evaluation_protocol": "ranking",
+    "rasp_test_mrr": 0.4182206094264984,
+    "all_sources_test_mrr": 0.4194231331348419,
+    "test_mrr_delta": -0.0012025237083435059,
+    "config_digest": "66766346d1d325a4e94aeee2371b1c0986a7584c51df32e4f6e1c305500b30ef",
+    "safety_diagnostics": {
+      "rasp": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 0.0,
+        "target_gate_calibration_mrr_delta": 3.75150194188126e-05,
+        "target_gate_routed_calibration_mrr": 0.43591588685101196,
+        "target_gate_reference_calibration_mrr": 0.43587837183159317,
+        "raw_routed_test_mrr": 0.41839760541915894,
+        "router_off_reference_test_mrr": 0.4182206094264984,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 0.0,
+            "test_mrr": 0.4182206094264984
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.4182206094264984
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.41839760541915894
+          },
+          "soft": {
+            "gate": 0.0,
+            "test_mrr": 0.4182206094264984
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      },
+      "all_sources": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 0.0,
+        "target_gate_calibration_mrr_delta": 0.0,
+        "target_gate_routed_calibration_mrr": 0.42330202270111367,
+        "target_gate_reference_calibration_mrr": 0.42330202270111367,
+        "raw_routed_test_mrr": 0.4194231331348419,
+        "router_off_reference_test_mrr": 0.4194231331348419,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 0.0,
+            "test_mrr": 0.4194231331348419
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.4194231331348419
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.4194231331348419
+          },
+          "soft": {
+            "gate": 0.0,
+            "test_mrr": 0.4194231331348419
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      }
+    },
+    "gate_policy_test_mrr_deltas": {
+      "route": -0.0010255277156829834,
+      "identity": -0.0012025237083435059,
+      "hard": -0.0012025237083435059,
+      "soft": -0.0012025237083435059
+    },
+    "training_diagnostics": {
+      "rasp": {
+        "trainable_parameters": 298938,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 33603,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "enron",
+          "uci"
+        ],
+        "seed": 1,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "enron": 90,
+          "uci": 70
+        },
+        "epoch_mean_losses": [
+          134.1739947795868,
+          76.24077582359314,
+          53.2173091173172,
+          48.491517305374146,
+          46.3713253736496
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "enron": 0.5592969160672611,
+          "uci": 0.44070308393273894
+        },
+        "optimizer_step_counts": [
+          18,
+          18,
+          18,
+          18,
+          18
+        ],
+        "conflict_pairs": 30,
+        "gradient_pairs": 70,
+        "conflict_rate": 0.42857142857142855,
+        "mean_cosine_before": 0.0450307650092457,
+        "mean_cosine_after": 0.20455587114140925
+      },
+      "all_sources": {
+        "trainable_parameters": 373310,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 67205,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "enron",
+          "mooc",
+          "reddit",
+          "uci"
+        ],
+        "seed": 1,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "enron": 50,
+          "mooc": 30,
+          "reddit": 45,
+          "uci": 35
+        },
+        "epoch_mean_losses": [
+          117.12956404685974,
+          83.21078443527222,
+          70.84470427036285,
+          62.97256898880005,
+          59.17739701271057
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "enron": 0.3137082386634968,
+          "mooc": 0.18084223709674146,
+          "reddit": 0.25826026883273845,
+          "uci": 0.24718925540702336
+        },
+        "optimizer_step_counts": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "conflict_pairs": 97,
+        "gradient_pairs": 205,
+        "conflict_rate": 0.47317073170731705,
+        "mean_cosine_before": 0.02513548106341282,
+        "mean_cosine_after": 0.20082289700214637
+      }
+    },
+    "elapsed_seconds": 163.48242093995214
+  },
+  {
+    "method": "rasp",
+    "target": "wikipedia",
+    "seed": 2,
+    "candidate_count": 8,
+    "selected_sources": [
+      "reddit",
+      "uci"
+    ],
+    "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_identity/wikipedia/seed2/selection/selection.json",
+    "evaluation_protocol": "ranking",
+    "rasp_test_mrr": 0.5298975706100464,
+    "all_sources_test_mrr": 0.40713992714881897,
+    "test_mrr_delta": 0.12275764346122742,
+    "config_digest": "66766346d1d325a4e94aeee2371b1c0986a7584c51df32e4f6e1c305500b30ef",
+    "safety_diagnostics": {
+      "rasp": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 0.00047445339903945795,
+        "target_gate_calibration_mrr_delta": 0.002558501562526246,
+        "target_gate_routed_calibration_mrr": 0.5622476136327541,
+        "target_gate_reference_calibration_mrr": 0.5596891120702279,
+        "raw_routed_test_mrr": 0.5321165919303894,
+        "router_off_reference_test_mrr": 0.5298975706100464,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 1.0,
+            "test_mrr": 0.5321165919303894
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.5298975706100464
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.5321165919303894
+          },
+          "soft": {
+            "gate": 0.04633740100272454,
+            "test_mrr": 0.5298975706100464
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      },
+      "all_sources": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 9.52380895614624e-05,
+        "target_gate_calibration_mrr_delta": 0.0007477991063805187,
+        "target_gate_routed_calibration_mrr": 0.4236256874385564,
+        "target_gate_reference_calibration_mrr": 0.4228778883321759,
+        "raw_routed_test_mrr": 0.4085213243961334,
+        "router_off_reference_test_mrr": 0.40713992714881897,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 1.0,
+            "test_mrr": 0.4085213243961334
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.40713992714881897
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.4085213243961334
+          },
+          "soft": {
+            "gate": 0.009478601118396268,
+            "test_mrr": 0.40713992714881897
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      }
+    },
+    "gate_policy_test_mrr_deltas": {
+      "route": 0.12359526753425598,
+      "identity": 0.12275764346122742,
+      "hard": 0.12359526753425598,
+      "soft": 0.12275764346122742
+    },
+    "training_diagnostics": {
+      "rasp": {
+        "trainable_parameters": 316858,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 33603,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "reddit",
+          "uci"
+        ],
+        "seed": 2,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "reddit": 95,
+          "uci": 65
+        },
+        "epoch_mean_losses": [
+          76.19859981536865,
+          45.52793234586716,
+          36.269688963890076,
+          29.763372004032135,
+          29.031469136476517
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "reddit": 0.5925210616948058,
+          "uci": 0.40747893830519427
+        },
+        "optimizer_step_counts": [
+          19,
+          19,
+          19,
+          19,
+          19
+        ],
+        "conflict_pairs": 29,
+        "gradient_pairs": 65,
+        "conflict_rate": 0.4461538461538462,
+        "mean_cosine_before": 0.04724203022196889,
+        "mean_cosine_after": 0.22004139406176715
+      },
+      "all_sources": {
+        "trainable_parameters": 373310,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 67205,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "enron",
+          "mooc",
+          "reddit",
+          "uci"
+        ],
+        "seed": 2,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "enron": 30,
+          "mooc": 40,
+          "reddit": 55,
+          "uci": 35
+        },
+        "epoch_mean_losses": [
+          105.19645261764526,
+          86.86314976215363,
+          74.45734000205994,
+          70.16135478019714,
+          66.32487416267395
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "enron": 0.18374819084941235,
+          "mooc": 0.2669957294416245,
+          "reddit": 0.32544579549148167,
+          "uci": 0.22381028421748145
+        },
+        "optimizer_step_counts": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "conflict_pairs": 108,
+        "gradient_pairs": 200,
+        "conflict_rate": 0.54,
+        "mean_cosine_before": -0.026247771686175838,
+        "mean_cosine_after": 0.19837579481536521
+      }
+    },
+    "elapsed_seconds": 162.09402692690492
+  },
+  {
+    "method": "rasp",
+    "target": "wikipedia",
+    "seed": 3,
+    "candidate_count": 8,
+    "selected_sources": [
+      "enron",
+      "uci"
+    ],
+    "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_identity/wikipedia/seed3/selection/selection.json",
+    "evaluation_protocol": "ranking",
+    "rasp_test_mrr": 0.4016473591327667,
+    "all_sources_test_mrr": 0.24473974108695984,
+    "test_mrr_delta": 0.15690761804580688,
+    "config_digest": "66766346d1d325a4e94aeee2371b1c0986a7584c51df32e4f6e1c305500b30ef",
+    "safety_diagnostics": {
+      "rasp": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 0.0007512295745430192,
+        "target_gate_calibration_mrr_delta": 0.0019212113771618915,
+        "target_gate_routed_calibration_mrr": 0.4509890080241784,
+        "target_gate_reference_calibration_mrr": 0.4490677966470165,
+        "raw_routed_test_mrr": 0.4026457667350769,
+        "router_off_reference_test_mrr": 0.4016473591327667,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 1.0,
+            "test_mrr": 0.4026457667350769
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.4016473591327667
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.4026457667350769
+          },
+          "soft": {
+            "gate": 0.07237057963599725,
+            "test_mrr": 0.4016648232936859
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      },
+      "all_sources": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 0.0,
+        "target_gate_calibration_mrr_delta": 0.0,
+        "target_gate_routed_calibration_mrr": 0.2977179925411376,
+        "target_gate_reference_calibration_mrr": 0.2977179925411376,
+        "raw_routed_test_mrr": 0.24473974108695984,
+        "router_off_reference_test_mrr": 0.24473974108695984,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 0.0,
+            "test_mrr": 0.24473974108695984
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.24473974108695984
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.24473974108695984
+          },
+          "soft": {
+            "gate": 0.0,
+            "test_mrr": 0.24473974108695984
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      }
+    },
+    "gate_policy_test_mrr_deltas": {
+      "route": 0.15790602564811707,
+      "identity": 0.15690761804580688,
+      "hard": 0.15790602564811707,
+      "soft": 0.15692508220672607
+    },
+    "training_diagnostics": {
+      "rasp": {
+        "trainable_parameters": 298938,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 33603,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "enron",
+          "uci"
+        ],
+        "seed": 3,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "enron": 70,
+          "uci": 90
+        },
+        "epoch_mean_losses": [
+          132.72819828987122,
+          72.35215771198273,
+          57.28202724456787,
+          53.21242380142212,
+          51.609575152397156
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "enron": 0.4393491503328742,
+          "uci": 0.5606508496671258
+        },
+        "optimizer_step_counts": [
+          18,
+          18,
+          18,
+          18,
+          18
+        ],
+        "conflict_pairs": 34,
+        "gradient_pairs": 70,
+        "conflict_rate": 0.4857142857142857,
+        "mean_cosine_before": -0.017012368967490536,
+        "mean_cosine_after": 0.20246432909209813
+      },
+      "all_sources": {
+        "trainable_parameters": 373310,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 67205,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "enron",
+          "mooc",
+          "reddit",
+          "uci"
+        ],
+        "seed": 3,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "enron": 35,
+          "mooc": 45,
+          "reddit": 35,
+          "uci": 45
+        },
+        "epoch_mean_losses": [
+          120.91009879112244,
+          99.57695281505585,
+          82.04407274723053,
+          74.11579942703247,
+          70.15881717205048
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "enron": 0.21747556269126223,
+          "mooc": 0.257800462221104,
+          "reddit": 0.24720469705485867,
+          "uci": 0.27751927803277515
+        },
+        "optimizer_step_counts": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "conflict_pairs": 109,
+        "gradient_pairs": 220,
+        "conflict_rate": 0.4954545454545455,
+        "mean_cosine_before": 0.0022160938980960053,
+        "mean_cosine_after": 0.22824794754064484
+      }
+    },
+    "elapsed_seconds": 162.60570695996284
+  },
+  {
+    "method": "rasp",
+    "target": "wikipedia",
+    "seed": 42,
+    "candidate_count": 8,
+    "selected_sources": [
+      "enron",
+      "reddit"
+    ],
+    "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_identity/wikipedia/seed42/selection/selection.json",
+    "evaluation_protocol": "ranking",
+    "rasp_test_mrr": 0.4257780909538269,
+    "all_sources_test_mrr": 0.3306197226047516,
+    "test_mrr_delta": 0.09515836834907532,
+    "config_digest": "66766346d1d325a4e94aeee2371b1c0986a7584c51df32e4f6e1c305500b30ef",
+    "safety_diagnostics": {
+      "rasp": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 0.0,
+        "target_gate_calibration_mrr_delta": 0.00017507001757621765,
+        "target_gate_routed_calibration_mrr": 0.48592873470184683,
+        "target_gate_reference_calibration_mrr": 0.4857536646842706,
+        "raw_routed_test_mrr": 0.4257780909538269,
+        "router_off_reference_test_mrr": 0.4257780909538269,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 0.0,
+            "test_mrr": 0.4257780909538269
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.4257780909538269
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.4257780909538269
+          },
+          "soft": {
+            "gate": 0.0,
+            "test_mrr": 0.4257780909538269
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      },
+      "all_sources": {
+        "target_gate": 0.0,
+        "target_gate_lcb": 0.0001936875724306314,
+        "target_gate_calibration_mrr_delta": 0.0004589213293139674,
+        "target_gate_routed_calibration_mrr": 0.3536705239949858,
+        "target_gate_reference_calibration_mrr": 0.3532116026656718,
+        "raw_routed_test_mrr": 0.3319811522960663,
+        "router_off_reference_test_mrr": 0.3306197226047516,
+        "safety_gate_sweep": {
+          "hard": {
+            "gate": 1.0,
+            "test_mrr": 0.3319811522960663
+          },
+          "identity": {
+            "gate": 0.0,
+            "test_mrr": 0.3306197226047516
+          },
+          "route": {
+            "gate": 1.0,
+            "test_mrr": 0.3319811522960663
+          },
+          "soft": {
+            "gate": 0.019182388050645316,
+            "test_mrr": 0.3306197226047516
+          }
+        },
+        "target_optimization_events": 3806,
+        "target_calibration_events_reserved": 952
+      }
+    },
+    "gate_policy_test_mrr_deltas": {
+      "route": 0.09379693865776062,
+      "identity": 0.09515836834907532,
+      "hard": 0.09379693865776062,
+      "soft": 0.09515836834907532
+    },
+    "training_diagnostics": {
+      "rasp": {
+        "trainable_parameters": 308154,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 33603,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "enron",
+          "reddit"
+        ],
+        "seed": 42,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "enron": 65,
+          "reddit": 95
+        },
+        "epoch_mean_losses": [
+          110.735915184021,
+          71.52811467647552,
+          50.99303090572357,
+          42.66359096765518,
+          39.315766632556915
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "enron": 0.4325844304966424,
+          "reddit": 0.5674155695033576
+        },
+        "optimizer_step_counts": [
+          19,
+          19,
+          19,
+          19,
+          19
+        ],
+        "conflict_pairs": 25,
+        "gradient_pairs": 65,
+        "conflict_rate": 0.38461538461538464,
+        "mean_cosine_before": 0.042028433697011605,
+        "mean_cosine_after": 0.20330253064704057
+      },
+      "all_sources": {
+        "trainable_parameters": 373310,
+        "temporal_expert_parameters": 0,
+        "source_expert_parameters": 67205,
+        "source_router_parameters": 17732,
+        "risk_controlled_routing": true,
+        "sources": [
+          "enron",
+          "mooc",
+          "reddit",
+          "uci"
+        ],
+        "seed": 42,
+        "time_encoding_mode": "paper_sincos",
+        "epoch_batch_counts": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "source_batch_counts": {
+          "enron": 35,
+          "mooc": 45,
+          "reddit": 45,
+          "uci": 35
+        },
+        "epoch_mean_losses": [
+          113.3943966627121,
+          94.32879412174225,
+          80.89164960384369,
+          73.10538339614868,
+          69.21166634559631
+        ],
+        "global_batch_cap": 32,
+        "pretraining_strategy": "conflict_aware",
+        "source_weights": {
+          "enron": 0.21591439984640098,
+          "mooc": 0.2764359772068602,
+          "reddit": 0.2832122090297288,
+          "uci": 0.22443741391701
+        },
+        "optimizer_step_counts": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "conflict_pairs": 126,
+        "gradient_pairs": 220,
+        "conflict_rate": 0.5727272727272728,
+        "mean_cosine_before": -0.0320901666905477,
+        "mean_cosine_after": 0.20343575575552006
+      }
+    },
+    "elapsed_seconds": 163.01334001123905
+  }
+]

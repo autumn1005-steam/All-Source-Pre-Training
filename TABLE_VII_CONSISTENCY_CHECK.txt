@@ -1,0 +1,6 @@
+TABLE VII PROTOCOL CONSISTENCY: PASS
+records=125
+targets=wikipedia,reddit,mooc,uci,enron
+methods=All-source,HRCSR-Hard,Strict RASP,Target-only GraphMixer,Target-only T-GAT
+seeds=0,1,2,3,42
+CodeVersion is audited separately and is not assumed from manuscript prose.

@@ -1,0 +1,11 @@
+{
+  "config_digest": "f5afc236c8b61f39cf59acba33eebb1dfdc428978957b2ac62252a7a91965884",
+  "seed": 3,
+  "source_weights": {
+    "uci": 1.0
+  },
+  "sources": [
+    "uci"
+  ],
+  "target": "enron"
+}

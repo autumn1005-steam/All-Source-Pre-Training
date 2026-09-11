@@ -1,0 +1,15 @@
+{
+  "all_sources_test_mrr": 0.335848867893219,
+  "candidate_count": 8,
+  "config_digest": "94be58e804a38378ff81cacf50757e5d283eac70a3f8414c42d8577f808f8650",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.3627234697341919,
+  "seed": 3,
+  "selected_sources": [
+    "reddit"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_identity/mooc/seed3/selection/selection.json",
+  "target": "mooc",
+  "test_mrr_delta": 0.0268746018409729
+}

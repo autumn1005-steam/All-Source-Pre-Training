@@ -1,0 +1,27 @@
+{
+  "dense": {
+    "n_decisions": 25,
+    "gate_open_count": 15,
+    "decision_correct_count": 19,
+    "safety_violations": 0,
+    "missed_opportunities": 6,
+    "mean_selector_regret": 8.537769317626954e-05
+  },
+  "sparse": {
+    "n_decisions": 5,
+    "gate_open_count": 4,
+    "decision_correct_count": 5,
+    "safety_violations": 0,
+    "missed_opportunities": 0,
+    "mean_selector_regret": 0.0
+  },
+  "all_audited": {
+    "n_decisions": 30,
+    "gate_open_count": 19,
+    "decision_correct_count": 24,
+    "safety_violations": 0,
+    "missed_opportunities": 6,
+    "mean_selector_regret": 7.114807764689128e-05
+  },
+  "reporting_rule": "dense and sparse panels remain separate; the all-audited panel is descriptive only"
+}

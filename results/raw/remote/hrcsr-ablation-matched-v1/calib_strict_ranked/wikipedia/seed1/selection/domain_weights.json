@@ -1,0 +1,14 @@
+{
+  "all_source_weights": {
+    "enron": 0.208414702428298,
+    "mooc": 0.1892690005874343,
+    "reddit": 0.3310230225096365,
+    "uci": 0.27129327447463136
+  },
+  "method": "risk_adjusted_target_affinity",
+  "selected_weights": {
+    "mooc": 0.36377455772010253,
+    "reddit": 0.6362254422798975
+  },
+  "temperature": 0.1
+}

@@ -1,0 +1,62 @@
+{
+  "accepted": [
+    [
+      "enron"
+    ],
+    [
+      "uci"
+    ]
+  ],
+  "beam_width": 2,
+  "candidate_budget": 8,
+  "explored": [
+    [
+      "enron"
+    ],
+    [
+      "mooc"
+    ],
+    [
+      "uci"
+    ],
+    [
+      "wikipedia"
+    ],
+    [
+      "enron",
+      "mooc"
+    ],
+    [
+      "enron",
+      "uci"
+    ],
+    [
+      "enron",
+      "wikipedia"
+    ],
+    [
+      "mooc",
+      "uci"
+    ]
+  ],
+  "frontier": [],
+  "max_sources": 2,
+  "pending": [],
+  "sources": [
+    "enron",
+    "mooc",
+    "uci",
+    "wikipedia"
+  ],
+  "stop_reason": "no_gain",
+  "utilities": {
+    "enron": 0.3684981220360481,
+    "enron+mooc": 0.3243707415840777,
+    "enron+uci": 0.33747762533011333,
+    "enron+wikipedia": 0.3275959428120942,
+    "mooc": 0.3443156375681253,
+    "mooc+uci": 0.3143714625504609,
+    "uci": 0.34685765309663497,
+    "wikipedia": 0.3446791987828558
+  }
+}

@@ -1,0 +1,25 @@
+name: k6_scalability
+datasets: [wikipedia, reddit, mooc, uci, enron, lastfm, socialevo]
+targets: [mooc, wikipedia, reddit]
+seeds: [42]
+seed_overrides:
+  mooc: [0, 1, 42]
+time_encoding_mode: paper_sincos
+model:
+  shared_dim: 128
+  time_dim: 64
+  num_layers: 2
+  num_heads: 2
+  num_neighbors: 10
+  dropout: 0.1
+training:
+  pretrain_epochs: 25
+  transfer_epochs: 20
+  batch_size: 512
+  total_batches_per_epoch: 160
+proxy:
+  calibration_fraction: 0.8
+  calibration_steps: 100
+  proxy_batch_size: 256
+  proxy_batches: 12
+  margin: 0.002

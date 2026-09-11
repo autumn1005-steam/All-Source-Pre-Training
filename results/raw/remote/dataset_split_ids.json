@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-09-11",
+  "server_processed_root": "/root/autodl-tmp/processed-westb-verified/processed",
+  "split_definition": "timestamp quantiles [0.70, 0.85] in src/tempofound/data.py",
+  "split_code_sha256": "1b38045522f279f10f6a1be5a7b17606a498153cd9a2aa9e3e930dc48bc2d08c",
+  "datasets": {
+    "wikipedia": {
+      "csv": "ml_wikipedia.csv",
+      "csv_sha256": "1337f01b69712e553fa4f0439e96044e51095a1bce72a2526cc2e5994259521e"
+    },
+    "reddit": {
+      "csv": "ml_reddit.csv",
+      "csv_sha256": "f7702df6afbd9e31cdeacb3ffecd350e83e671141ae802d40309ff6ef9a8b390"
+    },
+    "mooc": {
+      "csv": "ml_mooc.csv",
+      "csv_sha256": "2ab7cfdb2c781e637a03096bb2c8bd4d4efb105f66de8023f9b9495e1597a9d9"
+    },
+    "uci": {
+      "csv": "ml_uci.csv",
+      "csv_sha256": "1afae3492224f7ec89d413b8e3ab3bd309f39054250774062df9c21f1f09570f"
+    },
+    "enron": {
+      "csv": "ml_enron.csv",
+      "csv_sha256": "83777a7449e31ab486bb64242180a04beda61c23798b2fc1f6deea530fbd2cef"
+    }
+  }
+}

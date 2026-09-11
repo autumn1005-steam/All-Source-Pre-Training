@@ -1,0 +1,15 @@
+{
+  "all_sources_test_mrr": 0.39507099986076355,
+  "candidate_count": 8,
+  "config_digest": "449f1cd37149d551611163500ce1ee0ec0c69d01c65503649b25fff0e022192f",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.409596711397171,
+  "seed": 42,
+  "selected_sources": [
+    "enron"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_strict_ranked/mooc/seed42/selection/selection.json",
+  "target": "mooc",
+  "test_mrr_delta": 0.01452571153640747
+}

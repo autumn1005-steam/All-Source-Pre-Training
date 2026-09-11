@@ -1,0 +1,29 @@
+name: tgat_matched_control
+datasets: [wikipedia, reddit, mooc, uci, enron]
+targets: [mooc, wikipedia, reddit]
+seeds: [0, 1, 2, 3, 42]
+time_encoding_mode: paper_sincos
+model:
+  backbone: tgat
+  shared_dim: 64
+  time_dim: 32
+  num_layers: 1
+  num_heads: 2
+  num_neighbors: 5
+  dropout: 0.1
+training:
+  pretrain_epochs: 5
+  transfer_epochs: 3
+  batch_size: 128
+  total_batches_per_epoch: 32
+proxy:
+  calibration_fraction: 0.8
+  calibration_steps: 20
+  proxy_batch_size: 128
+  proxy_batches: 4
+  margin: 0.002
+evaluation:
+  evaluation_protocol: ranking
+  negative_policy: historical
+  negatives_per_positive: 20
+  evaluation_batch_size: 64

@@ -1,0 +1,68 @@
+{
+  "checkpoint_selection_scope": "target_validation_only_after_source_selection",
+  "config_digest": "9c61c912268af50dfc5f6f5d9cf3ba0a9137a85eb3c671775353d73132c85da7",
+  "evaluation_batch_size": 64,
+  "evaluation_protocol": "ranking",
+  "mean_train_routing_regret": 0.002250182693491484,
+  "mode": "frozen",
+  "negative_policy": "historical",
+  "negatives_per_positive": 20,
+  "raw_route_minus_reference_test_mrr": 0.0022190213203430176,
+  "raw_routed_test_mrr": 0.5321165919303894,
+  "risk_controlled_routing": true,
+  "router_off_reference_test_mrr": 0.5298975706100464,
+  "routing_regret_violation_rate": 0.49929935190050795,
+  "safety_gate_sweep": {
+    "hard": {
+      "gate": 1.0,
+      "test_mrr": 0.5321165919303894
+    },
+    "identity": {
+      "gate": 0.0,
+      "test_mrr": 0.5298975706100464
+    },
+    "route": {
+      "gate": 1.0,
+      "test_mrr": 0.5321165919303894
+    },
+    "soft": {
+      "gate": 0.04633740100272454,
+      "test_mrr": 0.5298975706100464
+    }
+  },
+  "seed": 2,
+  "sources": [
+    "reddit",
+    "uci"
+  ],
+  "target": "wikipedia",
+  "target_calibration_events_reserved": 952,
+  "target_calibration_fraction": 0.20008406893652794,
+  "target_gate": 1.0,
+  "target_gate_calibration_events": 952,
+  "target_gate_calibration_mrr_delta": 0.002558501562526246,
+  "target_gate_information_boundary": "held_out_chronological_target_train_suffix",
+  "target_gate_lcb": 0.00047445339903945795,
+  "target_gate_mean_gain": 0.002558501562526246,
+  "target_gate_metric": "per_event_reciprocal_rank_gain",
+  "target_gate_mode": "holdout_lcb_hard",
+  "target_gate_negatives": 20,
+  "target_gate_reference_calibration_mrr": 0.5596891120702279,
+  "target_gate_routed_calibration_mrr": 0.5622476136327541,
+  "target_gate_ucb": 0.0049812540457937855,
+  "target_gate_window_means": [
+    0.00019529629596240857,
+    0.00086482009650525,
+    0.007948717945500424,
+    0.00022366525311219064,
+    0.0035813602569856142
+  ],
+  "target_optimization_events": 3806,
+  "target_reference_weight": 1.0,
+  "test_mrr": 0.5321165919303894,
+  "training_negative_fallback_rate": 0.0002627430373095113,
+  "training_negative_policy": "historical_with_collision_free_random_cold_start_fallback",
+  "transfer_regret_mode": "event_pairwise",
+  "transfer_regret_weight": 0.25,
+  "validation_mrr": 0.5801838040351868
+}

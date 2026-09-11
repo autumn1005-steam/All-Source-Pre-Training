@@ -1,0 +1,35 @@
+name: rasp_real_initial_custom_protocol
+datasets: [wikipedia, reddit, mooc]
+targets: [wikipedia]
+seeds: [42]
+model:
+  shared_dim: 32
+  time_dim: 16
+  num_layers: 1
+  num_heads: 2
+  num_neighbors: 5
+  dropout: 0.1
+training:
+  pretrain_epochs: 5
+  transfer_epochs: 3
+  batch_size: 128
+  total_batches_per_epoch: 64
+  pretraining_strategy: conflict_aware
+  domain_loss_coefficient: 0.1
+proxy:
+  calibration_fraction: 0.8
+  calibration_steps: 20
+  proxy_batch_size: 128
+  proxy_batches: 4
+selection:
+  selection_method: rasp
+  proxy_windows: 3
+  bootstrap_replicates: 1000
+  max_sources: 2
+  beam_width: 2
+  candidate_budget: 3
+evaluation:
+  evaluation_protocol: ranking
+  negative_policy: random
+  negatives_per_positive: 20
+  evaluation_batch_size: 64

@@ -1,0 +1,17 @@
+{
+  "config_digest": "e90098234b05068af5227973f5bf30b00e1036a3bccf0c2a47fb149b90040d15",
+  "seed": 0,
+  "source_weights": {
+    "mooc": 0.15094559304681907,
+    "reddit": 0.29904083102177004,
+    "uci": 0.17572693372986625,
+    "wikipedia": 0.37428664220154473
+  },
+  "sources": [
+    "mooc",
+    "reddit",
+    "uci",
+    "wikipedia"
+  ],
+  "target": "enron"
+}

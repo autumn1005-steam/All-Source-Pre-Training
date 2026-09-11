@@ -1,0 +1,192 @@
+{
+  "target": "socialevo",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    42
+  ],
+  "authoritative_source": "direct per-seed JSON; paired_results.json intentionally ignored",
+  "coverage": {
+    "HRCSR-Hard": {
+      "n": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        42
+      ],
+      "status": "COMPLETE FIVE-SEED COVERAGE"
+    },
+    "Strict RASP": {
+      "n": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        42
+      ],
+      "status": "COMPLETE FIVE-SEED COVERAGE"
+    },
+    "All-source": {
+      "n": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        42
+      ],
+      "status": "COMPLETE FIVE-SEED COVERAGE"
+    },
+    "Target-only T-GAT": {
+      "n": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        42
+      ],
+      "status": "COMPLETE FIVE-SEED COVERAGE"
+    },
+    "Target-only GraphMixer": {
+      "n": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        42
+      ],
+      "status": "COMPLETE FIVE-SEED COVERAGE"
+    }
+  },
+  "method_statistics": {
+    "HRCSR-Hard": {
+      "n": 5,
+      "mean": 0.8018597841262818,
+      "sample_std": 0.014758423726121553,
+      "per_seed": {
+        "0": 0.7971163988113403,
+        "1": 0.8125927448272705,
+        "2": 0.7973265647888184,
+        "3": 0.7822644710540771,
+        "42": 0.8199987411499023
+      }
+    },
+    "Strict RASP": {
+      "n": 5,
+      "mean": 0.7882883787155152,
+      "sample_std": 0.0238913281568955,
+      "per_seed": {
+        "0": 0.7967911958694458,
+        "1": 0.7462195158004761,
+        "2": 0.8022707104682922,
+        "3": 0.8032681345939636,
+        "42": 0.792892336845398
+      }
+    },
+    "All-source": {
+      "n": 5,
+      "mean": 0.78231201171875,
+      "sample_std": 0.012548781976508484,
+      "per_seed": {
+        "0": 0.7803995609283447,
+        "1": 0.7993748188018799,
+        "2": 0.787249743938446,
+        "3": 0.77964848279953,
+        "42": 0.7648874521255493
+      }
+    },
+    "Target-only T-GAT": {
+      "n": 5,
+      "mean": 0.5052133321762085,
+      "sample_std": 0.07059863723100097,
+      "per_seed": {
+        "0": 0.5026284456253052,
+        "1": 0.5461117029190063,
+        "2": 0.43048304319381714,
+        "3": 0.445931077003479,
+        "42": 0.6009123921394348
+      }
+    },
+    "Target-only GraphMixer": {
+      "n": 5,
+      "mean": 0.5863338112831116,
+      "sample_std": 0.04879624603817975,
+      "per_seed": {
+        "0": 0.5132395029067993,
+        "1": 0.5863370299339294,
+        "2": 0.6089890003204346,
+        "3": 0.5769369602203369,
+        "42": 0.6461665630340576
+      }
+    }
+  },
+  "hrcsr_minus_strict": {
+    "mean_delta": 0.013571405410766601,
+    "median_delta": 0.00032520294189453125,
+    "sample_std_delta": 0.03422335341983479,
+    "paired_bootstrap_95_ci": [
+      -0.010314083099365235,
+      0.04281313419342041
+    ],
+    "positive_seeds": 3,
+    "exact_two_sided_sign_flip_p": 0.4375,
+    "per_seed_delta": {
+      "0": 0.00032520294189453125,
+      "1": 0.06637322902679443,
+      "2": -0.004944145679473877,
+      "3": -0.021003663539886475,
+      "42": 0.027106404304504395
+    },
+    "interpretation": "descriptive because n=5"
+  },
+  "hrcsr_minus_all_source": {
+    "mean_delta": 0.01954777240753174,
+    "positive_seeds": 5,
+    "per_seed_delta": {
+      "0": 0.016716837882995605,
+      "1": 0.013217926025390625,
+      "2": 0.010076820850372314,
+      "3": 0.002615988254547119,
+      "42": 0.05511128902435303
+    },
+    "interpretation": "descriptive because n=5"
+  },
+  "gate_diagnostics": {
+    "gate_open_count": 4,
+    "decision_accuracy": 1.0,
+    "safety_violations": 0,
+    "missed_opportunities": 0,
+    "mean_selector_regret": 0.0,
+    "max_selector_regret": 0.0,
+    "spearman_lcb_vs_future_gain": 0.9,
+    "mean_future_route_minus_identity": 0.011191904544830322
+  },
+  "protocol": {
+    "calibration_requested": [
+      293933
+    ],
+    "calibration_retained": [
+      286990
+    ],
+    "calibration_skipped": [
+      6943
+    ],
+    "calibration_skip_rate": [
+      0.023621029282183355
+    ],
+    "test_query_counters": [
+      "RECONSTRUCTED_FROM_DATASET_AND_FINAL_SAMPLER"
+    ],
+    "config_digests": [
+      "5923860d83e56111ce93d6be9e80e843282e53669598a8ebd105ee7708aa9d46",
+      "9c5fb89135999b90f33dcdc78ad15d56eba7904d01c43201573f5981da91032f"
+    ]
+  }
+}

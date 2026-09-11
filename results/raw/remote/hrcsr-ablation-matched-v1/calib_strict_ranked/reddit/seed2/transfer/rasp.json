@@ -1,0 +1,30 @@
+{
+  "checkpoint_selection_scope": "target_validation_only_after_source_selection",
+  "config_digest": "8599b4f52548922421cff4ceb4f3736bbf72c2294bb263208c681df0851d6dd2",
+  "evaluation_batch_size": 64,
+  "evaluation_protocol": "ranking",
+  "mean_train_routing_regret": 0.0,
+  "mode": "frozen",
+  "negative_policy": "historical",
+  "negatives_per_positive": 20,
+  "risk_controlled_routing": false,
+  "routing_regret_violation_rate": 0.0,
+  "seed": 2,
+  "sources": [
+    "wikipedia"
+  ],
+  "target": "reddit",
+  "target_calibration_events_reserved": 1127,
+  "target_calibration_fraction": 0.19996451383960256,
+  "target_gate": 1.0,
+  "target_gate_information_boundary": "not_applicable",
+  "target_gate_mode": "not_applicable",
+  "target_optimization_events": 4509,
+  "target_reference_weight": 1.0,
+  "test_mrr": 0.4171472489833832,
+  "training_negative_fallback_rate": 0.00022177866489243733,
+  "training_negative_policy": "historical_with_collision_free_random_cold_start_fallback",
+  "transfer_regret_mode": "not_applicable",
+  "transfer_regret_weight": 0.0,
+  "validation_mrr": 0.47081661224365234
+}

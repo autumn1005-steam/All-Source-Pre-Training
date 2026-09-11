@@ -1,0 +1,21 @@
+{
+  "config_digest": "abcac33a7f1769fd2bb9c04827dcda21496fc6ee7403cf84813120d87c5f5339",
+  "seed": 2,
+  "source_weights": {
+    "enron": 0.04798769507107569,
+    "lastfm": 0.1219298040190626,
+    "mooc": 0.21290461414850448,
+    "reddit": 0.2639597849594247,
+    "uci": 0.22544573328508818,
+    "wikipedia": 0.1277723685168443
+  },
+  "sources": [
+    "enron",
+    "lastfm",
+    "mooc",
+    "reddit",
+    "uci",
+    "wikipedia"
+  ],
+  "target": "socialevo"
+}

@@ -1,0 +1,11 @@
+{
+  "config_digest": "b9eb21c05716e5e7f2a841b1cbec5a9463decc7a079a7874a60ba541871e86cc",
+  "seed": 1,
+  "source_weights": {
+    "wikipedia": 1.0
+  },
+  "sources": [
+    "wikipedia"
+  ],
+  "target": "reddit"
+}

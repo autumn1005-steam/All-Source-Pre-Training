@@ -1,0 +1,11 @@
+{
+  "config_digest": "5923860d83e56111ce93d6be9e80e843282e53669598a8ebd105ee7708aa9d46",
+  "seed": 3,
+  "source_weights": {
+    "reddit": 1.0
+  },
+  "sources": [
+    "reddit"
+  ],
+  "target": "socialevo"
+}

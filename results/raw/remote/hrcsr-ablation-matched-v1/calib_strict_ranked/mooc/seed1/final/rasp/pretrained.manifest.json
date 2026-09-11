@@ -1,0 +1,11 @@
+{
+  "config_digest": "449f1cd37149d551611163500ce1ee0ec0c69d01c65503649b25fff0e022192f",
+  "seed": 1,
+  "source_weights": {
+    "reddit": 1.0
+  },
+  "sources": [
+    "reddit"
+  ],
+  "target": "mooc"
+}

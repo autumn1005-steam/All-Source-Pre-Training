@@ -1,0 +1,14 @@
+{
+  "all_source_weights": {
+    "mooc": 0.24263174083976483,
+    "reddit": 0.18455079458714105,
+    "uci": 0.2931579214114794,
+    "wikipedia": 0.27965954316161473
+  },
+  "method": "risk_adjusted_target_affinity",
+  "selected_weights": {
+    "uci": 0.5117824429985952,
+    "wikipedia": 0.48821755700140473
+  },
+  "temperature": 0.1
+}

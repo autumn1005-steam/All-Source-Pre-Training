@@ -1,0 +1,67 @@
+{
+  "checkpoint_selection_scope": "target_validation_only_after_source_selection",
+  "config_digest": "59304ac1d659218d852defaa8bac06ef4e869ac3192e983e3e7492de480cd2d0",
+  "evaluation_batch_size": 64,
+  "evaluation_protocol": "ranking",
+  "mean_train_routing_regret": -0.006822292745318466,
+  "mode": "frozen",
+  "negative_policy": "historical",
+  "negatives_per_positive": 20,
+  "raw_route_minus_reference_test_mrr": 0.03359910845756531,
+  "raw_routed_test_mrr": 0.34843963384628296,
+  "risk_controlled_routing": true,
+  "router_off_reference_test_mrr": 0.31484052538871765,
+  "routing_regret_violation_rate": 0.46928502501964764,
+  "safety_gate_sweep": {
+    "hard": {
+      "gate": 1.0,
+      "test_mrr": 0.34843963384628296
+    },
+    "identity": {
+      "gate": 0.0,
+      "test_mrr": 0.31484052538871765
+    },
+    "route": {
+      "gate": 1.0,
+      "test_mrr": 0.34843963384628296
+    },
+    "soft": {
+      "gate": 0.960120390097527,
+      "test_mrr": 0.34728604555130005
+    }
+  },
+  "seed": 0,
+  "sources": [
+    "wikipedia"
+  ],
+  "target": "uci",
+  "target_calibration_events_reserved": 8377,
+  "target_calibration_fraction": 0.20000477509311432,
+  "target_gate": 1.0,
+  "target_gate_calibration_events": 8377,
+  "target_gate_calibration_mrr_delta": 0.034059188166922084,
+  "target_gate_information_boundary": "held_out_chronological_target_train_suffix",
+  "target_gate_lcb": 0.03221890115719868,
+  "target_gate_mean_gain": 0.034059188166922084,
+  "target_gate_metric": "per_event_reciprocal_rank_gain",
+  "target_gate_mode": "holdout_lcb_hard",
+  "target_gate_negatives": 20,
+  "target_gate_reference_calibration_mrr": 0.4932481454452083,
+  "target_gate_routed_calibration_mrr": 0.5273073337642193,
+  "target_gate_ucb": 0.03567790887743942,
+  "target_gate_window_means": [
+    0.03708511544058104,
+    0.03182835393720851,
+    0.030729782301098553,
+    0.035978233309379264,
+    0.03467398116392876
+  ],
+  "target_optimization_events": 33507,
+  "target_reference_weight": 1.0,
+  "test_mrr": 0.34843963384628296,
+  "training_negative_fallback_rate": 2.984451010236667e-05,
+  "training_negative_policy": "historical_with_collision_free_random_cold_start_fallback",
+  "transfer_regret_mode": "event_pairwise",
+  "transfer_regret_weight": 0.25,
+  "validation_mrr": 0.3802112936973572
+}

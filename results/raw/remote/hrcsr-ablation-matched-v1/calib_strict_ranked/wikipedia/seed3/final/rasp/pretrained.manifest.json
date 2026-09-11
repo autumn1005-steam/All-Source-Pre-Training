@@ -1,0 +1,11 @@
+{
+  "config_digest": "85b6824408f3f5f510879580a100f5d6877a7a7271500cbb7eecf0cffc57f77f",
+  "seed": 3,
+  "source_weights": {
+    "uci": 1.0
+  },
+  "sources": [
+    "uci"
+  ],
+  "target": "wikipedia"
+}

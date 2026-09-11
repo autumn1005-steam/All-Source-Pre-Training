@@ -1,0 +1,66 @@
+{
+  "accepted": [
+    [
+      "reddit"
+    ],
+    [
+      "wikipedia"
+    ]
+  ],
+  "beam_width": 2,
+  "candidate_budget": 8,
+  "explored": [
+    [
+      "mooc"
+    ],
+    [
+      "reddit"
+    ],
+    [
+      "uci"
+    ],
+    [
+      "wikipedia"
+    ]
+  ],
+  "frontier": [
+    [
+      "reddit"
+    ],
+    [
+      "wikipedia"
+    ]
+  ],
+  "max_sources": 2,
+  "pending": [
+    [
+      "mooc",
+      "reddit"
+    ],
+    [
+      "reddit",
+      "uci"
+    ],
+    [
+      "reddit",
+      "wikipedia"
+    ],
+    [
+      "mooc",
+      "wikipedia"
+    ]
+  ],
+  "sources": [
+    "mooc",
+    "reddit",
+    "uci",
+    "wikipedia"
+  ],
+  "stop_reason": null,
+  "utilities": {
+    "mooc": 0.1784571024627374,
+    "reddit": 0.2244287826553785,
+    "uci": 0.1778104784315599,
+    "wikipedia": 0.21783816665306585
+  }
+}

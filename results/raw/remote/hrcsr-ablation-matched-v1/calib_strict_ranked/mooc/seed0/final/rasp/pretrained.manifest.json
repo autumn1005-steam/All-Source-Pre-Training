@@ -1,0 +1,11 @@
+{
+  "config_digest": "449f1cd37149d551611163500ce1ee0ec0c69d01c65503649b25fff0e022192f",
+  "seed": 0,
+  "source_weights": {
+    "uci": 1.0
+  },
+  "sources": [
+    "uci"
+  ],
+  "target": "mooc"
+}

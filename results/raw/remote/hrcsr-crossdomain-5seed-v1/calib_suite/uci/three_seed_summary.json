@@ -1,0 +1,38 @@
+{
+  "target": "uci",
+  "variant": "calib_suite",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    42
+  ],
+  "protocol": "historical collision-free ranking; chronological target-train optimization prefix + held-out calibration suffix",
+  "budget_scope": "equal consumed source minibatches; target optimization event count matched across calibration variants",
+  "rasp_mean": 0.4300079822540283,
+  "all_sources_mean": 0.35232006311416625,
+  "paired_delta_mean": 0.07768791913986206,
+  "paired_delta_sample_std": 0.04482255582050076,
+  "positive_seeds": 5,
+  "gate_policy_delta_means": {
+    "route": 0.07768791913986206,
+    "identity": -0.007561862468719482,
+    "hard": 0.07768791913986206,
+    "soft": 0.07836241722106933
+  },
+  "rasp_gate_values": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "rasp_gate_lcbs": [
+    0.03221890115719868,
+    0.023071486622095107,
+    0.12032444498154582,
+    0.15637249949665052,
+    0.11658819517596648
+  ]
+}

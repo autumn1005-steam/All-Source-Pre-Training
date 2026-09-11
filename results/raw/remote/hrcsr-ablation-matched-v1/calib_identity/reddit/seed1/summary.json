@@ -1,0 +1,15 @@
+{
+  "all_sources_test_mrr": 0.4122556149959564,
+  "candidate_count": 8,
+  "config_digest": "2741d22f1c4ddcfa45ed284bd4435c7b4fa98b738ec0370e945c93b5dd995c67",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.41303637623786926,
+  "seed": 1,
+  "selected_sources": [
+    "wikipedia"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_identity/reddit/seed1/selection/selection.json",
+  "target": "reddit",
+  "test_mrr_delta": 0.0007807612419128418
+}

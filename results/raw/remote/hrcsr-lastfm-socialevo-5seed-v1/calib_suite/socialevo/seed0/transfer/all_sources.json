@@ -1,0 +1,72 @@
+{
+  "checkpoint_selection_scope": "target_validation_only_after_source_selection",
+  "config_digest": "9c5fb89135999b90f33dcdc78ad15d56eba7904d01c43201573f5981da91032f",
+  "evaluation_batch_size": 64,
+  "evaluation_protocol": "ranking",
+  "mean_train_routing_regret": 3.3526496631863825e-06,
+  "mode": "frozen",
+  "negative_policy": "historical",
+  "negatives_per_positive": 20,
+  "raw_route_minus_reference_test_mrr": 9.900331497192383e-05,
+  "raw_routed_test_mrr": 0.7804985642433167,
+  "risk_controlled_routing": true,
+  "router_off_reference_test_mrr": 0.7803995609283447,
+  "routing_regret_violation_rate": 0.49970804757599735,
+  "safety_gate_sweep": {
+    "hard": {
+      "gate": 0.0,
+      "test_mrr": 0.7803995609283447
+    },
+    "identity": {
+      "gate": 0.0,
+      "test_mrr": 0.7803995609283447
+    },
+    "route": {
+      "gate": 1.0,
+      "test_mrr": 0.7804985642433167
+    },
+    "soft": {
+      "gate": 0.0,
+      "test_mrr": 0.7803995609283447
+    }
+  },
+  "seed": 0,
+  "sources": [
+    "enron",
+    "lastfm",
+    "mooc",
+    "reddit",
+    "uci",
+    "wikipedia"
+  ],
+  "target": "socialevo",
+  "target_calibration_events_reserved": 293933,
+  "target_calibration_fraction": 0.2,
+  "target_gate": 0.0,
+  "target_gate_calibration_events": 286990,
+  "target_gate_calibration_mrr_delta": -9.651630467839172e-05,
+  "target_gate_information_boundary": "held_out_chronological_target_train_suffix",
+  "target_gate_lcb": -0.0001295983103855542,
+  "target_gate_mean_gain": -9.651630467839172e-05,
+  "target_gate_metric": "per_event_reciprocal_rank_gain",
+  "target_gate_mode": "holdout_lcb_hard",
+  "target_gate_negatives": 20,
+  "target_gate_reference_calibration_mrr": 0.764153328089943,
+  "target_gate_routed_calibration_mrr": 0.7640568117841483,
+  "target_gate_ucb": -5.9269208260756206e-05,
+  "target_gate_window_means": [
+    -0.0001573949592619799,
+    -1.348328317697507e-05,
+    -0.00012261473825469766,
+    -9.850123251087595e-05,
+    -9.058731018743007e-05
+  ],
+  "target_optimization_events": 1175732,
+  "target_reference_weight": 1.0,
+  "test_mrr": 0.7803995609283447,
+  "training_negative_fallback_rate": 0.0002862557913391815,
+  "training_negative_policy": "historical_with_collision_free_random_cold_start_fallback",
+  "transfer_regret_mode": "event_pairwise",
+  "transfer_regret_weight": 0.25,
+  "validation_mrr": 0.7722855806350708
+}

@@ -1,0 +1,16 @@
+{
+  "all_sources_test_mrr": 0.40688249468803406,
+  "candidate_count": 8,
+  "config_digest": "8599b4f52548922421cff4ceb4f3736bbf72c2294bb263208c681df0851d6dd2",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.4037092924118042,
+  "seed": 42,
+  "selected_sources": [
+    "enron",
+    "wikipedia"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_strict_ranked/reddit/seed42/selection/selection.json",
+  "target": "reddit",
+  "test_mrr_delta": -0.0031732022762298584
+}

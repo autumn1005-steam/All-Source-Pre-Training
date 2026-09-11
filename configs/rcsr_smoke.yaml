@@ -1,0 +1,55 @@
+name: rcsr_smoke_non_paper
+datasets: [source_a, source_b, source_c, target]
+targets: [target]
+seeds: [42]
+time_encoding_mode: paper_sincos
+model:
+  shared_dim: 8
+  time_dim: 4
+  num_layers: 1
+  num_heads: 2
+  num_neighbors: 2
+  dropout: 0.0
+  source_experts: true
+  expert_identity_init: true
+  risk_controlled_routing: true
+  router_temperature: 1.0
+  router_prior_strength: 1.0
+  router_entropy_penalty: 1.0
+  router_abstain_bias: -1.0
+training:
+  pretrain_epochs: 1
+  transfer_epochs: 1
+  batch_size: 8
+  total_batches_per_epoch: 3
+  pretraining_strategy: conflict_aware
+  affinity_temperature: 0.2
+  minimum_source_batches: 1
+  domain_adversarial_scale: 1.0
+  domain_loss_coefficient: 0.1
+  transfer_regret_weight: 0.25
+  transfer_regret_margin: 0.0
+proxy:
+  calibration_fraction: 0.7
+  calibration_steps: 2
+  proxy_batch_size: 4
+  proxy_batches: 1
+  proxy_metric: mrr
+  proxy_negative_policy: historical
+selection:
+  selection_method: rasp
+  proxy_windows: 2
+  bootstrap_replicates: 32
+  bootstrap_confidence: 0.9
+  risk_beta: 1.0
+  size_penalty: 0.001
+  beam_width: 2
+  max_sources: 2
+  candidate_budget: 6
+  min_risk_adjusted_gain: 0.0
+  consistent_candidate_weights: true
+evaluation:
+  evaluation_protocol: ranking
+  negative_policy: historical
+  negatives_per_positive: 8
+  evaluation_batch_size: 8

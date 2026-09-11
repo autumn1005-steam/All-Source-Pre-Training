@@ -1,0 +1,70 @@
+{
+  "checkpoint_selection_scope": "target_validation_only_after_source_selection",
+  "config_digest": "e29d432dde0a78913442259a8d8dc03022ae5a0c64baf96ac765587e3ee1da6a",
+  "evaluation_batch_size": 64,
+  "evaluation_protocol": "ranking",
+  "mean_train_routing_regret": -0.01736409705435675,
+  "mode": "frozen",
+  "negative_policy": "historical",
+  "negatives_per_positive": 20,
+  "raw_route_minus_reference_test_mrr": 0.023565828800201416,
+  "raw_routed_test_mrr": 0.4158923327922821,
+  "risk_controlled_routing": true,
+  "router_off_reference_test_mrr": 0.3923265039920807,
+  "routing_regret_violation_rate": 0.44851679701119646,
+  "safety_gate_sweep": {
+    "hard": {
+      "gate": 1.0,
+      "test_mrr": 0.4158923327922821
+    },
+    "identity": {
+      "gate": 0.0,
+      "test_mrr": 0.3923265039920807
+    },
+    "route": {
+      "gate": 1.0,
+      "test_mrr": 0.4158923327922821
+    },
+    "soft": {
+      "gate": 0.8133184999812806,
+      "test_mrr": 0.4132534861564636
+    }
+  },
+  "seed": 1,
+  "sources": [
+    "enron",
+    "reddit",
+    "uci",
+    "wikipedia"
+  ],
+  "target": "mooc",
+  "target_calibration_events_reserved": 36090,
+  "target_calibration_fraction": 0.19999889166588158,
+  "target_gate": 1.0,
+  "target_gate_calibration_events": 36090,
+  "target_gate_calibration_mrr_delta": 0.019532627277396235,
+  "target_gate_information_boundary": "held_out_chronological_target_train_suffix",
+  "target_gate_lcb": 0.01678351322692182,
+  "target_gate_mean_gain": 0.019532627277396235,
+  "target_gate_metric": "per_event_reciprocal_rank_gain",
+  "target_gate_mode": "holdout_lcb_hard",
+  "target_gate_negatives": 20,
+  "target_gate_reference_calibration_mrr": 0.4011161210664168,
+  "target_gate_routed_calibration_mrr": 0.42064874841307515,
+  "target_gate_ucb": 0.02399345987168548,
+  "target_gate_window_means": [
+    0.015641901669954123,
+    0.018045280657731352,
+    0.017574705973672188,
+    0.01748435084735647,
+    0.02891689723826703
+  ],
+  "target_optimization_events": 144361,
+  "target_reference_weight": 1.0,
+  "test_mrr": 0.4158923327922821,
+  "training_negative_fallback_rate": 0.0001177603369331052,
+  "training_negative_policy": "historical_with_collision_free_random_cold_start_fallback",
+  "transfer_regret_mode": "event_pairwise",
+  "transfer_regret_weight": 0.25,
+  "validation_mrr": 0.38169482350349426
+}

@@ -1,0 +1,16 @@
+{
+  "all_sources_test_mrr": 0.24473974108695984,
+  "candidate_count": 8,
+  "config_digest": "9c61c912268af50dfc5f6f5d9cf3ba0a9137a85eb3c671775353d73132c85da7",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.4026457667350769,
+  "seed": 3,
+  "selected_sources": [
+    "enron",
+    "uci"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-ablation-matched-v1/calib_suite/wikipedia/seed3/selection/selection.json",
+  "target": "wikipedia",
+  "test_mrr_delta": 0.15790602564811707
+}

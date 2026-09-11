@@ -1,0 +1,15 @@
+{
+  "all_sources_test_mrr": 0.4678409695625305,
+  "candidate_count": 8,
+  "config_digest": "e90098234b05068af5227973f5bf30b00e1036a3bccf0c2a47fb149b90040d15",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.3179200291633606,
+  "seed": 3,
+  "selected_sources": [
+    "wikipedia"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/enron/seed3/selection/selection.json",
+  "target": "enron",
+  "test_mrr_delta": -0.14992094039916992
+}

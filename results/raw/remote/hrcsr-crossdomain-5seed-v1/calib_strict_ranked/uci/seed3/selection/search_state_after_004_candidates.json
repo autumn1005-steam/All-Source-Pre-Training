@@ -1,0 +1,66 @@
+{
+  "accepted": [
+    [
+      "reddit"
+    ],
+    [
+      "mooc"
+    ]
+  ],
+  "beam_width": 2,
+  "candidate_budget": 8,
+  "explored": [
+    [
+      "enron"
+    ],
+    [
+      "mooc"
+    ],
+    [
+      "reddit"
+    ],
+    [
+      "wikipedia"
+    ]
+  ],
+  "frontier": [
+    [
+      "reddit"
+    ],
+    [
+      "mooc"
+    ]
+  ],
+  "max_sources": 2,
+  "pending": [
+    [
+      "enron",
+      "reddit"
+    ],
+    [
+      "mooc",
+      "reddit"
+    ],
+    [
+      "reddit",
+      "wikipedia"
+    ],
+    [
+      "enron",
+      "mooc"
+    ]
+  ],
+  "sources": [
+    "enron",
+    "mooc",
+    "reddit",
+    "wikipedia"
+  ],
+  "stop_reason": null,
+  "utilities": {
+    "enron": 0.1997523068538972,
+    "mooc": 0.39083476203406065,
+    "reddit": 0.479236828688793,
+    "wikipedia": 0.33387396278743436
+  }
+}

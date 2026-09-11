@@ -1,0 +1,31 @@
+{
+  "candidate_count": 8,
+  "candidate_sources": [
+    "enron",
+    "mooc",
+    "reddit",
+    "wikipedia"
+  ],
+  "candidate_utilities": {
+    "enron": 0.28156538497535566,
+    "enron+mooc": 0.23369384503952895,
+    "enron+reddit": 0.32943851436411187,
+    "mooc": 0.4262037663257299,
+    "mooc+reddit": 0.28239084285774435,
+    "reddit": 0.4452936289082191,
+    "reddit+wikipedia": 0.24865701039497448,
+    "wikipedia": 0.37974501584629416
+  },
+  "config_digest": "3215e9042e545c037491631bdd660eeb0f3629de7fb9643e58793b4139efee26",
+  "consistent_candidate_weights": true,
+  "information_boundary": "target_training_period_only",
+  "method": "rasp",
+  "risk_adjusted_utility": 0.4452936289082191,
+  "seed": 2,
+  "selected_sources": [
+    "reddit"
+  ],
+  "stop_reason": "no_gain",
+  "target": "uci",
+  "temporal_paired_gate": {}
+}

@@ -1,0 +1,18 @@
+{
+  "target": "mooc",
+  "variant": "calib_strict_ranked",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    42
+  ],
+  "protocol": "historical collision-free ranking; chronological target-train optimization prefix + held-out calibration suffix",
+  "budget_scope": "equal consumed source minibatches; target optimization event count matched across calibration variants",
+  "rasp_mean": 0.40727274417877196,
+  "all_sources_mean": 0.38946152329444883,
+  "paired_delta_mean": 0.01781122088432312,
+  "paired_delta_sample_std": 0.018763676739012917,
+  "positive_seeds": 4
+}

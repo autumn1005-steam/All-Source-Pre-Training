@@ -1,0 +1,90 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\title{Supplementary Material for Knowing When Not to Transfer}
+\author{Anonymous Authors}
+\begin{document}
+\maketitle
+
+This supplementary file records the reproducibility boundaries of the TKDE
+revision.  The executable source, configurations, raw outputs, aggregation
+scripts, and the complete appendix are distributed with the main manuscript.
+
+\section{Protocol and Information Boundary}
+All primary ranking experiments use chronological 70/15/15 splits and
+collision-filtered historical negatives.  HRCSR reserves a chronological
+suffix of the target-training period for calibration.  The checkpoint-boundary
+audit exposes validation-selected, fixed-epoch, and optimization-prefix-only
+modes; a mode is reported only when its raw JSON output is present.
+
+The completed matched-width audit is summarized in the main paper. The earlier
+reduced-width diagnostic is retained below only to make the version boundary
+auditable; it is not used for a primary claim.
+
+\begin{table}[h]
+\centering
+\caption{Checkpoint-boundary diagnostic (reduced-width audit configuration).}
+\label{tab:checkpoint_boundary_supp}
+\scriptsize
+\begin{tabular}{llccc}
+\toprule
+Target & Selection & Hard MRR & Route$-$Id. & Open \\
+\midrule
+Wikipedia & validation & .4551(.0572) & +.0012 & 1/5 \\
+Wikipedia & fixed epoch & .4510(.0498) & +.0016 & 1/5 \\
+Wikipedia & prefix only & .4510(.0498) & +.0016 & 1/5 \\
+Reddit & validation & .4296(.0121) & +.0002 & 1/5 \\
+Reddit & fixed epoch & .4306(.0137) & +.0002 & 2/5 \\
+Reddit & prefix only & .4306(.0137) & +.0002 & 2/5 \\
+MOOC & validation & .4559(.0182) & +.0742 & 5/5 \\
+MOOC & fixed epoch & .4567(.0205) & +.0802 & 5/5 \\
+MOOC & prefix only & .4572(.0194) & +.0799 & 5/5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This diagnostic is not substituted for the main table: it uses the released
+reduced-width audit configuration and therefore only tests sensitivity to
+checkpoint-selection information within that branch. The matched-width rerun,
+including UCI and Enron, is recorded in
+\texttt{CHECKPOINT\_BOUNDARY\_RESULTS.csv} and the experiment manifest.
+
+\section{Sparse SocialEvo Boundary}
+SocialEvo now has complete five-seed HRCSR, strict-RASP, all-source,
+target-only T-GAT, and target-only GraphMixer artifacts for seeds 0, 1, 2, 3,
+and 42. Direct per-seed transfer JSON files are authoritative because an
+older resumed-run aggregate retained only seeds 3 and 42.
+
+The SocialEvo runs use the audited skip-unsampleable sparse-negative policy.
+Across the common processed split, validation retains 307,953 of 314,930
+requested queries and test retains 310,119 of 314,924; no random fallback is
+used.  Route, identity, hard, and soft paths share the same queries and
+historical negatives.  The target-only summaries record the chronological
+split, historical ranking, and 20 negatives but not per-query identifiers, so
+they are contextual controls rather than proof of exact cross-process query-ID
+equality.  The main paper consequently reports SocialEvo in a separate
+five-seed sparse-domain table instead of pooling it with the dense panel.
+
+\section{Contemporary Baseline Compatibility}
+MiNT, BRIDGE, and GraphBridge are discussed in the main paper and audited in
+\texttt{CONTEMPORARY\_BASELINE\_AUDIT.md}. Their released tasks or metrics do
+not permit a direct historical-negative MRR comparison without changing the
+scientific question; no cross-task numbers are imported.
+
+\section{Measured Efficiency}
+The common-hardware measurements and synthetic expert-count scaling profile
+are provided in \texttt{EFFICIENCY\_RESULTS.csv} and
+\texttt{EXPERT\_SCALING.csv}. The latter is a computational profile using
+synthetic expert replication and is not a performance benchmark.
+
+\section{Result Provenance}
+Every manuscript number is linked in \texttt{FINAL\_RESULT\_PROVENANCE.md} to
+a raw JSON/CSV file and an aggregation script. Unavailable fields remain
+explicitly marked \texttt{NA}; no value is imputed.
+
+\section{Reproduction}
+The complete command sequence is in \texttt{RUN\_ALL.md}.  Use
+\texttt{scripts/audit\_sparse\_protocol.py} for query-denominator checks and
+\texttt{scripts/profile\_efficiency.py} for measured cost fields.
+
+\end{document}

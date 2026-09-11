@@ -1,0 +1,30 @@
+{
+  "checkpoint_selection_scope": "target_validation_only_after_source_selection",
+  "config_digest": "abcac33a7f1769fd2bb9c04827dcda21496fc6ee7403cf84813120d87c5f5339",
+  "evaluation_batch_size": 64,
+  "evaluation_protocol": "ranking",
+  "mean_train_routing_regret": 0.0,
+  "mode": "frozen",
+  "negative_policy": "historical",
+  "negatives_per_positive": 20,
+  "risk_controlled_routing": false,
+  "routing_regret_violation_rate": 0.0,
+  "seed": 42,
+  "sources": [
+    "mooc"
+  ],
+  "target": "socialevo",
+  "target_calibration_events_reserved": 293933,
+  "target_calibration_fraction": 0.2,
+  "target_gate": 1.0,
+  "target_gate_information_boundary": "not_applicable",
+  "target_gate_mode": "not_applicable",
+  "target_optimization_events": 1175732,
+  "target_reference_weight": 1.0,
+  "test_mrr": 0.792892336845398,
+  "training_negative_fallback_rate": 0.0002862557913391815,
+  "training_negative_policy": "historical_with_collision_free_random_cold_start_fallback",
+  "transfer_regret_mode": "not_applicable",
+  "transfer_regret_weight": 0.0,
+  "validation_mrr": 0.7864519953727722
+}

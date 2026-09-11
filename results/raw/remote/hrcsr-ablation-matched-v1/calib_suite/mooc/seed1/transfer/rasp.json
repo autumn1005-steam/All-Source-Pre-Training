@@ -1,0 +1,67 @@
+{
+  "checkpoint_selection_scope": "target_validation_only_after_source_selection",
+  "config_digest": "e29d432dde0a78913442259a8d8dc03022ae5a0c64baf96ac765587e3ee1da6a",
+  "evaluation_batch_size": 64,
+  "evaluation_protocol": "ranking",
+  "mean_train_routing_regret": -0.04005233251522037,
+  "mode": "frozen",
+  "negative_policy": "historical",
+  "negatives_per_positive": 20,
+  "raw_route_minus_reference_test_mrr": 0.07733011245727539,
+  "raw_routed_test_mrr": 0.4687129259109497,
+  "risk_controlled_routing": true,
+  "router_off_reference_test_mrr": 0.3913828134536743,
+  "routing_regret_violation_rate": 0.36472685374397057,
+  "safety_gate_sweep": {
+    "hard": {
+      "gate": 1.0,
+      "test_mrr": 0.4687129259109497
+    },
+    "identity": {
+      "gate": 0.0,
+      "test_mrr": 0.3913828134536743
+    },
+    "route": {
+      "gate": 1.0,
+      "test_mrr": 0.4687129259109497
+    },
+    "soft": {
+      "gate": 0.9634480781895896,
+      "test_mrr": 0.46705400943756104
+    }
+  },
+  "seed": 1,
+  "sources": [
+    "reddit"
+  ],
+  "target": "mooc",
+  "target_calibration_events_reserved": 36090,
+  "target_calibration_fraction": 0.19999889166588158,
+  "target_gate": 1.0,
+  "target_gate_calibration_events": 36090,
+  "target_gate_calibration_mrr_delta": 0.039093962440669254,
+  "target_gate_information_boundary": "held_out_chronological_target_train_suffix",
+  "target_gate_lcb": 0.033090215138564576,
+  "target_gate_mean_gain": 0.039093962440669254,
+  "target_gate_metric": "per_event_reciprocal_rank_gain",
+  "target_gate_mode": "holdout_lcb_hard",
+  "target_gate_negatives": 20,
+  "target_gate_reference_calibration_mrr": 0.4000292197546988,
+  "target_gate_routed_calibration_mrr": 0.439123182285894,
+  "target_gate_ucb": 0.043947106083077246,
+  "target_gate_window_means": [
+    0.024952058313658574,
+    0.04450475739459147,
+    0.038545728911691904,
+    0.04137712422614862,
+    0.04609014335725571
+  ],
+  "target_optimization_events": 144361,
+  "target_reference_weight": 1.0,
+  "test_mrr": 0.4687129259109497,
+  "training_negative_fallback_rate": 0.0001177603369331052,
+  "training_negative_policy": "historical_with_collision_free_random_cold_start_fallback",
+  "transfer_regret_mode": "event_pairwise",
+  "transfer_regret_weight": 0.25,
+  "validation_mrr": 0.4257084131240845
+}

@@ -1,0 +1,13 @@
+{
+  "config_digest": "9c61c912268af50dfc5f6f5d9cf3ba0a9137a85eb3c671775353d73132c85da7",
+  "seed": 1,
+  "source_weights": {
+    "enron": 0.5592969160672611,
+    "uci": 0.44070308393273894
+  },
+  "sources": [
+    "enron",
+    "uci"
+  ],
+  "target": "wikipedia"
+}

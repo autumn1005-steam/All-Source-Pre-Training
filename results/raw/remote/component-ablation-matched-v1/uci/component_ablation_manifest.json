@@ -1,0 +1,182 @@
+[
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed0/final/rasp/pretrained.pth",
+    "config_digest": "a82bb99c4558ca8917b4af3b0d8b859c485907f0e3bf10e8cf89ab628b821048",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a1_expert_identity/uci/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a1_expert_identity"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed0/final/rasp/pretrained.pth",
+    "config_digest": "d389d874f340fe644ad02bae79b3118b9bc00fdf02af9d870a8f7e1a5ed879f4",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a2_response_router/uci/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a2_response_router"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed0/final/rasp/pretrained.pth",
+    "config_digest": "6d79cafd32dfbabd807dd5a62e89f642ea23db40b500bf575384a955951524b0",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a3_local_acceptance/uci/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a3_local_acceptance"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed0/final/rasp/pretrained.pth",
+    "config_digest": "cce31fb2440f9b6c0e30f9d797a6f5cdba7c95437c6e2fa4b7bd7922c33a7947",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a4_pairwise_regret/uci/seed0.json",
+    "seed": 0,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a4_pairwise_regret"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed1/final/rasp/pretrained.pth",
+    "config_digest": "a82bb99c4558ca8917b4af3b0d8b859c485907f0e3bf10e8cf89ab628b821048",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a1_expert_identity/uci/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a1_expert_identity"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed1/final/rasp/pretrained.pth",
+    "config_digest": "d389d874f340fe644ad02bae79b3118b9bc00fdf02af9d870a8f7e1a5ed879f4",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a2_response_router/uci/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a2_response_router"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed1/final/rasp/pretrained.pth",
+    "config_digest": "6d79cafd32dfbabd807dd5a62e89f642ea23db40b500bf575384a955951524b0",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a3_local_acceptance/uci/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a3_local_acceptance"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed1/final/rasp/pretrained.pth",
+    "config_digest": "cce31fb2440f9b6c0e30f9d797a6f5cdba7c95437c6e2fa4b7bd7922c33a7947",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a4_pairwise_regret/uci/seed1.json",
+    "seed": 1,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a4_pairwise_regret"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed2/final/rasp/pretrained.pth",
+    "config_digest": "a82bb99c4558ca8917b4af3b0d8b859c485907f0e3bf10e8cf89ab628b821048",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a1_expert_identity/uci/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a1_expert_identity"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed2/final/rasp/pretrained.pth",
+    "config_digest": "d389d874f340fe644ad02bae79b3118b9bc00fdf02af9d870a8f7e1a5ed879f4",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a2_response_router/uci/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a2_response_router"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed2/final/rasp/pretrained.pth",
+    "config_digest": "6d79cafd32dfbabd807dd5a62e89f642ea23db40b500bf575384a955951524b0",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a3_local_acceptance/uci/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a3_local_acceptance"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed2/final/rasp/pretrained.pth",
+    "config_digest": "cce31fb2440f9b6c0e30f9d797a6f5cdba7c95437c6e2fa4b7bd7922c33a7947",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a4_pairwise_regret/uci/seed2.json",
+    "seed": 2,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a4_pairwise_regret"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed3/final/rasp/pretrained.pth",
+    "config_digest": "a82bb99c4558ca8917b4af3b0d8b859c485907f0e3bf10e8cf89ab628b821048",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a1_expert_identity/uci/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a1_expert_identity"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed3/final/rasp/pretrained.pth",
+    "config_digest": "d389d874f340fe644ad02bae79b3118b9bc00fdf02af9d870a8f7e1a5ed879f4",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a2_response_router/uci/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a2_response_router"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed3/final/rasp/pretrained.pth",
+    "config_digest": "6d79cafd32dfbabd807dd5a62e89f642ea23db40b500bf575384a955951524b0",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a3_local_acceptance/uci/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a3_local_acceptance"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed3/final/rasp/pretrained.pth",
+    "config_digest": "cce31fb2440f9b6c0e30f9d797a6f5cdba7c95437c6e2fa4b7bd7922c33a7947",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a4_pairwise_regret/uci/seed3.json",
+    "seed": 3,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a4_pairwise_regret"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed42/final/rasp/pretrained.pth",
+    "config_digest": "a82bb99c4558ca8917b4af3b0d8b859c485907f0e3bf10e8cf89ab628b821048",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a1_expert_identity/uci/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a1_expert_identity"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed42/final/rasp/pretrained.pth",
+    "config_digest": "d389d874f340fe644ad02bae79b3118b9bc00fdf02af9d870a8f7e1a5ed879f4",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a2_response_router/uci/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a2_response_router"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed42/final/rasp/pretrained.pth",
+    "config_digest": "6d79cafd32dfbabd807dd5a62e89f642ea23db40b500bf575384a955951524b0",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a3_local_acceptance/uci/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a3_local_acceptance"
+  },
+  {
+    "checkpoint": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_suite/uci/seed42/final/rasp/pretrained.pth",
+    "config_digest": "cce31fb2440f9b6c0e30f9d797a6f5cdba7c95437c6e2fa4b7bd7922c33a7947",
+    "output": "/root/autodl-tmp/TempoFound-TKDE-runs/component-ablation-matched-v1/uci/a4_pairwise_regret/uci/seed42.json",
+    "seed": 42,
+    "status": "COMPLETED",
+    "target": "uci",
+    "variant": "a4_pairwise_regret"
+  }
+]

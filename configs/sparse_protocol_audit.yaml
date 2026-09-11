@@ -1,0 +1,46 @@
+name: sparse_protocol_audit
+datasets: [wikipedia, reddit, mooc, uci, enron, lastfm, socialevo]
+targets: [socialevo]
+source_overrides:
+  socialevo: [wikipedia, reddit, mooc, uci, enron, lastfm]
+seeds: [0, 1, 2, 3, 42]
+time_encoding_mode: paper_sincos
+model:
+  shared_dim: 64
+  time_dim: 32
+  num_layers: 1
+  num_heads: 2
+  num_neighbors: 5
+  dropout: 0.1
+  source_experts: true
+  expert_identity_init: true
+  risk_controlled_routing: true
+training:
+  pretrain_epochs: 5
+  transfer_epochs: 3
+  batch_size: 128
+  total_batches_per_epoch: 32
+  pretraining_strategy: conflict_aware
+  transfer_regret_weight: 0.25
+  target_gate_mode: holdout_lcb_hard
+  target_gate_windows: 5
+  target_gate_bootstrap_replicates: 1000
+  target_gate_confidence: 0.95
+  target_calibration_fraction: 0.2
+  target_calibration_min_events: 128
+proxy:
+  proxy_metric: mrr
+  proxy_negative_policy: historical
+selection:
+  selection_method: rasp
+  proxy_windows: 3
+  bootstrap_replicates: 1000
+  bootstrap_confidence: 0.95
+  beam_width: 2
+  max_sources: 2
+  candidate_budget: 8
+evaluation:
+  evaluation_protocol: ranking
+  negative_policy: historical
+  negatives_per_positive: 20
+  evaluation_batch_size: 64

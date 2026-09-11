@@ -1,0 +1,13 @@
+{
+  "config_digest": "f5afc236c8b61f39cf59acba33eebb1dfdc428978957b2ac62252a7a91965884",
+  "seed": 0,
+  "source_weights": {
+    "reddit": 0.47548521342491146,
+    "wikipedia": 0.5245147865750885
+  },
+  "sources": [
+    "reddit",
+    "wikipedia"
+  ],
+  "target": "enron"
+}

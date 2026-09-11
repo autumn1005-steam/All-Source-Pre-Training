@@ -1,0 +1,15 @@
+{
+  "all_sources_test_mrr": 0.3229702115058899,
+  "candidate_count": 8,
+  "config_digest": "3215e9042e545c037491631bdd660eeb0f3629de7fb9643e58793b4139efee26",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.31845352053642273,
+  "seed": 42,
+  "selected_sources": [
+    "wikipedia"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_strict_ranked/uci/seed42/selection/selection.json",
+  "target": "uci",
+  "test_mrr_delta": -0.004516690969467163
+}

@@ -1,0 +1,62 @@
+{
+  "accepted": [
+    [
+      "reddit"
+    ],
+    [
+      "wikipedia"
+    ]
+  ],
+  "beam_width": 2,
+  "candidate_budget": 8,
+  "explored": [
+    [
+      "enron"
+    ],
+    [
+      "reddit"
+    ],
+    [
+      "uci"
+    ],
+    [
+      "wikipedia"
+    ],
+    [
+      "enron",
+      "reddit"
+    ],
+    [
+      "reddit",
+      "uci"
+    ],
+    [
+      "reddit",
+      "wikipedia"
+    ],
+    [
+      "enron",
+      "wikipedia"
+    ]
+  ],
+  "frontier": [],
+  "max_sources": 2,
+  "pending": [],
+  "sources": [
+    "enron",
+    "reddit",
+    "uci",
+    "wikipedia"
+  ],
+  "stop_reason": "no_gain",
+  "utilities": {
+    "enron": 0.2631128831344911,
+    "enron+reddit": 0.1806876541456954,
+    "enron+wikipedia": 0.18216543261933343,
+    "reddit": 0.28642176889829746,
+    "reddit+uci": 0.25807814493469416,
+    "reddit+wikipedia": 0.25335044721688094,
+    "uci": 0.2595759296130181,
+    "wikipedia": 0.2652798217057303
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "all_sources_test_mrr": 0.29039156436920166,
+  "candidate_count": 8,
+  "config_digest": "3215e9042e545c037491631bdd660eeb0f3629de7fb9643e58793b4139efee26",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.35153067111968994,
+  "seed": 0,
+  "selected_sources": [
+    "enron",
+    "mooc"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-crossdomain-5seed-v1/calib_strict_ranked/uci/seed0/selection/selection.json",
+  "target": "uci",
+  "test_mrr_delta": 0.06113910675048828
+}

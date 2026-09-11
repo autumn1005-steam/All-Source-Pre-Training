@@ -1,0 +1,16 @@
+{
+  "all_sources_test_mrr": 0.7273611426353455,
+  "candidate_count": 8,
+  "config_digest": "abcac33a7f1769fd2bb9c04827dcda21496fc6ee7403cf84813120d87c5f5339",
+  "evaluation_protocol": "ranking",
+  "method": "rasp",
+  "rasp_test_mrr": 0.7462195158004761,
+  "seed": 1,
+  "selected_sources": [
+    "lastfm",
+    "mooc"
+  ],
+  "selection_json": "/root/autodl-tmp/TempoFound-TKDE-runs/hrcsr-lastfm-socialevo-5seed-v1/calib_strict_ranked/socialevo/seed1/selection/selection.json",
+  "target": "socialevo",
+  "test_mrr_delta": 0.018858373165130615
+}
