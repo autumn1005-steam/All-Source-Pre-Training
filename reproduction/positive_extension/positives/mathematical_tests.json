@@ -1,0 +1,91 @@
+{
+  "version": "declared_simrank_union_v1",
+  "status": "passed",
+  "cuda_checked": true,
+  "tests": [
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 0,
+      "depth": 0,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 0,
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 0,
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 0,
+      "depth": 3,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 1,
+      "depth": 0,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 1,
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 1,
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 1,
+      "depth": 3,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 2,
+      "depth": 0,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 2,
+      "depth": 1,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 2,
+      "depth": 2,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "finite-depth recurrence including isolated and directed graph",
+      "graph": 2,
+      "depth": 3,
+      "max_abs_difference": 0.0
+    },
+    {
+      "test": "fixed K=8, one self, candidate closure, deterministic ranking and node-id ties",
+      "passed": true
+    },
+    {
+      "test": "label/split isolation using unreadable files and changed bytes",
+      "passed": true
+    },
+    {
+      "test": "isolate, low-degree equal budgets and identity cosine degeneration",
+      "passed": true
+    }
+  ]
+}

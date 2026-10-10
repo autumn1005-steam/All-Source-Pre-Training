@@ -1,0 +1,7 @@
+# Compatible runtime ranges; exact observed versions are in reproduction/environment.json.
+# Install PyTorch 2.8.0 with the appropriate CUDA wheel before this file.
+numpy>=1.26,<3
+scipy>=1.11,<2
+scikit-learn>=1.4,<2
+torch-geometric>=2.6,<3
+psutil>=5.9,<8

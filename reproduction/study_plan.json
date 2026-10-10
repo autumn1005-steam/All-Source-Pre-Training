@@ -1,0 +1,425 @@
+{
+  "selection": "mean validation Macro-F1 over 20/40/60 public label budgets; test metrics excluded from selection",
+  "final_encoder_seeds": [
+    1,
+    2,
+    3
+  ],
+  "linear_probe_initializations_per_encoder": 5,
+  "kmeans_initializations_per_encoder": 3,
+  "primary": {
+    "acm": {
+      "full": {
+        "lrscale": 1.0,
+        "keys": [
+          "acm__full__supplied__k16__lam0.5__lr1.0__seed1",
+          "acm__full__supplied__k16__lam0.5__lr1.0__seed2",
+          "acm__full__supplied__k16__lam0.5__lr1.0__seed3"
+        ]
+      },
+      "heco": {
+        "lrscale": 0.5,
+        "keys": [
+          "acm__heco__supplied__k16__lam0.5__lr0.5__seed1",
+          "acm__heco__supplied__k16__lam0.5__lr0.5__seed2",
+          "acm__heco__supplied__k16__lam0.5__lr0.5__seed3"
+        ]
+      },
+      "refined": {
+        "lrscale": 1.0,
+        "k": 8,
+        "keys": [
+          "acm__full__refine_supplied__k8__lam0.5__lr1.0__seed1",
+          "acm__full__refine_supplied__k8__lam0.5__lr1.0__seed2",
+          "acm__full__refine_supplied__k8__lam0.5__lr1.0__seed3"
+        ]
+      },
+      "ns4gc": {
+        "lrscale": 1.0,
+        "keys": [
+          "acm__ns4gc__projected__lr1.0__seed1",
+          "acm__ns4gc__projected__lr1.0__seed2",
+          "acm__ns4gc__projected__lr1.0__seed3"
+        ]
+      },
+      "adameow": {
+        "lrscale": 1.0,
+        "keys": [
+          "acm__adameow__common__lr1.0__seed1",
+          "acm__adameow__common__lr1.0__seed2",
+          "acm__adameow__common__lr1.0__seed3"
+        ]
+      }
+    },
+    "dblp": {
+      "full": {
+        "lrscale": 2.0,
+        "keys": [
+          "dblp__full__supplied__k16__lam0.5__lr2.0__seed1",
+          "dblp__full__supplied__k16__lam0.5__lr2.0__seed2",
+          "dblp__full__supplied__k16__lam0.5__lr2.0__seed3"
+        ]
+      },
+      "heco": {
+        "lrscale": 2.0,
+        "keys": [
+          "dblp__heco__supplied__k16__lam0.5__lr2.0__seed1",
+          "dblp__heco__supplied__k16__lam0.5__lr2.0__seed2",
+          "dblp__heco__supplied__k16__lam0.5__lr2.0__seed3"
+        ]
+      },
+      "refined": {
+        "lrscale": 2.0,
+        "k": 8,
+        "keys": [
+          "dblp__full__refine_supplied__k8__lam0.5__lr2.0__seed1",
+          "dblp__full__refine_supplied__k8__lam0.5__lr2.0__seed2",
+          "dblp__full__refine_supplied__k8__lam0.5__lr2.0__seed3"
+        ]
+      },
+      "ns4gc": {
+        "lrscale": 1.0,
+        "keys": [
+          "dblp__ns4gc__projected__lr1.0__seed1",
+          "dblp__ns4gc__projected__lr1.0__seed2",
+          "dblp__ns4gc__projected__lr1.0__seed3"
+        ]
+      },
+      "adameow": {
+        "lrscale": 1.0,
+        "keys": [
+          "dblp__adameow__common__lr1.0__seed1",
+          "dblp__adameow__common__lr1.0__seed2",
+          "dblp__adameow__common__lr1.0__seed3"
+        ]
+      }
+    },
+    "aminer": {
+      "full": {
+        "lrscale": 1.0,
+        "keys": [
+          "aminer__full__supplied__k16__lam0.5__lr1.0__seed1",
+          "aminer__full__supplied__k16__lam0.5__lr1.0__seed2",
+          "aminer__full__supplied__k16__lam0.5__lr1.0__seed3"
+        ]
+      },
+      "heco": {
+        "lrscale": 2.0,
+        "keys": [
+          "aminer__heco__supplied__k16__lam0.5__lr2.0__seed1",
+          "aminer__heco__supplied__k16__lam0.5__lr2.0__seed2",
+          "aminer__heco__supplied__k16__lam0.5__lr2.0__seed3"
+        ]
+      },
+      "refined": {
+        "lrscale": 1.0,
+        "k": 8,
+        "keys": [
+          "aminer__full__refine_supplied__k8__lam0.5__lr1.0__seed1",
+          "aminer__full__refine_supplied__k8__lam0.5__lr1.0__seed2",
+          "aminer__full__refine_supplied__k8__lam0.5__lr1.0__seed3"
+        ]
+      },
+      "ns4gc": {
+        "lrscale": 1.0,
+        "keys": [
+          "aminer__ns4gc__projected__lr1.0__seed1",
+          "aminer__ns4gc__projected__lr1.0__seed2",
+          "aminer__ns4gc__projected__lr1.0__seed3"
+        ]
+      },
+      "adameow": {
+        "lrscale": 1.0,
+        "keys": [
+          "aminer__adameow__common__lr1.0__seed1",
+          "aminer__adameow__common__lr1.0__seed2",
+          "aminer__adameow__common__lr1.0__seed3"
+        ]
+      }
+    },
+    "freebase": {
+      "full": {
+        "lrscale": 2.0,
+        "keys": [
+          "freebase__full__supplied__k16__lam0.5__lr2.0__seed1",
+          "freebase__full__supplied__k16__lam0.5__lr2.0__seed2",
+          "freebase__full__supplied__k16__lam0.5__lr2.0__seed3"
+        ]
+      },
+      "heco": {
+        "lrscale": 2.0,
+        "keys": [
+          "freebase__heco__supplied__k16__lam0.5__lr2.0__seed1",
+          "freebase__heco__supplied__k16__lam0.5__lr2.0__seed2",
+          "freebase__heco__supplied__k16__lam0.5__lr2.0__seed3"
+        ]
+      },
+      "refined": {
+        "lrscale": 2.0,
+        "k": 8,
+        "keys": [
+          "freebase__full__refine_supplied__k8__lam0.5__lr2.0__seed1",
+          "freebase__full__refine_supplied__k8__lam0.5__lr2.0__seed2",
+          "freebase__full__refine_supplied__k8__lam0.5__lr2.0__seed3"
+        ]
+      },
+      "ns4gc": {
+        "lrscale": 1.0,
+        "keys": [
+          "freebase__ns4gc__projected__lr1.0__seed1",
+          "freebase__ns4gc__projected__lr1.0__seed2",
+          "freebase__ns4gc__projected__lr1.0__seed3"
+        ]
+      }
+    }
+  },
+  "ablation": [
+    {
+      "dataset": "acm",
+      "variant": "mp_only",
+      "keys": [
+        "acm__mp_only__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mp_only__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mp_only__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "acm",
+      "variant": "mp_aug",
+      "keys": [
+        "acm__mp_aug__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mp_aug__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mp_aug__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "acm",
+      "variant": "mp_ng",
+      "keys": [
+        "acm__mp_ng__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mp_ng__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mp_ng__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "acm",
+      "variant": "mp_sm",
+      "keys": [
+        "acm__mp_sm__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mp_sm__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mp_sm__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "acm",
+      "variant": "no_global",
+      "keys": [
+        "acm__no_global__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__no_global__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__no_global__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "acm",
+      "variant": "no_cn",
+      "keys": [
+        "acm__no_cn__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__no_cn__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__no_cn__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "acm",
+      "variant": "layernorm",
+      "keys": [
+        "acm__layernorm__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__layernorm__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__layernorm__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "variant": "mp_only",
+      "keys": [
+        "aminer__mp_only__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mp_only__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mp_only__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "variant": "mp_aug",
+      "keys": [
+        "aminer__mp_aug__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mp_aug__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mp_aug__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "variant": "mp_ng",
+      "keys": [
+        "aminer__mp_ng__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mp_ng__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mp_ng__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "variant": "mp_sm",
+      "keys": [
+        "aminer__mp_sm__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mp_sm__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mp_sm__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "variant": "no_global",
+      "keys": [
+        "aminer__no_global__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__no_global__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__no_global__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "variant": "no_cn",
+      "keys": [
+        "aminer__no_cn__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__no_cn__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__no_cn__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "variant": "layernorm",
+      "keys": [
+        "aminer__layernorm__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__layernorm__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__layernorm__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "acm",
+      "variant": "random_positive_k8",
+      "keys": [
+        "acm__full__random_supplied__k8__lam0.5__lr1.0__seed1",
+        "acm__full__random_supplied__k8__lam0.5__lr1.0__seed2",
+        "acm__full__random_supplied__k8__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "dblp",
+      "variant": "random_positive_k8",
+      "keys": [
+        "dblp__full__random_supplied__k8__lam0.5__lr2.0__seed1",
+        "dblp__full__random_supplied__k8__lam0.5__lr2.0__seed2",
+        "dblp__full__random_supplied__k8__lam0.5__lr2.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "variant": "random_positive_k8",
+      "keys": [
+        "aminer__full__random_supplied__k8__lam0.5__lr1.0__seed1",
+        "aminer__full__random_supplied__k8__lam0.5__lr1.0__seed2",
+        "aminer__full__random_supplied__k8__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "freebase",
+      "variant": "random_positive_k8",
+      "keys": [
+        "freebase__full__random_supplied__k8__lam0.5__lr2.0__seed1",
+        "freebase__full__random_supplied__k8__lam0.5__lr2.0__seed2",
+        "freebase__full__random_supplied__k8__lam0.5__lr2.0__seed3"
+      ]
+    },
+    {
+      "dataset": "acm",
+      "variant": "mean_anchor",
+      "keys": [
+        "acm__mean_anchor__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mean_anchor__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mean_anchor__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "variant": "mean_anchor",
+      "keys": [
+        "aminer__mean_anchor__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mean_anchor__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mean_anchor__supplied__k16__lam0.5__lr1.0__seed3"
+      ]
+    }
+  ],
+  "sensitivity": [
+    {
+      "dataset": "acm",
+      "lam": 0.25,
+      "keys": [
+        "acm__full__supplied__k16__lam0.25__lr1.0__seed1",
+        "acm__full__supplied__k16__lam0.25__lr1.0__seed2",
+        "acm__full__supplied__k16__lam0.25__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "acm",
+      "lam": 0.75,
+      "keys": [
+        "acm__full__supplied__k16__lam0.75__lr1.0__seed1",
+        "acm__full__supplied__k16__lam0.75__lr1.0__seed2",
+        "acm__full__supplied__k16__lam0.75__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "lam": 0.25,
+      "keys": [
+        "aminer__full__supplied__k16__lam0.25__lr1.0__seed1",
+        "aminer__full__supplied__k16__lam0.25__lr1.0__seed2",
+        "aminer__full__supplied__k16__lam0.25__lr1.0__seed3"
+      ]
+    },
+    {
+      "dataset": "aminer",
+      "lam": 0.75,
+      "keys": [
+        "aminer__full__supplied__k16__lam0.75__lr1.0__seed1",
+        "aminer__full__supplied__k16__lam0.75__lr1.0__seed2",
+        "aminer__full__supplied__k16__lam0.75__lr1.0__seed3"
+      ]
+    }
+  ],
+  "tuning": [
+    "acm__full__supplied__k16__lam0.5__lr0.5__seed0",
+    "acm__full__supplied__k16__lam0.5__lr1.0__seed0",
+    "acm__full__supplied__k16__lam0.5__lr2.0__seed0",
+    "acm__heco__supplied__k16__lam0.5__lr0.5__seed0",
+    "acm__heco__supplied__k16__lam0.5__lr1.0__seed0",
+    "acm__heco__supplied__k16__lam0.5__lr2.0__seed0",
+    "dblp__full__supplied__k16__lam0.5__lr0.5__seed0",
+    "dblp__full__supplied__k16__lam0.5__lr1.0__seed0",
+    "dblp__full__supplied__k16__lam0.5__lr2.0__seed0",
+    "dblp__heco__supplied__k16__lam0.5__lr0.5__seed0",
+    "dblp__heco__supplied__k16__lam0.5__lr1.0__seed0",
+    "dblp__heco__supplied__k16__lam0.5__lr2.0__seed0",
+    "aminer__full__supplied__k16__lam0.5__lr0.5__seed0",
+    "aminer__full__supplied__k16__lam0.5__lr1.0__seed0",
+    "aminer__full__supplied__k16__lam0.5__lr2.0__seed0",
+    "aminer__heco__supplied__k16__lam0.5__lr0.5__seed0",
+    "aminer__heco__supplied__k16__lam0.5__lr1.0__seed0",
+    "aminer__heco__supplied__k16__lam0.5__lr2.0__seed0",
+    "freebase__full__supplied__k16__lam0.5__lr0.5__seed0",
+    "freebase__full__supplied__k16__lam0.5__lr1.0__seed0",
+    "freebase__full__supplied__k16__lam0.5__lr2.0__seed0",
+    "freebase__heco__supplied__k16__lam0.5__lr0.5__seed0",
+    "freebase__heco__supplied__k16__lam0.5__lr1.0__seed0",
+    "freebase__heco__supplied__k16__lam0.5__lr2.0__seed0"
+  ],
+  "execution": "three independent jobs concurrently; AdaMEOW runs alone; efficiency measured afterwards on idle GPU",
+  "status": "complete",
+  "attention_control_status": "complete"
+}

@@ -1,0 +1,114 @@
+{
+  "version": "declared_simrank_union_v1",
+  "dataset": "acm",
+  "n_target": 4019,
+  "origin": "New declared completion of missing generator using original C=.9, L=3, alpha=.5; not recovered original code or claimed exact original reproduction.",
+  "candidate_rule": "All non-self incoming neighbors of the binary union of released target meta-path matrices; no cap or non-neighbor fill; all strategies share exactly this set.",
+  "graph_direction": "Incoming adjacency is the transpose of the binary outgoing union; released symmetric projections yield the same neighbor sets.",
+  "union_is_symmetric": true,
+  "union_nonself_directed_entries": 4359766,
+  "union_csr_content_sha256": "419e3b26676a40f1c365bfa1a1a662774e22252733f84e64c9f1f37ff0fe9474",
+  "budget": "One self pair plus min(K, non-self candidate degree) per node, equal for every strategy.",
+  "k_nonself": 8,
+  "c": 0.9,
+  "iterations": 3,
+  "alpha_cosine": 0.5,
+  "simrank_recurrence": "S0=I; W=row-normalized incoming binary union; St+1=C W St W^T; overwrite diagonal with 1 each round; zero-degree off-diagonal similarities stay 0.",
+  "combined_score": "alpha * raw-feature cosine + (1-alpha) * finite-depth SimRank, without additional score normalization.",
+  "cosine_features": "p_feat",
+  "raw_feature_use": "Fixed released target attributes, L2-normalized per row; zero-feature rows give 0 cosine; no learned embedding.",
+  "tie_rule": "Descending score then ascending target node id; ties never selected by labels.",
+  "random_rule": "One frozen PCG64 uniform ranking per node seeded by SeedSequence([random_seed, node_id]); candidate set and per-row budget matched.",
+  "random_seed": 20261010,
+  "label_use": "No labels or split files opened by generator.",
+  "requested_modes": [
+    "cosine",
+    "simrank",
+    "combined",
+    "random"
+  ],
+  "isolated_target_nodes": 3,
+  "nodes_with_fewer_than_k_candidates": 52,
+  "candidate_degree_min": 0,
+  "candidate_degree_max": 1894,
+  "candidate_degree_mean": 1084.788753421249,
+  "input_sha256": {
+    "pap.npz": "3f25894497558f74356448f1a504c946efef9f23e7beb74d38bc9ecf95a4dbb6",
+    "psp.npz": "cd25669b884825155487308c7d4adb42d99edbc843215438219ad551f86c8f3e",
+    "p_feat.npz": "9e1019dfceaaabb19ee5b5f09de3147ffbaa818b43c3fc3f92bdfaf4ed5f02f4"
+  },
+  "files": {
+    "cosine": {
+      "file": "cosine.npz",
+      "sha256": "75f367ce591711dbe78da4a4224e2992b88594146717ab1633946aa821ca3e9e",
+      "csr_content_sha256": "6c8eb035fdad8451bf961989dc1a04a52e8b8cedbe243e31418f2b1fd1c9db68",
+      "nnz": 35968,
+      "self_pairs": 4019,
+      "total_per_row_min": 1,
+      "total_per_row_max": 9,
+      "total_per_row_mean": 8.949489922866384
+    },
+    "simrank": {
+      "file": "simrank.npz",
+      "sha256": "a35b0fa471d633a9c904ca81a2a1ec0d2479a5468b79b04044cdc0ef7dc6d4c2",
+      "csr_content_sha256": "9f6104365b6c93627e3258a25cd8a3f7f2229c3ac435edde80f064d6260c294d",
+      "nnz": 35968,
+      "self_pairs": 4019,
+      "total_per_row_min": 1,
+      "total_per_row_max": 9,
+      "total_per_row_mean": 8.949489922866384
+    },
+    "combined": {
+      "file": "combined.npz",
+      "sha256": "f91323f9cc3e72d844e23ce70181a3ac0300801807456c80619b9809a8c705a6",
+      "csr_content_sha256": "074bca40e6d2bfae8ff031603bc44bb5c4eed645568a6e5f3163b2c88f526be0",
+      "nnz": 35968,
+      "self_pairs": 4019,
+      "total_per_row_min": 1,
+      "total_per_row_max": 9,
+      "total_per_row_mean": 8.949489922866384
+    },
+    "random": {
+      "file": "random.npz",
+      "sha256": "b32d8f4fd48d1b8ba86b9f87c9ab492d99a37edc6695f3d668c95a23b7952658",
+      "csr_content_sha256": "7faf4b6677daf62db2e4ffaa00d989df70095605ef7f81a420bfd0239cc511f8",
+      "nnz": 35968,
+      "self_pairs": 4019,
+      "total_per_row_min": 1,
+      "total_per_row_max": 9,
+      "total_per_row_mean": 8.949489922866384
+    }
+  },
+  "phase_seconds": {
+    "input_loading_seconds": 0.09727149503305554,
+    "binary_union_seconds": 0.05442289402708411,
+    "simrank_seconds": 0.5409726689103991,
+    "all_requested_ranking_seconds": 2.092309827217832,
+    "serialization_seconds": 0.05576914898119867,
+    "total_generation_seconds": 2.8487527060788125
+  },
+  "memory": {
+    "host_rss_baseline_mib": 623.2421875,
+    "host_rss_sampled_peak_mib": 958.828125,
+    "host_rss_sampled_increment_mib": 335.5859375,
+    "rss_sampling_interval_seconds": 0.02,
+    "rss_caveat": "Sampled current process RSS; 20 ms sampling can miss transient peaks.",
+    "cuda_baseline_allocated_mib": 0.0,
+    "cuda_baseline_reserved_mib": 0.0,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "cuda_peak_allocated_mib": 431.02490234375,
+    "cuda_peak_reserved_mib": 574.0
+  },
+  "measurement_boundary": "Loading supplied projections/features, binary union, all three SimRank rounds, requested rankings, and compressed positive serialization. Original heterogeneous-to-meta-path projection construction is outside this boundary and measured separately in the prior study.",
+  "measurement_execution": "Run on idle device; do not overlap generation profiling with encoder jobs.",
+  "device": "cuda",
+  "cuda_product_block_rows": 256,
+  "environment": {
+    "numpy": "2.3.2",
+    "scipy": "1.18.1",
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35"
+  }
+}

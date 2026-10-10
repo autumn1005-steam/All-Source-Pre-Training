@@ -1,0 +1,172 @@
+[
+  {
+    "dataset": "acm",
+    "construction_median_seconds": 0.05146207893267274,
+    "normalization_median_seconds": 0.06912630121223629,
+    "released_loading_median_seconds": 0.2861642329953611,
+    "construction_repeats": [
+      0.06759779108688235,
+      0.05146207893267274,
+      0.051690151914954185,
+      0.051452173851430416,
+      0.05125573021359742
+    ],
+    "normalization_repeats": [
+      0.08770588715560734,
+      0.07284633908420801,
+      0.05686661088839173,
+      0.06912630121223629,
+      0.06121801305562258
+    ],
+    "loading_repeats": [
+      0.33750870008952916,
+      0.30778855085372925,
+      0.2861642329953611,
+      0.2792313019745052,
+      0.2806309829466045
+    ],
+    "metapath_checks": [
+      {
+        "path": "pap",
+        "nnz": 57853,
+        "different_entries": 0
+      },
+      {
+        "path": "psp",
+        "nnz": 4338213,
+        "different_entries": 0
+      }
+    ],
+    "upstream_positive_generation_cost": "unavailable: released positive files reused; no SimRank generator supplied"
+  },
+  {
+    "dataset": "dblp",
+    "construction_median_seconds": 0.7482892130501568,
+    "normalization_median_seconds": 0.17874029418453574,
+    "released_loading_median_seconds": 0.7722391709685326,
+    "construction_repeats": [
+      0.8025556560605764,
+      0.7737676580436528,
+      0.7481162298936397,
+      0.7482892130501568,
+      0.7437393181025982
+    ],
+    "normalization_repeats": [
+      0.2105356859974563,
+      0.16597129101864994,
+      0.19377615000121295,
+      0.17874029418453574,
+      0.15693429787643254
+    ],
+    "loading_repeats": [
+      0.8592534689232707,
+      0.7746645021252334,
+      0.7722391709685326,
+      0.7483661950100213,
+      0.7446084038820118
+    ],
+    "metapath_checks": [
+      {
+        "path": "apa",
+        "nnz": 11113,
+        "different_entries": 0
+      },
+      {
+        "path": "apcpa",
+        "nnz": 5000495,
+        "different_entries": 0
+      },
+      {
+        "path": "aptpa",
+        "nnz": 7043571,
+        "different_entries": 0
+      }
+    ],
+    "upstream_positive_generation_cost": "unavailable: released positive files reused; no SimRank generator supplied"
+  },
+  {
+    "dataset": "aminer",
+    "construction_median_seconds": 0.013466061791405082,
+    "normalization_median_seconds": 0.003407154930755496,
+    "released_loading_median_seconds": 0.05643226997926831,
+    "construction_repeats": [
+      0.02111723111011088,
+      0.013582528103142977,
+      0.013288774993270636,
+      0.013335081050172448,
+      0.013466061791405082
+    ],
+    "normalization_repeats": [
+      0.014370050048455596,
+      0.003429437056183815,
+      0.003407154930755496,
+      0.0033939520362764597,
+      0.0033713181037455797
+    ],
+    "loading_repeats": [
+      0.05874704709276557,
+      0.05698157008737326,
+      0.05643226997926831,
+      0.05618147202767432,
+      0.05623557209037244
+    ],
+    "metapath_checks": [
+      {
+        "path": "pap",
+        "nnz": 21976,
+        "different_entries": 0
+      },
+      {
+        "path": "prp",
+        "nnz": 129824,
+        "different_entries": 0
+      }
+    ],
+    "upstream_positive_generation_cost": "unavailable: released positive files reused; no SimRank generator supplied"
+  },
+  {
+    "dataset": "freebase",
+    "construction_median_seconds": 0.01929466798901558,
+    "normalization_median_seconds": 0.005105738062411547,
+    "released_loading_median_seconds": 0.05776303610764444,
+    "construction_repeats": [
+      0.019256446044892073,
+      0.019424689933657646,
+      0.01947800279594958,
+      0.019225339870899916,
+      0.01929466798901558
+    ],
+    "normalization_repeats": [
+      0.005105738062411547,
+      0.005879509961232543,
+      0.005071443971246481,
+      0.005150688113644719,
+      0.005047040991485119
+    ],
+    "loading_repeats": [
+      0.05792851117439568,
+      0.05776303610764444,
+      0.0578837301582098,
+      0.05770772090181708,
+      0.057692984119057655
+    ],
+    "metapath_checks": [
+      {
+        "path": "mdm",
+        "nnz": 8404,
+        "different_entries": 0
+      },
+      {
+        "path": "mam",
+        "nnz": 254702,
+        "different_entries": 0
+      },
+      {
+        "path": "mwm",
+        "nnz": 10706,
+        "different_entries": 0
+      }
+    ],
+    "upstream_positive_generation_cost": "unavailable: released positive files reused; no SimRank generator supplied"
+  }
+]

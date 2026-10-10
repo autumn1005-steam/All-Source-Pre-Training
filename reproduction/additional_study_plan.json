@@ -1,0 +1,96 @@
+{
+  "version": "review_extensions_v1",
+  "registered_before_additional_results": true,
+  "positive_generation": {
+    "datasets": [
+      "acm",
+      "dblp",
+      "aminer",
+      "freebase"
+    ],
+    "graph": "binary union of released meta-path projections, with self loops removed",
+    "candidate_pool": "all non-self union neighbors, identical across strategies",
+    "simrank": {
+      "decay": 0.9,
+      "iterations": 3,
+      "initial_state": "identity",
+      "reset_diagonal_each_iteration": true
+    },
+    "cosine": "raw row-normalized supplied target attributes; unavailable semantic evidence for identity inputs",
+    "mixture_weight": 0.5,
+    "nonself_budget": 8,
+    "self_pairs": "always included",
+    "underfull_rows": "retain min(8, nonself degree); no outside-pool padding",
+    "ties": "ascending target-node identifier",
+    "attributed_strategies": [
+      "cosine",
+      "simrank",
+      "combined",
+      "random"
+    ],
+    "identity_strategies": [
+      "simrank",
+      "random"
+    ],
+    "encoder_seeds": [
+      1,
+      2,
+      3
+    ],
+    "training": "existing full-model selected learning rate, fixed 600 maximum epochs, patience 40 after at least 60 epochs; five frozen probes per encoder",
+    "selection": "no labels and no test-dependent strategy or hyperparameter selection",
+    "implementation_status": "newly completed explicit implementation, not verified reconstruction of missing historical generator",
+    "preprocessing_profile": "measure graph construction, SimRank and ranking before training on otherwise idle GPU"
+  },
+  "heldout_transfer": {
+    "datasets": [
+      "acm",
+      "dblp"
+    ],
+    "graph_partition_seed": 20261010,
+    "partition": "each raw node type independently assigned to source or heldout; retain relations only when both endpoints have the same owner",
+    "empty_neighbor_rule": "remove target nodes missing any type required by typed aggregation; filter using structure only",
+    "projections": "rebuild from each graph's original type relations; never slice released full-graph projections or positives",
+    "positive_rule": "fixed graph-local normalized-union ranking, up to eight nonself neighbors plus self",
+    "variants": [
+      "full",
+      "heco",
+      "mp_aug"
+    ],
+    "training_settings": [
+      "source-only self-supervision and frozen heldout deployment",
+      "target-only self-supervision reference"
+    ],
+    "controls": [
+      "raw supplied target features",
+      "random-initialized frozen meta-path encoders"
+    ],
+    "encoder_seeds": [
+      1,
+      2,
+      3
+    ],
+    "learning_rate": "fixed original dataset base rate; no full-graph validation-selected rate reused",
+    "encoder_checkpoint": "training loss only; no target labels or metrics select source checkpoint",
+    "probe_split": "20 training labels and 10 validation labels per class; remaining heldout targets used for test",
+    "deployment": "retain only target attribute projection and meta-path encoder; no target-gradient update in frozen transfer condition",
+    "scope": "heldout non-overlapping graphs within each supplied dataset, not cross-dataset or graph foundation modeling",
+    "upstream_attribute_boundary": "fixed supplied paper attribute dictionary; no fitting across the partition; unknown historical paper feature construction remains a declared input boundary",
+    "prohibited": "no split reselection or hyperparameter tuning based on target test outcomes",
+    "dblp_attribute_protocol": "DBLP-L: after graph separation, independently compute binary support of local PA.T @ local paper-feature support in the common 4231-column vocabulary, followed by row normalization; do not read released author features",
+    "attribute_decision_basis": "before encoder runs: raw-file audit found 48/334 released author-attribute columns identical to full-graph paper aggregation, with no complete reconstruction recipe; graph-local reconstruction removes cross-boundary aggregation",
+    "partition_algorithm": "One NumPy default_rng(20261010), sequential default-int64 integers(0,2,size=n) draws in ACM p/a/s order and DBLP a/p/c/t order; each node independently Bernoulli(0.5). No fixed-size permutation.",
+    "implementation_version": "typed_owner_disjoint_local_features_v3"
+  },
+  "writing": {
+    "edit_existing_source_in_place": true,
+    "authors": [
+      "Qiurui Song",
+      "Xuchu Jiang"
+    ],
+    "retain_old_result_tables": true,
+    "add_only_completed_recorded_results": true,
+    "report_negative_and_null_results": true,
+    "status": "implementation_in_progress"
+  }
+}

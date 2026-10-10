@@ -1,0 +1,87 @@
+Secondary hypothesis: retained source pretraining followed by unlabeled target SSL
+Protocol retained_warmstart_followup_v2
+
+Timing and scope
+---------------
+This is a follow-up formulated after the completed fixed frozen-transfer study,
+not a claim that adaptation was pre-registered before that study. TriView-HCL's
+frozen source/target-only Macro-F1 was ACM 61.52/76.72 and DBLP-L 62.72/55.73.
+The additional hypothesis is whether retained source weights provide a reusable
+initialization for target SSL. The original frozen-transfer outcomes remain
+unchanged and must be reported alongside this follow-up. The protocol below is
+fixed before any adaptation test score is seen. No further tuning, split
+selection, seed selection, or reinterpretation of failures is permitted.
+
+Exactly eighteen adaptation groups
+----------------------------------
+Source-initialized groups: datasets ACM and DBLP-L, variants TriView-HCL and
+HeCo, seeds 1/2/3 (12 groups). Additional budget/restart controls use TriView-HCL
+with initial_graph=target for both datasets and the same three seeds (6 groups).
+Each group has two SSL phases: 18 groups comprise 36 trained phases, plus five
+fixed probes per final encoder. These are not 36 independent scientific trials.
+The six controls were fixed before adaptation test results and distinguish a
+source-knowledge effect from extra SSL training and retained-encoder restart.
+
+Graph, features, positives, and probe splits
+------------------------------------------
+Use the previously locked typed_owner_disjoint_local_features_v3 manifests:
+all typed node identities and raw edges are source/target disjoint. No graph
+split is redrawn. Rebuild projections only from retained raw relations. ACM
+uses 1902-column supplied paper attributes; DBLP-L uses 4231-column author
+attributes rebuilt from the binary word-support union of retained local papers,
+with the same fixed vocabulary in both graphs. Use graph-local normalized MP
+union top-eight off-diagonal positives plus self, identically to v3. Reuse the
+v3 target class split, 20 train/10 validation/rest test per class, and five
+200-epoch probes with one validation-cross-entropy checkpoint for all metrics.
+
+Phase 1: initial-graph pretraining
+---------------------------------
+For source-initialized groups exactly repeat source-only SSL with the v3 model,
+while the six target-repeat controls use the target graph instead. Base LR .0008,
+maximum 600 epochs, minimum 60, patience 40, and minimum source SSL-loss
+checkpoint. Original v3 saved embeddings but not encoder weights, so this
+initial phase must be repeated. Save only the retained initial fc[0]/MP state
+for reproducibility; unused auxiliary weights do not need to be published.
+GPU floating-point order may prevent bitwise equality with earlier source runs;
+record the complete hashes and whether they match, without selecting a rerun.
+
+Phase 2: target-local initialization and adaptation
+--------------------------------------------------
+Reset all RNG streams to the same encoder seed, then instantiate a new
+target-local model exactly as in the v3 target-only reference. Transfer only
+the source target-attribute projection fc[0] and MP encoder state. Auxiliary
+identity projections, NG, SM, ContraNorm/LayerNorm, contrastive projector, and
+Adam optimizer are fresh. The target-repeat control transfers only its first
+target phase's fc[0]/MP state and likewise replaces all auxiliary modules.
+Source node identity weights must never be indexed
+as target nodes. An independent target-only initialization replay, with every
+RNG stream restored afterward, verifies the new auxiliary parameter hash.
+Assert that copying fc[0]/MP leaves the auxiliary hash and all RNG states
+unchanged, and that the copied retained state hash equals the source's.
+
+Run target SSL using the same base .0008, maximum600/minimum60/patience40
+budget as the target-only reference. Select only the minimum target-phase SSL
+loss checkpoint. The model is then frozen and the existing deployment guard
+checks that final inference runs fc[0]/MP only and does not mutate its state.
+Target graph/features are available during the adaptation phase; this condition
+must never be described as frozen zero-shot transfer.
+
+Label isolation and budget disclosure
+------------------------------------
+Neither source nor target SSL may load evaluation labels or public label split
+files. Load labels only after both training phases and final frozen inference.
+Target labels only train/validate/test the downstream linear probes. Store
+both training histories, positive hashes, graph hashes, initialization/copy
+checks, frozen state hash, individual probes, environments, and elapsed time.
+
+Compare final scores with the completed v3 same-architecture target-only
+references. For TriView-HCL also compare source-to-target adaptation with the
+target-to-target restart control. Both two-phase conditions have the same
+maximum phase budgets, though graph contents and early-stopping epochs can
+differ. Relative to the one-phase reference, adaptation has an additional
+source or target SSL phase. This is not equal-total-cost training against the
+one-phase reference. Early stopping can yield different realized epoch counts.
+One fixed graph partition per dataset and three encoder initializations cannot
+estimate variation across independent graph splits. All zero gains and losses
+must remain visible; the follow-up does not establish cross-dataset transfer,
+graph foundation models, or universal usefulness of source pretraining.

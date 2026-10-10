@@ -1,0 +1,500 @@
+{
+  "description": "Exact experiment inputs excluded from Git; paths are relative to the reproduction workspace.",
+  "files": {
+    "baselines/MEOW-main/data/acm/labels.npy": {
+      "sha256": "019284b3e6a58fc8ebd432fb99aaaf183ad41dbf56b8ca7af0b56dca9dd844b5",
+      "bytes": 32280,
+      "archive_member": "reproduction/baselines/MEOW-main/data/acm/labels.npy"
+    },
+    "baselines/MEOW-main/data/acm/nei_a.npz": {
+      "sha256": "f2ed9cff880088f2bbbf45eb70fa17e67d76d4fe87c0ec412ce9edd0b3a976e0",
+      "bytes": 37607,
+      "archive_member": "reproduction/baselines/MEOW-main/data/acm/nei_a.npz"
+    },
+    "baselines/MEOW-main/data/acm/nei_s.npz": {
+      "sha256": "b0faaa23bae80a397be3933d57413f6b14953de10beda808202e9fc813a55973",
+      "bytes": 8778,
+      "archive_member": "reproduction/baselines/MEOW-main/data/acm/nei_s.npz"
+    },
+    "baselines/MEOW-main/data/acm/pap.npz": {
+      "sha256": "7b53578aa3cfaf3dadc452fd6ce973a3a45dc8f0b42962716039401f298f1c0d",
+      "bytes": 79897,
+      "archive_member": "reproduction/baselines/MEOW-main/data/acm/pap.npz"
+    },
+    "baselines/MEOW-main/data/acm/psp.npz": {
+      "sha256": "54557bd612ee21e9de31512bb59bebdbfd20c67cc8eac5738ee1055e34cb35c1",
+      "bytes": 470252,
+      "archive_member": "reproduction/baselines/MEOW-main/data/acm/psp.npz"
+    },
+    "baselines/MEOW-main/data/aminer/labels.npy": {
+      "sha256": "51a0500d6f74ee8745fc2d0f85c38dcdba064878980b890d5a347f29d68b531d",
+      "bytes": 52640,
+      "archive_member": "reproduction/baselines/MEOW-main/data/aminer/labels.npy"
+    },
+    "baselines/MEOW-main/data/aminer/nei_a.npz": {
+      "sha256": "70de9f6f209084056ca7f17586c293de0324adc36526309c3bb065ef1f43e027",
+      "bytes": 48049,
+      "archive_member": "reproduction/baselines/MEOW-main/data/aminer/nei_a.npz"
+    },
+    "baselines/MEOW-main/data/aminer/nei_r.npz": {
+      "sha256": "76d759903a6b347a54b7c76a795afc35585bc6afe78f4b93f22007e757ac923f",
+      "bytes": 131125,
+      "archive_member": "reproduction/baselines/MEOW-main/data/aminer/nei_r.npz"
+    },
+    "baselines/MEOW-main/data/aminer/pap.npz": {
+      "sha256": "058b211cfb6bcf130a9cf6b1c1e338d8fabf09cd8ef5888f7d7ba7064deef825",
+      "bytes": 40853,
+      "archive_member": "reproduction/baselines/MEOW-main/data/aminer/pap.npz"
+    },
+    "baselines/MEOW-main/data/aminer/prp.npz": {
+      "sha256": "4f63835c4b0a7d8e62beb78823d5d3ec906ce49d2ed51f54450a8edbdc471303",
+      "bytes": 163185,
+      "archive_member": "reproduction/baselines/MEOW-main/data/aminer/prp.npz"
+    },
+    "baselines/MEOW-main/data/dblp/apa.npz": {
+      "sha256": "4a22475287d8c41dcc7098d4197f503643d294472adf7cb91c9318b0057a0f68",
+      "bytes": 34489,
+      "archive_member": "reproduction/baselines/MEOW-main/data/dblp/apa.npz"
+    },
+    "baselines/MEOW-main/data/dblp/apcpa.npz": {
+      "sha256": "b30b36d5af14aca6a99818e4910fd23f5a108bca2e1ea437f88aa0e817b4a7bd",
+      "bytes": 5715230,
+      "archive_member": "reproduction/baselines/MEOW-main/data/dblp/apcpa.npz"
+    },
+    "baselines/MEOW-main/data/dblp/aptpa.npz": {
+      "sha256": "86764d2aa6bd7fdf4dd28ffab5a6beb3351dad6f5e0b41a7d67e08b6c5f27ff6",
+      "bytes": 12261256,
+      "archive_member": "reproduction/baselines/MEOW-main/data/dblp/aptpa.npz"
+    },
+    "baselines/MEOW-main/data/dblp/labels.npy": {
+      "sha256": "817efdc3ebb9e96067b8770dad5894b06ecabde2ac95d4b17443985f0439fda7",
+      "bytes": 32584,
+      "archive_member": "reproduction/baselines/MEOW-main/data/dblp/labels.npy"
+    },
+    "baselines/MEOW-main/data/dblp/nei_ap.npz": {
+      "sha256": "3b4821862461adbdee4b1c08f60d09c3efbce820bdd8966aa6e1c6f60822fbc6",
+      "bytes": 52270,
+      "archive_member": "reproduction/baselines/MEOW-main/data/dblp/nei_ap.npz"
+    },
+    "baselines/MEOW-main/data/dblp/nei_apc.npz": {
+      "sha256": "757b74a9088cc7953bd265120b5635705b61bb161623c4314e15ab3600f236ef",
+      "bytes": 13491,
+      "archive_member": "reproduction/baselines/MEOW-main/data/dblp/nei_apc.npz"
+    },
+    "baselines/MEOW-main/data/dblp/nei_apcp.npz": {
+      "sha256": "be56b6660ceb4aa074cc00cc7f6ddd4f310599047082721353346a48c7550859",
+      "bytes": 4820038,
+      "archive_member": "reproduction/baselines/MEOW-main/data/dblp/nei_apcp.npz"
+    },
+    "baselines/MEOW-main/data/dblp/nei_apt.npz": {
+      "sha256": "8f9652317720733b38ab60fd96c8a4ef4acbf7c24c0ed7774b44b1d4064e808f",
+      "bytes": 164834,
+      "archive_member": "reproduction/baselines/MEOW-main/data/dblp/nei_apt.npz"
+    },
+    "baselines/MEOW-main/data/dblp/nei_aptp.npz": {
+      "sha256": "6a82d42198c499f0b1fa17c5f8437b406e33ce07aa2bd8722a339d362704f74b",
+      "bytes": 21702924,
+      "archive_member": "reproduction/baselines/MEOW-main/data/dblp/nei_aptp.npz"
+    },
+    "original/TriView-HCL-main/data/acm/a_feat.npz": {
+      "sha256": "e2f2ac8d357310149fc7badbf32ea0b171dec25aad6c37ec45de592666c65555",
+      "bytes": 1961252,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/a_feat.npz"
+    },
+    "original/TriView-HCL-main/data/acm/labels.npy": {
+      "sha256": "019284b3e6a58fc8ebd432fb99aaaf183ad41dbf56b8ca7af0b56dca9dd844b5",
+      "bytes": 32280,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/labels.npy"
+    },
+    "original/TriView-HCL-main/data/acm/nei_a.npy": {
+      "sha256": "1b60e195f2d3a7ead0b591f4ca1b25c5e048390decb37362a828780c4d761c05",
+      "bytes": 323916,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/nei_a.npy"
+    },
+    "original/TriView-HCL-main/data/acm/nei_s.npy": {
+      "sha256": "c0c4b7fe18b569384e47a582e0656bd17eb8994a0835d51bac121bfb98a2663d",
+      "bytes": 32280,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/nei_s.npy"
+    },
+    "original/TriView-HCL-main/data/acm/p_feat.npz": {
+      "sha256": "9e1019dfceaaabb19ee5b5f09de3147ffbaa818b43c3fc3f92bdfaf4ed5f02f4",
+      "bytes": 495879,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/p_feat.npz"
+    },
+    "original/TriView-HCL-main/data/acm/pa.txt": {
+      "sha256": "e67385fc13c3b3b624d81de7eb6e4245d9aeafa063c5466c6fab0f151bcb84d6",
+      "bytes": 128122,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/pa.txt"
+    },
+    "original/TriView-HCL-main/data/acm/pap.npz": {
+      "sha256": "3f25894497558f74356448f1a504c946efef9f23e7beb74d38bc9ecf95a4dbb6",
+      "bytes": 64585,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/pap.npz"
+    },
+    "original/TriView-HCL-main/data/acm/pos.npz": {
+      "sha256": "d683afe2d8cad6b5d99724f027a03bf82a078ecf8835e8e9cb58a7962127e642",
+      "bytes": 37470,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/pos.npz"
+    },
+    "original/TriView-HCL-main/data/acm/ps.txt": {
+      "sha256": "3da7615ef5567c5f7f1ab9ec770c4b4b8b6a54790baa1cda3d4499329dfc22d5",
+      "bytes": 30181,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/ps.txt"
+    },
+    "original/TriView-HCL-main/data/acm/psp.npz": {
+      "sha256": "cd25669b884825155487308c7d4adb42d99edbc843215438219ad551f86c8f3e",
+      "bytes": 423908,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/psp.npz"
+    },
+    "original/TriView-HCL-main/data/acm/test_20.npy": {
+      "sha256": "eb90e38c882009c6439d749d160d39ed64f8813e9f672c02be54993914934afa",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/test_20.npy"
+    },
+    "original/TriView-HCL-main/data/acm/test_40.npy": {
+      "sha256": "f73d7e23459dd654a7567ee8bf123849f400096f8fac558dc37033d3fdc11aa6",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/test_40.npy"
+    },
+    "original/TriView-HCL-main/data/acm/test_60.npy": {
+      "sha256": "5181ccdeacc54b88ed53681ba9f2c789cc6d67a499f40a68ac6827a96932b976",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/test_60.npy"
+    },
+    "original/TriView-HCL-main/data/acm/train_20.npy": {
+      "sha256": "6bf4c1cef638f3ffe1826091b9be7fbff23a4935dfbde03c24b492d264d67684",
+      "bytes": 608,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/train_20.npy"
+    },
+    "original/TriView-HCL-main/data/acm/train_40.npy": {
+      "sha256": "98239282e69e9775a9b13bc54598cc780eca31dcaeb81963efbbd4c6c3e51435",
+      "bytes": 1088,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/train_40.npy"
+    },
+    "original/TriView-HCL-main/data/acm/train_60.npy": {
+      "sha256": "5b86f56415b84d1faa8c8f864cd37272589ec4ffff1b0ca347d4c39ee38dcc02",
+      "bytes": 1568,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/train_60.npy"
+    },
+    "original/TriView-HCL-main/data/acm/val_20.npy": {
+      "sha256": "4280dccb661a50196502a39973a462919399fcfcd97b1d43581dfa9ca02d1b5d",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/val_20.npy"
+    },
+    "original/TriView-HCL-main/data/acm/val_40.npy": {
+      "sha256": "19fb1e72b76bc24da95423d1a83583a42fe5b62d69b2b197312f630ff5096202",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/val_40.npy"
+    },
+    "original/TriView-HCL-main/data/acm/val_60.npy": {
+      "sha256": "e234b6c1e19445ed6cc3694a273b943bbded8e847a9d0246f18d59f76fb8cd5d",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/acm/val_60.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/labels.npy": {
+      "sha256": "51a0500d6f74ee8745fc2d0f85c38dcdba064878980b890d5a347f29d68b531d",
+      "bytes": 52640,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/labels.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/nei_a.npy": {
+      "sha256": "69a0cc596ed1c6d16e7da32921db4c693279351d75bbb5a3bcc2f58513f319d1",
+      "bytes": 498150,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/nei_a.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/nei_r.npy": {
+      "sha256": "568ad58013e0e491b42e5b07e102cb25cc17253c45eb00029615c29133ef513c",
+      "bytes": 825114,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/nei_r.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/pa.txt": {
+      "sha256": "6e644c162db67840a414483890fe052fafa4deb4a3c5fa5a31e9bf7d87236885",
+      "bytes": 179759,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/pa.txt"
+    },
+    "original/TriView-HCL-main/data/aminer/pap.npz": {
+      "sha256": "058b211cfb6bcf130a9cf6b1c1e338d8fabf09cd8ef5888f7d7ba7064deef825",
+      "bytes": 40853,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/pap.npz"
+    },
+    "original/TriView-HCL-main/data/aminer/pos.npz": {
+      "sha256": "90d51988c0b086e04bcd399efda5779c80cded0a9b39ed068cb85e623ea8db00",
+      "bytes": 112142,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/pos.npz"
+    },
+    "original/TriView-HCL-main/data/aminer/pr.txt": {
+      "sha256": "04238431ee02107b88883b689c9920d77a5a718aca39b85cf7aa77f77aad1e5f",
+      "bytes": 613005,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/pr.txt"
+    },
+    "original/TriView-HCL-main/data/aminer/prp.npz": {
+      "sha256": "4f63835c4b0a7d8e62beb78823d5d3ec906ce49d2ed51f54450a8edbdc471303",
+      "bytes": 163185,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/prp.npz"
+    },
+    "original/TriView-HCL-main/data/aminer/test_20.npy": {
+      "sha256": "78a07809ebe756e471ad076b09847fbc87baf2813afab5d5a7888f1d7fa5edbd",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/test_20.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/test_40.npy": {
+      "sha256": "6317d3a093fccec5c5daa3c4dd196c2281c9735d0d8204d38069bb5588415d79",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/test_40.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/test_60.npy": {
+      "sha256": "0849876c17c16b23b64d7a7bf044ab7ae1012f5d18832583bd854af5d9dd5705",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/test_60.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/train_20.npy": {
+      "sha256": "609d9d70352f3a3db56a6c3e0ea97a2a5b8d943494b284fc61e747e00cc3c04e",
+      "bytes": 768,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/train_20.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/train_40.npy": {
+      "sha256": "8c96436b60a5b43cbda238a8c3bea7ace6d43e17652f3d8d81bf4effcfe15e36",
+      "bytes": 1408,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/train_40.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/train_60.npy": {
+      "sha256": "99a1d9510d177e6f68b68c7ffc4e69d7cb6118c53e8d343ac48ef4eeb2ae6ed5",
+      "bytes": 2048,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/train_60.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/val_20.npy": {
+      "sha256": "5ac76f040e62102026bc4202328b708fe8a6a1b8c99119d78eadbe7494db5eb8",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/val_20.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/val_40.npy": {
+      "sha256": "b91f42687b34b6d306dcbb94b7cd5b9428dceaf2e4fe391d9b86a92ba2a94b4d",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/val_40.npy"
+    },
+    "original/TriView-HCL-main/data/aminer/val_60.npy": {
+      "sha256": "74fa03079f8117223a845764de01d66139ea9767385f8cfc58cc6d9b0d7cc65c",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/aminer/val_60.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/a_feat.npz": {
+      "sha256": "997876bf8d90d29fdb90bf4801a9909893a9ee5646a85aeca079ce167595ec41",
+      "bytes": 68550,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/a_feat.npz"
+    },
+    "original/TriView-HCL-main/data/dblp/apa.npz": {
+      "sha256": "db86d949728d422cf388741d3cd80280e0ab79ac27242b3d0a0a0635a476a3bb",
+      "bytes": 27575,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/apa.npz"
+    },
+    "original/TriView-HCL-main/data/dblp/apcpa.npz": {
+      "sha256": "25181174771506d9636daae4eb98fe048c61654cd1280cf35315c7c4adde0f56",
+      "bytes": 2434207,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/apcpa.npz"
+    },
+    "original/TriView-HCL-main/data/dblp/aptpa.npz": {
+      "sha256": "66d50f8987c97fd6682d09edb751d3f53ac107cd991c514bd0263fac7f9bd7db",
+      "bytes": 6836065,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/aptpa.npz"
+    },
+    "original/TriView-HCL-main/data/dblp/labels.npy": {
+      "sha256": "817efdc3ebb9e96067b8770dad5894b06ecabde2ac95d4b17443985f0439fda7",
+      "bytes": 32584,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/labels.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/nei_p.npy": {
+      "sha256": "f195754f35a26d18222c0124c85d6aa238e7a1ae4f6089cc664ec616e403f9ab",
+      "bytes": 376049,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/nei_p.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/p_feat.npz": {
+      "sha256": "99c3d1836c44cda016f790d1cdbcc76fed729e48b9e2a9332eac145960716d9f",
+      "bytes": 170259,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/p_feat.npz"
+    },
+    "original/TriView-HCL-main/data/dblp/pa.txt": {
+      "sha256": "94cf38a92733d21664f55907305773bb6fb90dd9d1579392517596488f061382",
+      "bytes": 193719,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/pa.txt"
+    },
+    "original/TriView-HCL-main/data/dblp/pc.txt": {
+      "sha256": "316182e11f19fddfc3a01ebd6541134a7c3931ee62262e638be607bb3f9768e4",
+      "bytes": 110214,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/pc.txt"
+    },
+    "original/TriView-HCL-main/data/dblp/pos.npz": {
+      "sha256": "593aba2899e5ae6e70da9943fc7e55fd07bfc7ad9bb92755fbd10f41ac979632",
+      "bytes": 3367068,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/pos.npz"
+    },
+    "original/TriView-HCL-main/data/dblp/pt.txt": {
+      "sha256": "78f3d6f9a528ed112a2d29bd2a672cdf13a03779a87ce89856e6a622eda280b8",
+      "bytes": 800835,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/pt.txt"
+    },
+    "original/TriView-HCL-main/data/dblp/t_feat.npz": {
+      "sha256": "462ea84b5eebfd4883910d0d15afff53e960ae8a80d7d62591f86a8d61fb5467",
+      "bytes": 3089328,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/t_feat.npz"
+    },
+    "original/TriView-HCL-main/data/dblp/test_20.npy": {
+      "sha256": "a7fc6b67e477df8301915065b116fb7742d99f28323a2bf8bcb57663a2d5c490",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/test_20.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/test_40.npy": {
+      "sha256": "9af7116d1d11e656e4fc64dc11601353a3f37cad8fb9ffe8d71cf16d7e2a7ca6",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/test_40.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/test_60.npy": {
+      "sha256": "52122be025ae02256f82376bc62d1ba74083a4473a211e89a1389d67ca6e68bb",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/test_60.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/train_20.npy": {
+      "sha256": "85f0e91265931c8b1433ed7bd04e7e8f4c8c4246784d4443c147d6f24cccc709",
+      "bytes": 768,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/train_20.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/train_40.npy": {
+      "sha256": "82cead2b36410b52729e2034c0e75de55779e718e4a35f7cc0a31b25526d8c2b",
+      "bytes": 1408,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/train_40.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/train_60.npy": {
+      "sha256": "47086d378beda443b1a2aa1bb2d681e5a6d2b3e819a3e9850e365ea1f8f9b819",
+      "bytes": 2048,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/train_60.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/val_20.npy": {
+      "sha256": "6c06b017a4c45c7cd9d01c67fb409336ddcd5c076edb9c90792cc2d027565d38",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/val_20.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/val_40.npy": {
+      "sha256": "b4c0b94ed81eeb28fe9bf6dd4a057de9093aa512caf4197165a2634568e7b2d5",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/val_40.npy"
+    },
+    "original/TriView-HCL-main/data/dblp/val_60.npy": {
+      "sha256": "7ba309a9daec8bd5d92e217cecc6a22d8547b7b0193a8a30855fffd41636cec6",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/dblp/val_60.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/labels.npy": {
+      "sha256": "2410a09263b9d82e4bc58c36e4499ae8c5e2aa09011f71f5bbb73fda43bcf1fe",
+      "bytes": 28064,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/labels.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/ma.txt": {
+      "sha256": "058903c3ad171bbe4d9cf15d93f2aa5b3d2086ae0d2e0fd7b99e3e81632d1c5e",
+      "bytes": 660514,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/ma.txt"
+    },
+    "original/TriView-HCL-main/data/freebase/mam.npz": {
+      "sha256": "113c840d1adcef7d5fd985924894a3792945b4426dcbf526179df61ddb6b5021",
+      "bytes": 370849,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/mam.npz"
+    },
+    "original/TriView-HCL-main/data/freebase/md.txt": {
+      "sha256": "dbe17829c81248a4103f5e9cb7b1cab8aa1308ee28f1465b10ac893a897d772f",
+      "bytes": 34279,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/md.txt"
+    },
+    "original/TriView-HCL-main/data/freebase/mdm.npz": {
+      "sha256": "2382d3ecedbb68858feeaecb9b627087a072b4ec53e31112b6147e28136fe767",
+      "bytes": 18175,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/mdm.npz"
+    },
+    "original/TriView-HCL-main/data/freebase/mw.txt": {
+      "sha256": "866ff0bc4e263885f593ee72e4393445eb0d9f471db9eb2932780374b4467c9b",
+      "bytes": 59861,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/mw.txt"
+    },
+    "original/TriView-HCL-main/data/freebase/mwm.npz": {
+      "sha256": "1c71c345d33282328d0c3d3480a7d8e2fada6a61f68f5b3c8e904945503b7a6d",
+      "bytes": 21713,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/mwm.npz"
+    },
+    "original/TriView-HCL-main/data/freebase/nei_a.npy": {
+      "sha256": "957f366d1a4b1fa89cb7b841d363fb87b524990b65bc83826d13cf8a43948fe0",
+      "bytes": 712083,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/nei_a.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/nei_d.npy": {
+      "sha256": "c6b2bea16d81b0bd10d24b3192750a50ceea1fb66addb89ddf444013d0eb77ca",
+      "bytes": 218296,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/nei_d.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/nei_w.npy": {
+      "sha256": "94cf11663f364417915ef3660ab3f2c0207efc213e780d9cb74fa73deca0cdd6",
+      "bytes": 239512,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/nei_w.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/pos.npz": {
+      "sha256": "90d0276eaa0967317f6582431509279fcfe5995c79d2cf9f9ae3130df1c3b7c6",
+      "bytes": 267905,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/pos.npz"
+    },
+    "original/TriView-HCL-main/data/freebase/test_20.npy": {
+      "sha256": "a9db7585f6b3090e73560a166a1e2f6e65fc031ac41431d82e51d7a550e08aed",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/test_20.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/test_40.npy": {
+      "sha256": "7a2527b316fb8c1e9271ab0a23e54a55d345b00c9563a71fa57d55516eb8af40",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/test_40.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/test_60.npy": {
+      "sha256": "ac1dc9e45d960b1410bc29eae0de3f2cc617b714906644100abc5e1cba80c92a",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/test_60.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/train_20.npy": {
+      "sha256": "55a5d0bca0420b29fa429b1df7651e0d9db52e6162b91ab7060a172cea0140de",
+      "bytes": 608,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/train_20.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/train_40.npy": {
+      "sha256": "83ee2b96cde50c8089af998b3b460adb3f876db49a75cb2c4801ba796788568e",
+      "bytes": 1088,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/train_40.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/train_60.npy": {
+      "sha256": "c602957fafcbcceaafc0ed679aa2677a9d96e401cb678b51e87617304c271c6d",
+      "bytes": 1568,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/train_60.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/val_20.npy": {
+      "sha256": "d97aef24309f9abfa47d7d969f0a4f9b677ef2e79959f618a7a2276f9b2caaf3",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/val_20.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/val_40.npy": {
+      "sha256": "a0e069572440c844438b4a9f3c82faaee501a49b429875d525a0368f4b71aac1",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/val_40.npy"
+    },
+    "original/TriView-HCL-main/data/freebase/val_60.npy": {
+      "sha256": "49cd65ed8465889ed8d99cbb5af44d86ba580722d2ed33e4485b7600bf3a3071",
+      "bytes": 8128,
+      "archive_member": "reproduction/original/TriView-HCL-main/data/freebase/val_60.npy"
+    }
+  },
+  "upstream_data_references": {
+    "HeCo": {
+      "repository": "https://github.com/liun-online/HeCo",
+      "data_reference_commit": "20e8ca2042838877b2c815279920218b6bbea1db"
+    },
+    "MEOW": {
+      "repository": "https://github.com/jianxiangyu/MEOW",
+      "data_reference_commit": "6a072d79648ab83f7ec7b7482af1696ed00938a1"
+    },
+    "NS4GC": {
+      "repository": "https://github.com/Cloudy1225/NS4GC",
+      "reference_commit": "6d261bca09eabd68edfcbc0705b4085464263e2a"
+    }
+  },
+  "boundary": "Upstream reference commits are lookup snapshots. They do not establish that every exact input is downloadable there. The supplied full source package is the exact, hash-checked input bundle."
+}

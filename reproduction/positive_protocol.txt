@@ -1,0 +1,89 @@
+Declared positive-generator completion and fixed-budget extension
+
+Origin and limits
+The supplied implementation loads pos.npz and has no SimRank generator. All
+four original positive files are identical to the corresponding HeCo release.
+The new generator completes the original manuscript's stated C=0.9, L=3 and
+cosine/structure weight alpha=0.5 with a fully declared convention. It is not a
+recovered original implementation and cannot establish what the old experiments
+actually computed. The prior primary result table keeps supplied positives;
+this is a separate, newly executed reproducibility/selection study.
+
+Frozen graph and candidates
+Load only the released unnormalized target meta-path matrices. Form their binary
+union, remove every self loop, and transpose it so row i lists incoming union
+neighbors. Projections in the supplied graphs are symmetric, but this incoming
+convention also defines a directed graph unambiguously. Edge multiplicities and
+path identities are discarded in this new generator and retained in the model's
+original meta-path inputs. All four selectors rank the ENTIRE same non-self
+union-neighbor candidate row. No top-128 cap or non-neighbor fill is used.
+
+Finite-depth SimRank
+W_ij=1/|N_in(i)| for j in N_in(i), zero for zero-degree rows. Start S^(0)=I;
+repeat S^(t+1)=0.9 W S^(t) W^T three times, resetting every diagonal entry to 1
+after each round. A zero-degree row has zero off-diagonal similarity. Products
+use sparse adjacency and dense similarity, with exact finite-depth recurrence;
+CUDA uses bounded row blocks for the right product. It stores two n*n dense
+arrays at peak, not a cubic neighbor-pair tensor. It does not remove quadratic
+similarity storage or make a subquadratic-complexity claim. A small directed
+graph, an undirected graph with an isolate, and a loops-only graph are tested
+against independent explicit neighbor-pair recursion at depths 0/1/2/3.
+
+Attributes, scores, ties, and equal budget
+Cosine uses fixed released target raw features, L2-normalized per row. A zero
+feature vector yields zero cosine; no embedding, label or split is input to the
+generator. Scores are raw cosine, finite-depth SimRank, or 0.5*cosine+0.5*SimRank
+without further normalization. Each row ranks descending score, then ascending
+node id for exact ties. The matched random strategy ranks PCG64 independent
+uniform values seeded by SeedSequence([20261010,node_id]) over exactly the same
+candidate set, frozen across epochs and encoder seeds. Select min(8,degree)
+non-self candidates and always add self once. Thus all selectors have exactly
+the same per-node positive count; isolated nodes have only self. Degrees below
+8 and the actual min/max/mean budgets are reported rather than silently adding
+non-neighbors. Main selectors remain static across training; do not call this
+an adaptive learned-positive generator.
+
+Dataset scope and feature degeneration
+ACM and DBLP have released target attributes: cosine, SimRank, combined and
+random each receive three independent encoder seeds (24 runs). AMiner and
+Freebase use target identity features, making every non-self raw cosine zero;
+they receive SimRank and random at three seeds (12 runs), with no claimed
+semantic positive benefit. All four datasets receive generation timing/memory
+profiles. No generator rule or hyperparameter is selected by test performance.
+
+Training and evaluation
+Reuse experiment.py's full model, retained MP inference, self-supervised loss,
+600 maximum epochs, >=60 epochs, patience40, loss-selected encoder checkpoint,
+three seeds 1/2/3, five 200-epoch probes per frozen embedding, one minimum-val-CE
+probe checkpoint for all metrics, three KMeans repetitions with n_init10.
+Frozen full-model learning-rate multipliers from the completed primary study
+are ACM1, DBLP2, AMiner1, Freebase2. The early local study_plan snapshot with empty
+keys must be rejected; remote study_plan.json and local final_results plan are
+the completed source. New files are under positive_extension, never old results.
+Every generated NPZ, input file and raw result JSON has SHA256 provenance; CSR
+content hashes ignore NPZ archive timestamps. Five probes are nested within
+each encoder seed and are not counted as 15 independent encoder trials.
+
+Measurement boundary
+Profile generation sequentially on an idle GPU before encoder training. Record
+loading of supplied projections/features, binary union, three SimRank rounds,
+all requested ranking strategies, compressed output serialization, total wall
+time, CUDA allocated/reserved peaks and host RSS sampled every20ms. Host sampling
+can miss short-lived peaks. Projection construction from original heterogeneous
+relations is outside this boundary and is already measured separately in the
+earlier preprocessing study. CUDA peak allocation is a measured total including
+baseline; baseline is separately reported. Concurrent training-job durations
+cannot be used as isolated speed comparisons.
+
+Commands (remote experiment root)
+/root/miniconda3/bin/python positive_pipeline.py --device cuda --self-test
+/root/miniconda3/bin/python positive_study.py --workers 3
+
+Commands (read-only local mathematical tests)
+python work/positive_pipeline.py --test-only --output-root work/positive_extension/local_tests
+python work/positive_pipeline.py --source-root work/source/TriView-HCL-main --datasets acm --device cpu
+
+Default full run = 36 new independent encoder runs; no retuning. Dataset/mode
+arguments permit a smaller debugging run. Exact preprocessing time must be
+measured rather than guessed because dense meta-path unions dominate sparse-
+dense products on these moderate graphs.

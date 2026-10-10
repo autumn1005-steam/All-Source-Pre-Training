@@ -1,0 +1,5555 @@
+{
+  "units": "Fractions, not percentages; sample SD is across encoder-level means, never pooled probes.",
+  "counts": {
+    "base_trained_encoder_records_including_tuning": 153,
+    "positive_extension_records": 36,
+    "transfer_results_records": 48,
+    "adaptation_results_records": 18,
+    "budget_control_results_records": 3,
+    "transfer_trained_encoder_records": 36,
+    "transfer_untrained_encoder_groups": 6,
+    "transfer_raw_feature_probe_groups": 6,
+    "single_stage_trained_encoder_records": 225,
+    "final_trained_encoder_trial_records": 246,
+    "adaptation_ssl_phases": 36,
+    "fixed600_new_ssl_phases": 3,
+    "total_recorded_ssl_training_phases": 264
+  },
+  "base": {
+    "primary/acm/full": {
+      "keys": [
+        "acm__full__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__full__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__full__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8680666666666667,
+            "sample_sd": 0.024537590210396296,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8680666666666667,
+            "sample_sd": 0.024537590210396296,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8758109571936767,
+            "sample_sd": 0.01966804284899947,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9600901401362922,
+            "sample_sd": 0.014228671769244083,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8623333333333333,
+            "sample_sd": 0.012538474123007747,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8623333333333333,
+            "sample_sd": 0.012538474123007747,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8684841976248495,
+            "sample_sd": 0.010003870764677245,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9624209761674695,
+            "sample_sd": 0.011604300910883446,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8845999999999999,
+            "sample_sd": 0.017758378304338497,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8845999999999999,
+            "sample_sd": 0.017758378304338497,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8888085768414394,
+            "sample_sd": 0.016354202967110494,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9664061620344037,
+            "sample_sd": 0.010815628415295339,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.567935467371476,
+          "sample_sd": 0.11148922239051022,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.5417008871865294,
+          "sample_sd": 0.16584768163801447,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/acm/heco": {
+      "keys": [
+        "acm__heco__supplied__k16__lam0.5__lr0.5__seed1",
+        "acm__heco__supplied__k16__lam0.5__lr0.5__seed2",
+        "acm__heco__supplied__k16__lam0.5__lr0.5__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7906666666666667,
+            "sample_sd": 0.015869887628251644,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7906666666666667,
+            "sample_sd": 0.015869887628251644,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8002199312437706,
+            "sample_sd": 0.014059357756987445,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9157815337681866,
+            "sample_sd": 0.010952111424185918,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8131333333333334,
+            "sample_sd": 0.014228609676751047,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8131333333333334,
+            "sample_sd": 0.014228609676751047,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8209827926914254,
+            "sample_sd": 0.011770477773743482,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9378558741382149,
+            "sample_sd": 0.007296574335132587,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8435333333333334,
+            "sample_sd": 0.009563123618009674,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8435333333333334,
+            "sample_sd": 0.009563123618009674,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8493178747842661,
+            "sample_sd": 0.009814009794439974,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9469554041254931,
+            "sample_sd": 0.007067558246456249,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.4685254155899811,
+          "sample_sd": 0.06630582122156915,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.45629252016171323,
+          "sample_sd": 0.0786815453906428,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/acm/refined": {
+      "keys": [
+        "acm__full__refine_supplied__k8__lam0.5__lr1.0__seed1",
+        "acm__full__refine_supplied__k8__lam0.5__lr1.0__seed2",
+        "acm__full__refine_supplied__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8693333333333333,
+            "sample_sd": 0.015300108932074181,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8693333333333333,
+            "sample_sd": 0.015300108932074181,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8765305640671229,
+            "sample_sd": 0.01118332396369359,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.963442308974459,
+            "sample_sd": 0.00742343767147842,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8653333333333334,
+            "sample_sd": 0.011146897924235802,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8653333333333334,
+            "sample_sd": 0.011146897924235802,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8712853361668446,
+            "sample_sd": 0.009675488755161717,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.96557507122731,
+            "sample_sd": 0.006167488875346361,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8856666666666667,
+            "sample_sd": 0.014428213102575567,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8856666666666667,
+            "sample_sd": 0.014428213102575567,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8898680025347455,
+            "sample_sd": 0.013303998508650782,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9692366386405246,
+            "sample_sd": 0.006847484972153941,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.5676235304198837,
+          "sample_sd": 0.11615682485848772,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.5390589444775469,
+          "sample_sd": 0.17127156961601156,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/acm/ns4gc": {
+      "keys": [
+        "acm__ns4gc__projected__lr1.0__seed1",
+        "acm__ns4gc__projected__lr1.0__seed2",
+        "acm__ns4gc__projected__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7147333333333332,
+            "sample_sd": 0.0027736858750286772,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7147333333333332,
+            "sample_sd": 0.0027736858750286772,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7125769795569176,
+            "sample_sd": 0.0037754325462280585,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8645494625445055,
+            "sample_sd": 0.0019367839912972072,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.701,
+            "sample_sd": 0.0005999999999999894,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.701,
+            "sample_sd": 0.0005999999999999894,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6852538790343055,
+            "sample_sd": 0.0010338830618308508,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.851382007337189,
+            "sample_sd": 0.005142406578458393,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.7651333333333333,
+            "sample_sd": 0.002914332399252596,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7651333333333333,
+            "sample_sd": 0.002914332399252596,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7123138845114659,
+            "sample_sd": 0.006390067562816083,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8730929688717054,
+            "sample_sd": 0.012881976495491327,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.41473362882883674,
+          "sample_sd": 0.0077794008863755855,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.37366302311836,
+          "sample_sd": 0.039535105589060995,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/acm/adameow": {
+      "keys": [
+        "acm__adameow__common__lr1.0__seed1",
+        "acm__adameow__common__lr1.0__seed2",
+        "acm__adameow__common__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8895333333333333,
+            "sample_sd": 0.024948213028859093,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8895333333333333,
+            "sample_sd": 0.024948213028859093,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8927019809783215,
+            "sample_sd": 0.022498524284031374,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9774741188855758,
+            "sample_sd": 0.007171066067781757,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8886666666666667,
+            "sample_sd": 0.022083779869699224,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8886666666666667,
+            "sample_sd": 0.022083779869699224,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8890056357462492,
+            "sample_sd": 0.021230588077056224,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9798086197615574,
+            "sample_sd": 0.005894260198673631,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.9089333333333333,
+            "sample_sd": 0.014839586696850246,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9089333333333333,
+            "sample_sd": 0.014839586696850246,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9102108364094602,
+            "sample_sd": 0.014046478437988116,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9778374834266771,
+            "sample_sd": 0.006845973993292847,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.37333112945160674,
+          "sample_sd": 0.03432843387690388,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.32763951815267,
+          "sample_sd": 0.026074120906120973,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/dblp/full": {
+      "keys": [
+        "dblp__full__supplied__k16__lam0.5__lr2.0__seed1",
+        "dblp__full__supplied__k16__lam0.5__lr2.0__seed2",
+        "dblp__full__supplied__k16__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9182,
+            "sample_sd": 0.0033286633954186847,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9182,
+            "sample_sd": 0.0033286633954186847,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9113554418701479,
+            "sample_sd": 0.0031307721064182206,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9856943693590707,
+            "sample_sd": 0.0003544690306350832,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.9130666666666667,
+            "sample_sd": 0.004387862045841185,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9130666666666667,
+            "sample_sd": 0.004387862045841185,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.908911986231261,
+            "sample_sd": 0.004712052814217106,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9833212230227486,
+            "sample_sd": 0.001243627512867646,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.9186,
+            "sample_sd": 0.004132795663954417,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9186,
+            "sample_sd": 0.004132795663954417,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9096448863880864,
+            "sample_sd": 0.004123836323556686,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9875190298869702,
+            "sample_sd": 0.0005595527383739665,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.7321259846918905,
+          "sample_sd": 0.01217626034882477,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.7817926447769034,
+          "sample_sd": 0.012652821221564121,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/dblp/heco": {
+      "keys": [
+        "dblp__heco__supplied__k16__lam0.5__lr2.0__seed1",
+        "dblp__heco__supplied__k16__lam0.5__lr2.0__seed2",
+        "dblp__heco__supplied__k16__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9170666666666667,
+            "sample_sd": 0.0031643851430148756,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9170666666666667,
+            "sample_sd": 0.0031643851430148756,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9096445264190405,
+            "sample_sd": 0.003057241637760685,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9842092071555962,
+            "sample_sd": 0.0010747489844993524,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.9055333333333333,
+            "sample_sd": 0.005158811232574224,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9055333333333333,
+            "sample_sd": 0.005158811232574224,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9007402464712708,
+            "sample_sd": 0.005655046757797865,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9816705100028892,
+            "sample_sd": 0.001245946586924801,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.9132666666666667,
+            "sample_sd": 0.0009451631252505429,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9132666666666667,
+            "sample_sd": 0.0009451631252505429,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9035630709672878,
+            "sample_sd": 0.000559646860972722,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9864137726082511,
+            "sample_sd": 0.0005605074803340994,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.7121430344644822,
+          "sample_sd": 0.004706562102577711,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.7634608321889007,
+          "sample_sd": 0.00860965324885993,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/dblp/refined": {
+      "keys": [
+        "dblp__full__refine_supplied__k8__lam0.5__lr2.0__seed1",
+        "dblp__full__refine_supplied__k8__lam0.5__lr2.0__seed2",
+        "dblp__full__refine_supplied__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9158666666666667,
+            "sample_sd": 0.008603100216394845,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9158666666666667,
+            "sample_sd": 0.008603100216394845,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9105894395753963,
+            "sample_sd": 0.009153481243676034,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9868361252145043,
+            "sample_sd": 0.001301892295279167,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.9117333333333333,
+            "sample_sd": 0.003859188170241656,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9117333333333333,
+            "sample_sd": 0.003859188170241656,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9075867085613902,
+            "sample_sd": 0.0038384650989017784,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9842169019327475,
+            "sample_sd": 0.0020738555321054087,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.9242666666666667,
+            "sample_sd": 0.0008326663997864236,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9242666666666667,
+            "sample_sd": 0.0008326663997864236,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9173290840118135,
+            "sample_sd": 0.001327631571094986,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9903440473109388,
+            "sample_sd": 0.000647085530866838,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.7058166363579146,
+          "sample_sd": 0.02051710196442499,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.7566310897990383,
+          "sample_sd": 0.0196610776061097,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/dblp/ns4gc": {
+      "keys": [
+        "dblp__ns4gc__projected__lr1.0__seed1",
+        "dblp__ns4gc__projected__lr1.0__seed2",
+        "dblp__ns4gc__projected__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8162,
+            "sample_sd": 0.006999999999999951,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8162,
+            "sample_sd": 0.006999999999999951,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7640203659333137,
+            "sample_sd": 0.00762172386379862,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.928430060468023,
+            "sample_sd": 0.018251669255584996,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8215333333333333,
+            "sample_sd": 0.0180779792381044,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8215333333333333,
+            "sample_sd": 0.0180779792381044,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7994203602509278,
+            "sample_sd": 0.020096925280863084,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9220948725580085,
+            "sample_sd": 0.010819085031810878,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8553333333333333,
+            "sample_sd": 0.0164940393273853,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8553333333333333,
+            "sample_sd": 0.0164940393273853,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8162086115014463,
+            "sample_sd": 0.01851530014911443,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9279268524333865,
+            "sample_sd": 0.016977278648538333,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.4348300524667677,
+          "sample_sd": 0.015137918343944304,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.3210575507005209,
+          "sample_sd": 0.019523134712975967,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/dblp/adameow": {
+      "keys": [
+        "dblp__adameow__common__lr1.0__seed1",
+        "dblp__adameow__common__lr1.0__seed2",
+        "dblp__adameow__common__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9249333333333334,
+            "sample_sd": 0.00873231546231205,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9249333333333334,
+            "sample_sd": 0.00873231546231205,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9202432461142682,
+            "sample_sd": 0.008330518098013275,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9902791437975043,
+            "sample_sd": 0.000883009311393966,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.906,
+            "sample_sd": 0.006209669878503937,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.906,
+            "sample_sd": 0.006209669878503937,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9022135597016662,
+            "sample_sd": 0.006298928539253588,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9859443063760387,
+            "sample_sd": 0.00170016611045953,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.9374666666666667,
+            "sample_sd": 0.006184927916583447,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9374666666666667,
+            "sample_sd": 0.006184927916583447,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.93168932108295,
+            "sample_sd": 0.005987504871692461,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9927306875687143,
+            "sample_sd": 0.0011914452794801558,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.7280798917739261,
+          "sample_sd": 0.020282940075117013,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.7808468663479795,
+          "sample_sd": 0.021860818513103994,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/aminer/full": {
+      "keys": [
+        "aminer__full__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__full__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__full__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8106000000000001,
+            "sample_sd": 0.013712767773137562,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8106000000000001,
+            "sample_sd": 0.013712767773137562,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7350019105735799,
+            "sample_sd": 0.017064754427281056,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9121249578245639,
+            "sample_sd": 0.014697896672314716,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8113333333333334,
+            "sample_sd": 0.018840736008270305,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8113333333333334,
+            "sample_sd": 0.018840736008270305,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7407042383843474,
+            "sample_sd": 0.014518712558206744,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9234061489882297,
+            "sample_sd": 0.006825601909997046,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8178,
+            "sample_sd": 0.004044749683231226,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8178,
+            "sample_sd": 0.004044749683231226,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7529073112581579,
+            "sample_sd": 0.0035727469654403083,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9310258993250569,
+            "sample_sd": 0.001048685411855637,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.359517224832182,
+          "sample_sd": 0.014110601450330329,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.3225100200486757,
+          "sample_sd": 0.050017852101200015,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/aminer/heco": {
+      "keys": [
+        "aminer__heco__supplied__k16__lam0.5__lr2.0__seed1",
+        "aminer__heco__supplied__k16__lam0.5__lr2.0__seed2",
+        "aminer__heco__supplied__k16__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7652666666666667,
+            "sample_sd": 0.02872861523522039,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7652666666666667,
+            "sample_sd": 0.02872861523522039,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6913597545957685,
+            "sample_sd": 0.008745293609319232,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8981918456604558,
+            "sample_sd": 0.008134600442569204,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.7989333333333334,
+            "sample_sd": 0.011788695149732768,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7989333333333334,
+            "sample_sd": 0.011788695149732768,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7285129768516249,
+            "sample_sd": 0.012789155507349404,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9191954886306839,
+            "sample_sd": 0.0015821466454126562,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8044,
+            "sample_sd": 0.023577107541002475,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8044,
+            "sample_sd": 0.023577107541002475,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7412401634549473,
+            "sample_sd": 0.02563871036382467,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9231947171091954,
+            "sample_sd": 0.003048730005154262,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3151864099942862,
+          "sample_sd": 0.04593678216052558,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.30010632286096695,
+          "sample_sd": 0.042501487325151945,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/aminer/refined": {
+      "keys": [
+        "aminer__full__refine_supplied__k8__lam0.5__lr1.0__seed1",
+        "aminer__full__refine_supplied__k8__lam0.5__lr1.0__seed2",
+        "aminer__full__refine_supplied__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7897333333333334,
+            "sample_sd": 0.017551448183364644,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7897333333333334,
+            "sample_sd": 0.017551448183364644,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7075547918254895,
+            "sample_sd": 0.012478047259408076,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8973754577413304,
+            "sample_sd": 0.009496914663397908,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.7972,
+            "sample_sd": 0.005444263035526507,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7972,
+            "sample_sd": 0.005444263035526507,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7218784862054413,
+            "sample_sd": 0.0137916385397904,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.916297666920244,
+            "sample_sd": 0.004764363804588433,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.7984,
+            "sample_sd": 0.007549834435270756,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7984,
+            "sample_sd": 0.007549834435270756,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7281820574081429,
+            "sample_sd": 0.006210362326197396,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9211658744458571,
+            "sample_sd": 0.0006351941231481172,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.32851336746756626,
+          "sample_sd": 0.04656825858648706,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.30696030071206565,
+          "sample_sd": 0.059240477457623376,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/aminer/ns4gc": {
+      "keys": [
+        "aminer__ns4gc__projected__lr1.0__seed1",
+        "aminer__ns4gc__projected__lr1.0__seed2",
+        "aminer__ns4gc__projected__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7922666666666667,
+            "sample_sd": 0.012965081308396518,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7922666666666667,
+            "sample_sd": 0.012965081308396518,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7235559871047662,
+            "sample_sd": 0.013234959950365326,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9263892030541835,
+            "sample_sd": 0.008165452287974684,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8101999999999999,
+            "sample_sd": 0.014604109010822876,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8101999999999999,
+            "sample_sd": 0.014604109010822876,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.749681322003187,
+            "sample_sd": 0.01735407095287778,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9417038587446225,
+            "sample_sd": 0.0029084136237756734,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8108000000000001,
+            "sample_sd": 0.0035156791662493366,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8108000000000001,
+            "sample_sd": 0.0035156791662493366,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7473432662580054,
+            "sample_sd": 0.0033418196079703687,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9416217136813755,
+            "sample_sd": 0.0029416095376704234,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.37036859944002154,
+          "sample_sd": 0.03132531873742363,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.33781634479577005,
+          "sample_sd": 0.02189215743266862,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/aminer/adameow": {
+      "keys": [
+        "aminer__adameow__common__lr1.0__seed1",
+        "aminer__adameow__common__lr1.0__seed2",
+        "aminer__adameow__common__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5254666666666666,
+            "sample_sd": 0.084015554115493,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5254666666666666,
+            "sample_sd": 0.084015554115493,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.47147017443252787,
+            "sample_sd": 0.06125548225991933,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7580261819237397,
+            "sample_sd": 0.039574537601659236,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.571,
+            "sample_sd": 0.039824113298352296,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.571,
+            "sample_sd": 0.039824113298352296,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5125712469889637,
+            "sample_sd": 0.03755468676753111,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7824888607176647,
+            "sample_sd": 0.028599622264291715,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.5721333333333333,
+            "sample_sd": 0.04530003679174377,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5721333333333333,
+            "sample_sd": 0.04530003679174377,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5192064132158151,
+            "sample_sd": 0.03381361173553226,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7822161695716477,
+            "sample_sd": 0.026807466906461255,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.06169146142356513,
+          "sample_sd": 0.023449884511199528,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.03975974311280722,
+          "sample_sd": 0.02046234883199116,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/freebase/full": {
+      "keys": [
+        "freebase__full__supplied__k16__lam0.5__lr2.0__seed1",
+        "freebase__full__supplied__k16__lam0.5__lr2.0__seed2",
+        "freebase__full__supplied__k16__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5684,
+            "sample_sd": 0.026841758511692165,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5684,
+            "sample_sd": 0.026841758511692165,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5519187800536905,
+            "sample_sd": 0.02066015570276832,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7534645384009642,
+            "sample_sd": 0.006156360100118157,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.6306666666666667,
+            "sample_sd": 0.02131791109216223,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6306666666666667,
+            "sample_sd": 0.02131791109216223,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.605480484702931,
+            "sample_sd": 0.01637307706783295,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7864107559439572,
+            "sample_sd": 0.0010642300425022227,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.5829333333333333,
+            "sample_sd": 0.04327462689998998,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5829333333333333,
+            "sample_sd": 0.04327462689998998,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5594562863092393,
+            "sample_sd": 0.037975980824721374,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.767875691031038,
+            "sample_sd": 0.012617979505313244,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.16481895784151895,
+          "sample_sd": 0.0009011113274061753,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.1765579200302504,
+          "sample_sd": 0.002829168756150591,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/freebase/heco": {
+      "keys": [
+        "freebase__heco__supplied__k16__lam0.5__lr2.0__seed1",
+        "freebase__heco__supplied__k16__lam0.5__lr2.0__seed2",
+        "freebase__heco__supplied__k16__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.6174000000000001,
+            "sample_sd": 0.0027999999999999453,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6174000000000001,
+            "sample_sd": 0.0027999999999999453,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5939636433237577,
+            "sample_sd": 0.004922439306457125,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7598321020974969,
+            "sample_sd": 0.007487381955969552,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.6277333333333334,
+            "sample_sd": 0.009122134253196109,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6277333333333334,
+            "sample_sd": 0.009122134253196109,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6063964146312626,
+            "sample_sd": 0.007639084690897536,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7921366794122885,
+            "sample_sd": 0.006280007179109348,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.6165333333333334,
+            "sample_sd": 0.01814864549583062,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6165333333333334,
+            "sample_sd": 0.01814864549583062,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5880215728908763,
+            "sample_sd": 0.014036579779076984,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7850208437574084,
+            "sample_sd": 0.004555379191680969,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.13108257133410237,
+          "sample_sd": 0.004756396076595116,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.149901079682141,
+          "sample_sd": 0.004134155813121933,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/freebase/refined": {
+      "keys": [
+        "freebase__full__refine_supplied__k8__lam0.5__lr2.0__seed1",
+        "freebase__full__refine_supplied__k8__lam0.5__lr2.0__seed2",
+        "freebase__full__refine_supplied__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5327333333333334,
+            "sample_sd": 0.015947831618540957,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5327333333333334,
+            "sample_sd": 0.015947831618540957,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5233033742512538,
+            "sample_sd": 0.011388761363936484,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7068351392940552,
+            "sample_sd": 0.01234468475756989,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.6073333333333333,
+            "sample_sd": 0.017773388347001623,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6073333333333333,
+            "sample_sd": 0.017773388347001623,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.582923955307073,
+            "sample_sd": 0.018982959100369318,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7673462205759691,
+            "sample_sd": 0.0037685381489590782,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.5643999999999999,
+            "sample_sd": 0.05109520525450503,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5643999999999999,
+            "sample_sd": 0.05109520525450503,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5394165011822809,
+            "sample_sd": 0.04406756601553331,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7482651961357849,
+            "sample_sd": 0.010224888342255028,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.12531266293013893,
+          "sample_sd": 0.03831354011501265,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.1403256144541669,
+          "sample_sd": 0.05347201131897967,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "primary/freebase/ns4gc": {
+      "keys": [
+        "freebase__ns4gc__projected__lr1.0__seed1",
+        "freebase__ns4gc__projected__lr1.0__seed2",
+        "freebase__ns4gc__projected__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5566666666666666,
+            "sample_sd": 0.030276943923278146,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5566666666666666,
+            "sample_sd": 0.030276943923278146,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.544365410235367,
+            "sample_sd": 0.027105821018800092,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7536222832822727,
+            "sample_sd": 0.011161975041633937,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.6219333333333333,
+            "sample_sd": 0.016216452550830363,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6219333333333333,
+            "sample_sd": 0.016216452550830363,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5959236480875925,
+            "sample_sd": 0.015978837008513613,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7686055175096574,
+            "sample_sd": 0.013116147240158776,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.5519333333333334,
+            "sample_sd": 0.04110101377500717,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5519333333333334,
+            "sample_sd": 0.04110101377500717,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5355335405444542,
+            "sample_sd": 0.03621353013472434,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7536810304147136,
+            "sample_sd": 0.014320934832016354,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.16417454767447567,
+          "sample_sd": 0.0006696720673458294,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.17251505413126597,
+          "sample_sd": 0.00028954807781459015,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/acm/mp_only": {
+      "keys": [
+        "acm__mp_only__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mp_only__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mp_only__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8479333333333333,
+            "sample_sd": 0.026404040094904654,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8479333333333333,
+            "sample_sd": 0.026404040094904654,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8533018324593233,
+            "sample_sd": 0.021298745440533923,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9395554461393971,
+            "sample_sd": 0.008222505302069857,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8344666666666666,
+            "sample_sd": 0.0223788590713051,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8344666666666666,
+            "sample_sd": 0.0223788590713051,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8405608191862867,
+            "sample_sd": 0.017608247986860365,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.942978458663926,
+            "sample_sd": 0.005349379074484429,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8568666666666668,
+            "sample_sd": 0.021362896183180175,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8568666666666668,
+            "sample_sd": 0.021362896183180175,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8630832702206986,
+            "sample_sd": 0.020021737615375512,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9527417813630631,
+            "sample_sd": 0.00922316720953854,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.5145723668797482,
+          "sample_sd": 0.006311202336093475,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.4616797289841899,
+          "sample_sd": 0.021703807033384582,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/acm/mp_aug": {
+      "keys": [
+        "acm__mp_aug__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mp_aug__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mp_aug__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7518666666666666,
+            "sample_sd": 0.063205168565026,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7518666666666666,
+            "sample_sd": 0.063205168565026,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7581505844747418,
+            "sample_sd": 0.06071304854571485,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9194622140443222,
+            "sample_sd": 0.01969160067163117,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.7520666666666667,
+            "sample_sd": 0.059702707922952215,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7520666666666667,
+            "sample_sd": 0.059702707922952215,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7482053407371781,
+            "sample_sd": 0.059992068673890515,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9197824116525972,
+            "sample_sd": 0.019856994551957923,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.7973333333333332,
+            "sample_sd": 0.0744070785163168,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7973333333333332,
+            "sample_sd": 0.0744070785163168,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8007362693438599,
+            "sample_sd": 0.07517776199655618,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9392999272160799,
+            "sample_sd": 0.026574622961606773,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.42780578600048474,
+          "sample_sd": 0.04942661688093004,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.39633435628136754,
+          "sample_sd": 0.0819279671470495,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/acm/mp_ng": {
+      "keys": [
+        "acm__mp_ng__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mp_ng__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mp_ng__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8089999999999999,
+            "sample_sd": 0.02730347963172456,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8089999999999999,
+            "sample_sd": 0.02730347963172456,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8107852891630051,
+            "sample_sd": 0.021636018221510855,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9196279061580472,
+            "sample_sd": 0.012658238655120021,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.7951333333333334,
+            "sample_sd": 0.019654346423458875,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7951333333333334,
+            "sample_sd": 0.019654346423458875,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7991228812683013,
+            "sample_sd": 0.01627252631213542,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9337429743828828,
+            "sample_sd": 0.005382221083175541,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8254,
+            "sample_sd": 0.005610704055642323,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8254,
+            "sample_sd": 0.005610704055642323,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8275856053272064,
+            "sample_sd": 0.007815403536543565,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9370459807749837,
+            "sample_sd": 0.0005488535147346369,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3551253260994281,
+          "sample_sd": 0.003040350282086923,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.34420176974585026,
+          "sample_sd": 0.014613487949024957,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/acm/mp_sm": {
+      "keys": [
+        "acm__mp_sm__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mp_sm__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mp_sm__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.837,
+            "sample_sd": 0.027552858290928687,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.837,
+            "sample_sd": 0.027552858290928687,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8431628660671666,
+            "sample_sd": 0.024462969740657408,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9321368787477537,
+            "sample_sd": 0.04688736405203853,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8121333333333333,
+            "sample_sd": 0.039685933696126344,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8121333333333333,
+            "sample_sd": 0.039685933696126344,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8183829649471994,
+            "sample_sd": 0.039298858096562174,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9331201506370611,
+            "sample_sd": 0.04015126912326693,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8041333333333333,
+            "sample_sd": 0.05175338958303443,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8041333333333333,
+            "sample_sd": 0.05175338958303443,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8115495066365661,
+            "sample_sd": 0.051641865725266745,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9334936352385174,
+            "sample_sd": 0.034714533703427995,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.5255088301886868,
+          "sample_sd": 0.05345588043737268,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.5173744072030698,
+          "sample_sd": 0.08103929275201766,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/acm/no_global": {
+      "keys": [
+        "acm__no_global__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__no_global__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__no_global__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8862,
+            "sample_sd": 0.018594622878671196,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8862,
+            "sample_sd": 0.018594622878671196,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8905687237913955,
+            "sample_sd": 0.016745466779946008,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9691062981685693,
+            "sample_sd": 0.00604979539341312,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8772666666666666,
+            "sample_sd": 0.023868249481965222,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8772666666666666,
+            "sample_sd": 0.023868249481965222,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8819226448499798,
+            "sample_sd": 0.022205669267519847,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.969916862091312,
+            "sample_sd": 0.004392198244756201,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8914,
+            "sample_sd": 0.0008717797887082043,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8914,
+            "sample_sd": 0.0008717797887082043,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8950953055143736,
+            "sample_sd": 0.0009232875552271888,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9722120415277654,
+            "sample_sd": 0.00028161070538358754,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.6019252070637934,
+          "sample_sd": 0.0442318444506629,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.6034485851636909,
+          "sample_sd": 0.04166846356537256,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/acm/no_cn": {
+      "keys": [
+        "acm__no_cn__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__no_cn__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__no_cn__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8858,
+            "sample_sd": 0.021407475329893545,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8858,
+            "sample_sd": 0.021407475329893545,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.891308112591951,
+            "sample_sd": 0.01832825421651059,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9705286571421681,
+            "sample_sd": 0.004187638672788928,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8805333333333333,
+            "sample_sd": 0.01874495487680177,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8805333333333333,
+            "sample_sd": 0.01874495487680177,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.885714487825891,
+            "sample_sd": 0.017312571535418805,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9714755717435778,
+            "sample_sd": 0.005194802613336344,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8974,
+            "sample_sd": 0.010289800775525331,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8974,
+            "sample_sd": 0.010289800775525331,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9011573922108103,
+            "sample_sd": 0.009379545135381607,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9757643249567833,
+            "sample_sd": 0.0016395393217564452,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.6433217260561103,
+          "sample_sd": 0.03586179204906644,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.6472146551978397,
+          "sample_sd": 0.060735324848639034,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/acm/layernorm": {
+      "keys": [
+        "acm__layernorm__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__layernorm__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__layernorm__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8284666666666667,
+            "sample_sd": 0.07903071133004777,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8284666666666667,
+            "sample_sd": 0.07903071133004777,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.840529416172276,
+            "sample_sd": 0.06651651047842605,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9384790752746646,
+            "sample_sd": 0.04718509013344407,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8307333333333333,
+            "sample_sd": 0.06144667064482284,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8307333333333333,
+            "sample_sd": 0.06144667064482284,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8395802336201365,
+            "sample_sd": 0.05495194101458841,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9461560922317449,
+            "sample_sd": 0.037496035846772614,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8539333333333333,
+            "sample_sd": 0.06399291627464189,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8539333333333333,
+            "sample_sd": 0.06399291627464189,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8599035021503788,
+            "sample_sd": 0.06009781976500593,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9513500188234774,
+            "sample_sd": 0.03552278700488742,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.5677299373162339,
+          "sample_sd": 0.11384335926746476,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.5417133067240555,
+          "sample_sd": 0.16922251909555483,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/aminer/mp_only": {
+      "keys": [
+        "aminer__mp_only__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mp_only__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mp_only__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.773,
+            "sample_sd": 0.009406380813043843,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.773,
+            "sample_sd": 0.009406380813043843,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6889812287756705,
+            "sample_sd": 0.011855500025404704,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9059029568956397,
+            "sample_sd": 0.009374270974811246,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8004000000000001,
+            "sample_sd": 0.012139192724394886,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8004000000000001,
+            "sample_sd": 0.012139192724394886,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7348525788035573,
+            "sample_sd": 0.008143115711384277,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9309554360362585,
+            "sample_sd": 0.005253652133285736,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8282,
+            "sample_sd": 0.015557634781675428,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8282,
+            "sample_sd": 0.015557634781675428,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7651459570744403,
+            "sample_sd": 0.021633481134214125,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9264542193898931,
+            "sample_sd": 0.008903490400760019,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3440674610611558,
+          "sample_sd": 0.01597807926700859,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.33906042504808803,
+          "sample_sd": 0.03806445230784385,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/aminer/mp_aug": {
+      "keys": [
+        "aminer__mp_aug__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mp_aug__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mp_aug__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7825333333333334,
+            "sample_sd": 0.02026458322624316,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7825333333333334,
+            "sample_sd": 0.02026458322624316,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7020391120158946,
+            "sample_sd": 0.0206192111343798,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9053865883548555,
+            "sample_sd": 0.010352414946983255,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8092666666666666,
+            "sample_sd": 0.0025006665778014277,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8092666666666666,
+            "sample_sd": 0.0025006665778014277,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.741303983184899,
+            "sample_sd": 0.0004381887822281813,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9214957543804676,
+            "sample_sd": 0.004222794544227719,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8168666666666667,
+            "sample_sd": 0.009300179209742831,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8168666666666667,
+            "sample_sd": 0.009300179209742831,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7462598735455209,
+            "sample_sd": 0.010314136418318154,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9252755135248262,
+            "sample_sd": 0.0016234476111575496,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3632510072965537,
+          "sample_sd": 0.05870471270198941,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.34525085570217023,
+          "sample_sd": 0.10941796007305414,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/aminer/mp_ng": {
+      "keys": [
+        "aminer__mp_ng__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mp_ng__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mp_ng__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7742666666666667,
+            "sample_sd": 0.013460064388157089,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7742666666666667,
+            "sample_sd": 0.013460064388157089,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6942958468312297,
+            "sample_sd": 0.01422732288900346,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9076868296870915,
+            "sample_sd": 0.005439475648780117,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.7984,
+            "sample_sd": 0.014749915253993828,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7984,
+            "sample_sd": 0.014749915253993828,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7291828505044475,
+            "sample_sd": 0.013182356528673746,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9209604109328146,
+            "sample_sd": 0.009689840209301474,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8119333333333333,
+            "sample_sd": 0.007705409355338142,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8119333333333333,
+            "sample_sd": 0.007705409355338142,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7481532194198653,
+            "sample_sd": 0.009406744459415606,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9258717041780452,
+            "sample_sd": 0.0024856009376764774,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3758284200702083,
+          "sample_sd": 0.029900994047637568,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.3150126980611876,
+          "sample_sd": 0.04441381289902857,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/aminer/mp_sm": {
+      "keys": [
+        "aminer__mp_sm__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mp_sm__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mp_sm__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7777333333333334,
+            "sample_sd": 0.013500123456225694,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7777333333333334,
+            "sample_sd": 0.013500123456225694,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7034193321379891,
+            "sample_sd": 0.02009594091676138,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9087655352658454,
+            "sample_sd": 0.009443428761787534,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8052666666666667,
+            "sample_sd": 0.01639796735370977,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8052666666666667,
+            "sample_sd": 0.01639796735370977,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7402004900310731,
+            "sample_sd": 0.01746670354466064,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9259460640958352,
+            "sample_sd": 0.006464591633890502,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8113333333333334,
+            "sample_sd": 0.01021045216106176,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8113333333333334,
+            "sample_sd": 0.01021045216106176,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7402344216760269,
+            "sample_sd": 0.00684585779204847,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9247486140518599,
+            "sample_sd": 0.003157257899987523,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3449414305405912,
+          "sample_sd": 0.03675728441719508,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.3292669183266128,
+          "sample_sd": 0.00391832259150661,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/aminer/no_global": {
+      "keys": [
+        "aminer__no_global__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__no_global__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__no_global__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8089999999999999,
+            "sample_sd": 0.008534635317340647,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8089999999999999,
+            "sample_sd": 0.008534635317340647,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7325303806026942,
+            "sample_sd": 0.006147464314248719,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9106776782422458,
+            "sample_sd": 0.011807558288226933,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8068000000000001,
+            "sample_sd": 0.01430104891257984,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8068000000000001,
+            "sample_sd": 0.01430104891257984,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7385817314152398,
+            "sample_sd": 0.011683265738248811,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9235936926027196,
+            "sample_sd": 0.009010039864632873,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8170000000000001,
+            "sample_sd": 0.012106196760337173,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8170000000000001,
+            "sample_sd": 0.012106196760337173,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.752305236216142,
+            "sample_sd": 0.01330784129323274,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9313674923571591,
+            "sample_sd": 0.003388306081566194,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.33774686167832985,
+          "sample_sd": 0.028883399069554856,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.32286887502016426,
+          "sample_sd": 0.04638469476929937,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/aminer/no_cn": {
+      "keys": [
+        "aminer__no_cn__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__no_cn__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__no_cn__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7869333333333334,
+            "sample_sd": 0.01618682591904088,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7869333333333334,
+            "sample_sd": 0.01618682591904088,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7119957052305104,
+            "sample_sd": 0.024359025980058867,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9092026369520784,
+            "sample_sd": 0.007067492541518246,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8131333333333333,
+            "sample_sd": 0.016862186493255577,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8131333333333333,
+            "sample_sd": 0.016862186493255577,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7446963198254125,
+            "sample_sd": 0.024228304290270546,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9261350570221192,
+            "sample_sd": 0.004643001434468339,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8025333333333333,
+            "sample_sd": 0.00876888438362216,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8025333333333333,
+            "sample_sd": 0.00876888438362216,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7373187326757803,
+            "sample_sd": 0.014917027063611503,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9157575885147126,
+            "sample_sd": 0.01131262667001477,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3427053240849968,
+          "sample_sd": 0.04187297356884387,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.3121761266090973,
+          "sample_sd": 0.03258227083093257,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/aminer/layernorm": {
+      "keys": [
+        "aminer__layernorm__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__layernorm__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__layernorm__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8047333333333333,
+            "sample_sd": 0.019514439098609254,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8047333333333333,
+            "sample_sd": 0.019514439098609254,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.732434882505896,
+            "sample_sd": 0.018038127928454967,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9112784772004155,
+            "sample_sd": 0.017118353279916117,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8124666666666667,
+            "sample_sd": 0.021231423252653852,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8124666666666667,
+            "sample_sd": 0.021231423252653852,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7411494941900499,
+            "sample_sd": 0.01948003184954448,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9237186241615637,
+            "sample_sd": 0.006434188662713956,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8196666666666667,
+            "sample_sd": 0.001814754345175483,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8196666666666667,
+            "sample_sd": 0.001814754345175483,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7549054542356167,
+            "sample_sd": 0.0034348971640715854,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9315706973828737,
+            "sample_sd": 0.0005042792285893751,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.35222845157431937,
+          "sample_sd": 0.02023639690023454,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.33328070012109867,
+          "sample_sd": 0.05526057113595263,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/acm/random_positive_k8": {
+      "keys": [
+        "acm__full__random_supplied__k8__lam0.5__lr1.0__seed1",
+        "acm__full__random_supplied__k8__lam0.5__lr1.0__seed2",
+        "acm__full__random_supplied__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8703333333333333,
+            "sample_sd": 0.016504948752823618,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8703333333333333,
+            "sample_sd": 0.016504948752823618,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8774934180392737,
+            "sample_sd": 0.0123674603037346,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9634705408514913,
+            "sample_sd": 0.007320923116371551,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8634,
+            "sample_sd": 0.009526804291051651,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8634,
+            "sample_sd": 0.009526804291051651,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8691781158139279,
+            "sample_sd": 0.007716158934896722,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9654191728639354,
+            "sample_sd": 0.00578578159441683,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8852666666666668,
+            "sample_sd": 0.013963285191291376,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8852666666666668,
+            "sample_sd": 0.013963285191291376,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.889464110004414,
+            "sample_sd": 0.012749896706151682,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9693342111766003,
+            "sample_sd": 0.0063195103699415145,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.5668023212231246,
+          "sample_sd": 0.11727083077998372,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.5365650101412788,
+          "sample_sd": 0.17326038879145114,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/dblp/random_positive_k8": {
+      "keys": [
+        "dblp__full__random_supplied__k8__lam0.5__lr2.0__seed1",
+        "dblp__full__random_supplied__k8__lam0.5__lr2.0__seed2",
+        "dblp__full__random_supplied__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9222,
+            "sample_sd": 0.0005291502622130277,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9222,
+            "sample_sd": 0.0005291502622130277,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9163773444682404,
+            "sample_sd": 0.0009718525937647426,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9868199378377882,
+            "sample_sd": 0.00021841776424497855,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.9182,
+            "sample_sd": 0.0007211102550929031,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9182,
+            "sample_sd": 0.0007211102550929031,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9143498623513188,
+            "sample_sd": 0.0008692143241981724,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9851386494119557,
+            "sample_sd": 0.0004669776533021002,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.9269333333333333,
+            "sample_sd": 0.001285820101465839,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9269333333333333,
+            "sample_sd": 0.001285820101465839,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9187565589208319,
+            "sample_sd": 0.0014536009939579656,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9887500838716218,
+            "sample_sd": 0.0003252487026734449,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.7488284677270566,
+          "sample_sd": 0.008916660408014455,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.7982258123390245,
+          "sample_sd": 0.010254344145935896,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/aminer/random_positive_k8": {
+      "keys": [
+        "aminer__full__random_supplied__k8__lam0.5__lr1.0__seed1",
+        "aminer__full__random_supplied__k8__lam0.5__lr1.0__seed2",
+        "aminer__full__random_supplied__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8074666666666667,
+            "sample_sd": 0.020171597193413632,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8074666666666667,
+            "sample_sd": 0.020171597193413632,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7319847646043334,
+            "sample_sd": 0.02063238324884497,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9126681695783903,
+            "sample_sd": 0.01565300372465627,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8124,
+            "sample_sd": 0.01755790420295071,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8124,
+            "sample_sd": 0.01755790420295071,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7417482429495749,
+            "sample_sd": 0.013427418225499702,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9244163083047697,
+            "sample_sd": 0.006997398034778312,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8189333333333333,
+            "sample_sd": 0.005345403009440251,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8189333333333333,
+            "sample_sd": 0.005345403009440251,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7550336310808158,
+            "sample_sd": 0.006479736888864833,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9317549586070346,
+            "sample_sd": 0.0009113079638755047,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3423836638951859,
+          "sample_sd": 0.031022251397398677,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.33426932474766435,
+          "sample_sd": 0.05259713946287719,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/freebase/random_positive_k8": {
+      "keys": [
+        "freebase__full__random_supplied__k8__lam0.5__lr2.0__seed1",
+        "freebase__full__random_supplied__k8__lam0.5__lr2.0__seed2",
+        "freebase__full__random_supplied__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5770666666666667,
+            "sample_sd": 0.03973982049951065,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5770666666666667,
+            "sample_sd": 0.03973982049951065,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5570519881015941,
+            "sample_sd": 0.029885063644774973,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7576517505799453,
+            "sample_sd": 0.0059257804683861045,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.6307333333333334,
+            "sample_sd": 0.004500370355130075,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6307333333333334,
+            "sample_sd": 0.004500370355130075,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6072894039379405,
+            "sample_sd": 0.002425114985816449,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7894913814307001,
+            "sample_sd": 0.002667787200739419,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.6001333333333333,
+            "sample_sd": 0.03320983789983525,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6001333333333333,
+            "sample_sd": 0.03320983789983525,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5728019762620249,
+            "sample_sd": 0.02955348737557026,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7711560342278404,
+            "sample_sd": 0.01328633198842029,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.16501397800487247,
+          "sample_sd": 0.002060293835173656,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.17454143127459867,
+          "sample_sd": 0.0033148452713810768,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/acm/mean_anchor": {
+      "keys": [
+        "acm__mean_anchor__supplied__k16__lam0.5__lr1.0__seed1",
+        "acm__mean_anchor__supplied__k16__lam0.5__lr1.0__seed2",
+        "acm__mean_anchor__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8324666666666667,
+            "sample_sd": 0.09151138362702942,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8324666666666667,
+            "sample_sd": 0.09151138362702942,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8435653749947,
+            "sample_sd": 0.07863672448307195,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9386840202193337,
+            "sample_sd": 0.05222338349127832,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8329333333333333,
+            "sample_sd": 0.07719231395244819,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8329333333333333,
+            "sample_sd": 0.07719231395244819,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8412606637330481,
+            "sample_sd": 0.07016942758736552,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9466067531623673,
+            "sample_sd": 0.04356466293913443,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8532000000000001,
+            "sample_sd": 0.07535064697797886,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8532000000000001,
+            "sample_sd": 0.07535064697797886,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8591199517896242,
+            "sample_sd": 0.07088410076662381,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9508449039776604,
+            "sample_sd": 0.039006419315614105,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.5740166251457978,
+          "sample_sd": 0.11970696366958583,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.5529672629294167,
+          "sample_sd": 0.18218005464218553,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "ablation/aminer/mean_anchor": {
+      "keys": [
+        "aminer__mean_anchor__supplied__k16__lam0.5__lr1.0__seed1",
+        "aminer__mean_anchor__supplied__k16__lam0.5__lr1.0__seed2",
+        "aminer__mean_anchor__supplied__k16__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8174666666666667,
+            "sample_sd": 0.010900152904126248,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8174666666666667,
+            "sample_sd": 0.010900152904126248,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7423701506095276,
+            "sample_sd": 0.015853531222772797,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9127335666848446,
+            "sample_sd": 0.015152985371977953,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8087333333333333,
+            "sample_sd": 0.025006665778014657,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8087333333333333,
+            "sample_sd": 0.025006665778014657,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7392118872113952,
+            "sample_sd": 0.02130085528112867,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9203457058967176,
+            "sample_sd": 0.005801278011508047,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8192666666666667,
+            "sample_sd": 0.003817503547258859,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8192666666666667,
+            "sample_sd": 0.003817503547258859,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7530916650130748,
+            "sample_sd": 0.005515869022519678,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9304821882041715,
+            "sample_sd": 0.0012570710455835827,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3447790919685529,
+          "sample_sd": 0.03322976491276313,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.3328368089291254,
+          "sample_sd": 0.0379049106325994,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "sensitivity/acm/lambda=0.25": {
+      "keys": [
+        "acm__full__supplied__k16__lam0.25__lr1.0__seed1",
+        "acm__full__supplied__k16__lam0.25__lr1.0__seed2",
+        "acm__full__supplied__k16__lam0.25__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8975333333333333,
+            "sample_sd": 0.022419931608578504,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8975333333333333,
+            "sample_sd": 0.022419931608578504,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9014382508120418,
+            "sample_sd": 0.02012172770175995,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9521725991529295,
+            "sample_sd": 0.04471034013143893,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8578666666666667,
+            "sample_sd": 0.06492036146952151,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8578666666666667,
+            "sample_sd": 0.06492036146952151,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8641074534764647,
+            "sample_sd": 0.05893465257796633,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9504103349754385,
+            "sample_sd": 0.0471233661614566,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8715333333333334,
+            "sample_sd": 0.053266624947835135,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8715333333333334,
+            "sample_sd": 0.053266624947835135,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8770964683757817,
+            "sample_sd": 0.04955132850897392,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9554814526565387,
+            "sample_sd": 0.03790336834636879,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.5912412866793457,
+          "sample_sd": 0.1257706673363916,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.5734886929325865,
+          "sample_sd": 0.1905748597436793,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "sensitivity/acm/lambda=0.75": {
+      "keys": [
+        "acm__full__supplied__k16__lam0.75__lr1.0__seed1",
+        "acm__full__supplied__k16__lam0.75__lr1.0__seed2",
+        "acm__full__supplied__k16__lam0.75__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8794,
+            "sample_sd": 0.005610704055642212,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8794,
+            "sample_sd": 0.005610704055642212,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8841255718937232,
+            "sample_sd": 0.0039138864830654055,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9660387688845213,
+            "sample_sd": 0.0049525903555364915,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8707333333333334,
+            "sample_sd": 0.005828664798505116,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8707333333333334,
+            "sample_sd": 0.005828664798505116,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8763994210251934,
+            "sample_sd": 0.005763975567321016,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9682042427024448,
+            "sample_sd": 0.001450739475266547,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8952,
+            "sample_sd": 0.006302380502635466,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8952,
+            "sample_sd": 0.006302380502635466,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8986598956008588,
+            "sample_sd": 0.0064613814923699985,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.971633083617404,
+            "sample_sd": 0.001712900490619417,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.6258510228311792,
+          "sample_sd": 0.003325246879259836,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.6151078577698984,
+          "sample_sd": 0.0006457039457122545,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "sensitivity/aminer/lambda=0.25": {
+      "keys": [
+        "aminer__full__supplied__k16__lam0.25__lr1.0__seed1",
+        "aminer__full__supplied__k16__lam0.25__lr1.0__seed2",
+        "aminer__full__supplied__k16__lam0.25__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7909333333333334,
+            "sample_sd": 0.007433258594542077,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7909333333333334,
+            "sample_sd": 0.007433258594542077,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7170880212405175,
+            "sample_sd": 0.011392380865119834,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.907558276145578,
+            "sample_sd": 0.00295548202687454,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8138,
+            "sample_sd": 0.0051884487084291366,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8138,
+            "sample_sd": 0.0051884487084291366,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7458038347549822,
+            "sample_sd": 0.0013242572107183498,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9227519431500177,
+            "sample_sd": 0.006394422805520173,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8122,
+            "sample_sd": 0.007274613391789221,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8122,
+            "sample_sd": 0.007274613391789221,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7429746031892938,
+            "sample_sd": 0.0077358562605992125,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9230702046335565,
+            "sample_sd": 0.0023179257371759468,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.34466487903811255,
+          "sample_sd": 0.027816316018218903,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.30190439509719547,
+          "sample_sd": 0.027938303782803042,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "sensitivity/aminer/lambda=0.75": {
+      "keys": [
+        "aminer__full__supplied__k16__lam0.75__lr1.0__seed1",
+        "aminer__full__supplied__k16__lam0.75__lr1.0__seed2",
+        "aminer__full__supplied__k16__lam0.75__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7650666666666667,
+            "sample_sd": 0.04499659246357812,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7650666666666667,
+            "sample_sd": 0.04499659246357812,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6863611398337056,
+            "sample_sd": 0.025459601555482603,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9007875217089414,
+            "sample_sd": 0.01664716001961134,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.7925333333333334,
+            "sample_sd": 0.018217939876213587,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7925333333333334,
+            "sample_sd": 0.018217939876213587,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7173373857165617,
+            "sample_sd": 0.00972787900496779,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9166547802093861,
+            "sample_sd": 0.004372979881978309,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8078666666666667,
+            "sample_sd": 0.007960736984308244,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8078666666666667,
+            "sample_sd": 0.007960736984308244,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7358213356519405,
+            "sample_sd": 0.004348870781301573,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9228469567705418,
+            "sample_sd": 0.006477211020300546,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3439066138057865,
+          "sample_sd": 0.017308101335426488,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.29242611335389074,
+          "sample_sd": 0.02560291607389961,
+          "n_encoder_level_records": 3
+        }
+      }
+    }
+  },
+  "positive_extension": {
+    "acm/combined": {
+      "keys": [
+        "acm__full__generated_combined__k8__lam0.5__lr1.0__seed1",
+        "acm__full__generated_combined__k8__lam0.5__lr1.0__seed2",
+        "acm__full__generated_combined__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8485333333333334,
+            "sample_sd": 0.05998544267848107,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8485333333333334,
+            "sample_sd": 0.05998544267848107,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8534793663961643,
+            "sample_sd": 0.05349677330418365,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9533003397981512,
+            "sample_sd": 0.023030659749112795,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8391333333333333,
+            "sample_sd": 0.05455651504021614,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8391333333333333,
+            "sample_sd": 0.05455651504021614,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8425623356800718,
+            "sample_sd": 0.049929835810167814,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.948769984761575,
+            "sample_sd": 0.0231462253661485,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8804000000000001,
+            "sample_sd": 0.03413326822910463,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8804000000000001,
+            "sample_sd": 0.03413326822910463,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8840358132472335,
+            "sample_sd": 0.03144140796246903,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9642118711039513,
+            "sample_sd": 0.009459646212264304,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.4672326380264674,
+          "sample_sd": 0.043193051840286885,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.44454898834036094,
+          "sample_sd": 0.06123187747279242,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "acm/cosine": {
+      "keys": [
+        "acm__full__generated_cosine__k8__lam0.5__lr1.0__seed1",
+        "acm__full__generated_cosine__k8__lam0.5__lr1.0__seed2",
+        "acm__full__generated_cosine__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8592,
+            "sample_sd": 0.04087835613133188,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8592,
+            "sample_sd": 0.04087835613133188,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8639735764888953,
+            "sample_sd": 0.03464833219053337,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9590859655469918,
+            "sample_sd": 0.014044105197871562,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8529333333333333,
+            "sample_sd": 0.026956508181389865,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8529333333333333,
+            "sample_sd": 0.026956508181389865,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8561502553860004,
+            "sample_sd": 0.02321955840829035,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9560050992147374,
+            "sample_sd": 0.01094835754412783,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8847333333333333,
+            "sample_sd": 0.019616659586518127,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8847333333333333,
+            "sample_sd": 0.019616659586518127,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8877708658695503,
+            "sample_sd": 0.017741654505749542,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9668602303945072,
+            "sample_sd": 0.0027773187679002685,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.4683319325608886,
+          "sample_sd": 0.042686302789091364,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.4466943064480394,
+          "sample_sd": 0.05476335024675993,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "acm/random": {
+      "keys": [
+        "acm__full__generated_random__k8__lam0.5__lr1.0__seed1",
+        "acm__full__generated_random__k8__lam0.5__lr1.0__seed2",
+        "acm__full__generated_random__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.6935333333333332,
+            "sample_sd": 0.004387862045841197,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6935333333333332,
+            "sample_sd": 0.004387862045841197,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7004755863399198,
+            "sample_sd": 0.0036933916432556817,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8876144906535784,
+            "sample_sd": 0.009689939086306413,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.6911333333333333,
+            "sample_sd": 0.0009018499505645903,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6911333333333333,
+            "sample_sd": 0.0009018499505645903,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6903906448384408,
+            "sample_sd": 0.0016347973039632796,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.883938728571676,
+            "sample_sd": 0.01316589590169374,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.7240666666666666,
+            "sample_sd": 0.025044227545151634,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7240666666666666,
+            "sample_sd": 0.025044227545151634,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7055283919109414,
+            "sample_sd": 0.0078081344635867606,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.904698841579153,
+            "sample_sd": 0.018739916937017174,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.40347787230618215,
+          "sample_sd": 0.007162086337904439,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.3568859578675291,
+          "sample_sd": 0.004024413706765093,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "acm/simrank": {
+      "keys": [
+        "acm__full__generated_simrank__k8__lam0.5__lr1.0__seed1",
+        "acm__full__generated_simrank__k8__lam0.5__lr1.0__seed2",
+        "acm__full__generated_simrank__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.6257333333333334,
+            "sample_sd": 0.08199081249343322,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6257333333333334,
+            "sample_sd": 0.08199081249343322,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6636487492605756,
+            "sample_sd": 0.0693378299137796,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8083524131231532,
+            "sample_sd": 0.05943155872772441,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.7105999999999999,
+            "sample_sd": 0.015266957784706162,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7105999999999999,
+            "sample_sd": 0.015266957784706162,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7215037141665394,
+            "sample_sd": 0.008137090258460173,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8505057387912468,
+            "sample_sd": 0.012201350209251371,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.7187333333333332,
+            "sample_sd": 0.013470461511519661,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7187333333333332,
+            "sample_sd": 0.013470461511519661,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7260038749396679,
+            "sample_sd": 0.012186225775489374,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8577680062219165,
+            "sample_sd": 0.007898177591055908,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.32363667467007196,
+          "sample_sd": 0.2521977041028507,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.2902585475154686,
+          "sample_sd": 0.22920075751959626,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "aminer/random": {
+      "keys": [
+        "aminer__full__generated_random__k8__lam0.5__lr1.0__seed1",
+        "aminer__full__generated_random__k8__lam0.5__lr1.0__seed2",
+        "aminer__full__generated_random__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7893333333333333,
+            "sample_sd": 0.0056011903496786825,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7893333333333333,
+            "sample_sd": 0.0056011903496786825,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7060181000991801,
+            "sample_sd": 0.013305414264680494,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9041744022143695,
+            "sample_sd": 0.015117108492267972,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8049333333333334,
+            "sample_sd": 0.004021608301828244,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8049333333333334,
+            "sample_sd": 0.004021608301828244,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7330995238019417,
+            "sample_sd": 0.0031184411364750452,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9199927109123175,
+            "sample_sd": 0.004686901528897892,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8156666666666667,
+            "sample_sd": 0.006929165413910455,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8156666666666667,
+            "sample_sd": 0.006929165413910455,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7469831391268923,
+            "sample_sd": 0.007084536981194751,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9266958186911192,
+            "sample_sd": 0.00552943218769365,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.3561008852104844,
+          "sample_sd": 0.07066187216735904,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.39569971225875256,
+          "sample_sd": 0.1685775172171167,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "aminer/simrank": {
+      "keys": [
+        "aminer__full__generated_simrank__k8__lam0.5__lr1.0__seed1",
+        "aminer__full__generated_simrank__k8__lam0.5__lr1.0__seed2",
+        "aminer__full__generated_simrank__k8__lam0.5__lr1.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7560666666666667,
+            "sample_sd": 0.03562994994851001,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7560666666666667,
+            "sample_sd": 0.03562994994851001,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6805078663065149,
+            "sample_sd": 0.030218391031518105,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8903862342557135,
+            "sample_sd": 0.021920103186331707,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.7862666666666667,
+            "sample_sd": 0.018591754444735202,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7862666666666667,
+            "sample_sd": 0.018591754444735202,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7083239578715703,
+            "sample_sd": 0.021607695087921142,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9106217637046908,
+            "sample_sd": 0.006496164948923341,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.7940666666666667,
+            "sample_sd": 0.022346662688941605,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7940666666666667,
+            "sample_sd": 0.022346662688941605,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7209858438121639,
+            "sample_sd": 0.018274118014700524,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9083800189070059,
+            "sample_sd": 0.006818175418302082,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.32500443460914863,
+          "sample_sd": 0.0516936156788386,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.3565683084692103,
+          "sample_sd": 0.12611551060387347,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "dblp/combined": {
+      "keys": [
+        "dblp__full__generated_combined__k8__lam0.5__lr2.0__seed1",
+        "dblp__full__generated_combined__k8__lam0.5__lr2.0__seed2",
+        "dblp__full__generated_combined__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8729333333333333,
+            "sample_sd": 0.004239496825489221,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8729333333333333,
+            "sample_sd": 0.004239496825489221,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.868021985485353,
+            "sample_sd": 0.004497684479051554,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9775192398592764,
+            "sample_sd": 1.3833168549278102e-05,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8524666666666666,
+            "sample_sd": 0.004623130252689599,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8524666666666666,
+            "sample_sd": 0.004623130252689599,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8474848836067038,
+            "sample_sd": 0.004846934648611014,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9621156922212852,
+            "sample_sd": 0.0013221419106602848,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8740666666666667,
+            "sample_sd": 0.0027300793639257613,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8740666666666667,
+            "sample_sd": 0.0027300793639257613,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.866379041170365,
+            "sample_sd": 0.0025815764665406316,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9769183582538076,
+            "sample_sd": 0.0008577210148282161,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.5517202653050639,
+          "sample_sd": 0.008020551563027424,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.6067282822201101,
+          "sample_sd": 0.00481632079488578,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "dblp/cosine": {
+      "keys": [
+        "dblp__full__generated_cosine__k8__lam0.5__lr2.0__seed1",
+        "dblp__full__generated_cosine__k8__lam0.5__lr2.0__seed2",
+        "dblp__full__generated_cosine__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8579333333333333,
+            "sample_sd": 0.019225330512980414,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8579333333333333,
+            "sample_sd": 0.019225330512980414,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8529708728715139,
+            "sample_sd": 0.01987479671304938,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9721044332645156,
+            "sample_sd": 0.004494429428131436,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.8378,
+            "sample_sd": 0.007372923436466629,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8378,
+            "sample_sd": 0.007372923436466629,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.8326403075939162,
+            "sample_sd": 0.0075398440894943256,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9575440434855951,
+            "sample_sd": 0.004479631260843826,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.8639333333333333,
+            "sample_sd": 0.005947548514584265,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8639333333333333,
+            "sample_sd": 0.005947548514584265,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.855866414117358,
+            "sample_sd": 0.0055650323759396025,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.974683217095524,
+            "sample_sd": 0.0038654322784855205,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.5246168934920951,
+          "sample_sd": 0.01809550390330446,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.5779351114196049,
+          "sample_sd": 0.014932943356132817,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "dblp/random": {
+      "keys": [
+        "dblp__full__generated_random__k8__lam0.5__lr2.0__seed1",
+        "dblp__full__generated_random__k8__lam0.5__lr2.0__seed2",
+        "dblp__full__generated_random__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9201333333333335,
+            "sample_sd": 0.005178159261101741,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9201333333333335,
+            "sample_sd": 0.005178159261101741,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9150438025603784,
+            "sample_sd": 0.005333444675142551,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.987806953073287,
+            "sample_sd": 0.0003403588772247087,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.9184666666666668,
+            "sample_sd": 0.0021939310229206112,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9184666666666668,
+            "sample_sd": 0.0021939310229206112,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.9144190638269257,
+            "sample_sd": 0.0024212664450049097,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9852204758003565,
+            "sample_sd": 0.00013777057170887453,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.9259333333333334,
+            "sample_sd": 0.004168133075290873,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9259333333333334,
+            "sample_sd": 0.004168133075290873,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.918775527903954,
+            "sample_sd": 0.004124355836061341,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9893085164092879,
+            "sample_sd": 0.00021962131590860546,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.7449078283854269,
+          "sample_sd": 0.0047190081626661984,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.7956483521103224,
+          "sample_sd": 0.0039159464483222856,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "dblp/simrank": {
+      "keys": [
+        "dblp__full__generated_simrank__k8__lam0.5__lr2.0__seed1",
+        "dblp__full__generated_simrank__k8__lam0.5__lr2.0__seed2",
+        "dblp__full__generated_simrank__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.46713333333333334,
+            "sample_sd": 0.024194489730790643,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.46713333333333334,
+            "sample_sd": 0.024194489730790643,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.4641032145903449,
+            "sample_sd": 0.021949425906846638,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7346813996379344,
+            "sample_sd": 0.03649234162109734,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.5546,
+            "sample_sd": 0.018031084271335374,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5546,
+            "sample_sd": 0.018031084271335374,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5509558052785563,
+            "sample_sd": 0.01974495788078766,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.787043330499651,
+            "sample_sd": 0.014440643861749444,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.5367333333333334,
+            "sample_sd": 0.010557146078999399,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5367333333333334,
+            "sample_sd": 0.010557146078999399,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5267176016317606,
+            "sample_sd": 0.007356877114448212,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7805026706734273,
+            "sample_sd": 0.007119980221596484,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.008029459700275212,
+          "sample_sd": 0.004950052756429768,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.005283327846364998,
+          "sample_sd": 0.002954316273271327,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "freebase/random": {
+      "keys": [
+        "freebase__full__generated_random__k8__lam0.5__lr2.0__seed1",
+        "freebase__full__generated_random__k8__lam0.5__lr2.0__seed2",
+        "freebase__full__generated_random__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5705333333333333,
+            "sample_sd": 0.022300074738290196,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5705333333333333,
+            "sample_sd": 0.022300074738290196,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5576969534907706,
+            "sample_sd": 0.01696658906777752,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7606294639095531,
+            "sample_sd": 0.009167717885034374,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.6309999999999999,
+            "sample_sd": 0.005902541825349472,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6309999999999999,
+            "sample_sd": 0.005902541825349472,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6068743092904022,
+            "sample_sd": 0.00484724106752456,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7851585741559162,
+            "sample_sd": 0.005841256844685777,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.6020666666666667,
+            "sample_sd": 0.03630224970071874,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6020666666666667,
+            "sample_sd": 0.03630224970071874,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5787307657336881,
+            "sample_sd": 0.03136373329780556,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7791582294552508,
+            "sample_sd": 0.014423882082302992,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.17078301629828813,
+          "sample_sd": 0.004066428781092673,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.17562995043436566,
+          "sample_sd": 0.006909225161585608,
+          "n_encoder_level_records": 3
+        }
+      }
+    },
+    "freebase/simrank": {
+      "keys": [
+        "freebase__full__generated_simrank__k8__lam0.5__lr2.0__seed1",
+        "freebase__full__generated_simrank__k8__lam0.5__lr2.0__seed2",
+        "freebase__full__generated_simrank__k8__lam0.5__lr2.0__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5554666666666667,
+            "sample_sd": 0.04873164611762393,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5554666666666667,
+            "sample_sd": 0.04873164611762393,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.532888042952824,
+            "sample_sd": 0.04203871916525553,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7196545637803667,
+            "sample_sd": 0.01877486113202251,
+            "n_encoder_level_records": 3
+          }
+        },
+        "40": {
+          "acc": {
+            "mean": 0.6098666666666668,
+            "sample_sd": 0.03108461570187629,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6098666666666668,
+            "sample_sd": 0.03108461570187629,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5892595919480598,
+            "sample_sd": 0.028437334592950815,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7663236162970543,
+            "sample_sd": 0.013172209230904194,
+            "n_encoder_level_records": 3
+          }
+        },
+        "60": {
+          "acc": {
+            "mean": 0.5992,
+            "sample_sd": 0.005291502622129249,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5992,
+            "sample_sd": 0.005291502622129249,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5741559151260625,
+            "sample_sd": 0.004967986118795164,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.755988906584111,
+            "sample_sd": 0.010426290726897632,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {
+        "nmi": {
+          "mean": 0.12927887579075442,
+          "sample_sd": 0.02532243638047173,
+          "n_encoder_level_records": 3
+        },
+        "ari": {
+          "mean": 0.1481813223497531,
+          "sample_sd": 0.024091045407792513,
+          "n_encoder_level_records": 3
+        }
+      }
+    }
+  },
+  "transfer_results": {
+    "acm/full/random_encoder": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__acm__full__random_encoder__seed1",
+        "typed_owner_disjoint_local_features_v3__acm__full__random_encoder__seed2",
+        "typed_owner_disjoint_local_features_v3__acm__full__random_encoder__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.66,
+            "sample_sd": 0.06755525202488079,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.66,
+            "sample_sd": 0.06755525202488079,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5150072016668288,
+            "sample_sd": 0.060615846443949656,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7603329238504342,
+            "sample_sd": 0.032987898850856776,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "acm/full/raw_features": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__acm__full__raw_features__seed1",
+        "typed_owner_disjoint_local_features_v3__acm__full__raw_features__seed2",
+        "typed_owner_disjoint_local_features_v3__acm__full__raw_features__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7830894308943089,
+            "sample_sd": 0.0007451342593424257,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7830894308943089,
+            "sample_sd": 0.0007451342593424257,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.635593486761392,
+            "sample_sd": 0.0006219990088044819,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8694228686551863,
+            "sample_sd": 9.493382896253014e-05,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "acm/full/source_transfer": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__acm__full__source_transfer__seed1",
+        "typed_owner_disjoint_local_features_v3__acm__full__source_transfer__seed2",
+        "typed_owner_disjoint_local_features_v3__acm__full__source_transfer__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7970731707317074,
+            "sample_sd": 0.07444899719022008,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7970731707317074,
+            "sample_sd": 0.07444899719022008,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6151932458508983,
+            "sample_sd": 0.08137764830490173,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.842837656066224,
+            "sample_sd": 0.06391318469551031,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "acm/full/target_only_reference": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__acm__full__target_only_reference__seed1",
+        "typed_owner_disjoint_local_features_v3__acm__full__target_only_reference__seed2",
+        "typed_owner_disjoint_local_features_v3__acm__full__target_only_reference__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9078048780487805,
+            "sample_sd": 0.01032488316513012,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9078048780487805,
+            "sample_sd": 0.01032488316513012,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.767202464927622,
+            "sample_sd": 0.02680649662310902,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9311620789722056,
+            "sample_sd": 0.025226395124178413,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "acm/heco/source_transfer": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__acm__heco__source_transfer__seed1",
+        "typed_owner_disjoint_local_features_v3__acm__heco__source_transfer__seed2",
+        "typed_owner_disjoint_local_features_v3__acm__heco__source_transfer__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8134959349593497,
+            "sample_sd": 0.08282968963858087,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8134959349593497,
+            "sample_sd": 0.08282968963858087,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6199911295958705,
+            "sample_sd": 0.07273415174961192,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8669483125543579,
+            "sample_sd": 0.0550825418617503,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "acm/heco/target_only_reference": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__acm__heco__target_only_reference__seed1",
+        "typed_owner_disjoint_local_features_v3__acm__heco__target_only_reference__seed2",
+        "typed_owner_disjoint_local_features_v3__acm__heco__target_only_reference__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9185365853658538,
+            "sample_sd": 0.005751134693927566,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9185365853658538,
+            "sample_sd": 0.005751134693927566,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7907173454466643,
+            "sample_sd": 0.010340061703400827,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9108259041950361,
+            "sample_sd": 0.0033552378598250645,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "acm/mp_aug/source_transfer": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__acm__mp_aug__source_transfer__seed1",
+        "typed_owner_disjoint_local_features_v3__acm__mp_aug__source_transfer__seed2",
+        "typed_owner_disjoint_local_features_v3__acm__mp_aug__source_transfer__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8354471544715447,
+            "sample_sd": 0.07480505432845753,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8354471544715447,
+            "sample_sd": 0.07480505432845753,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6577353419455578,
+            "sample_sd": 0.043430245713252484,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8691717509604816,
+            "sample_sd": 0.05503203865727465,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "acm/mp_aug/target_only_reference": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__acm__mp_aug__target_only_reference__seed1",
+        "typed_owner_disjoint_local_features_v3__acm__mp_aug__target_only_reference__seed2",
+        "typed_owner_disjoint_local_features_v3__acm__mp_aug__target_only_reference__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.8980487804878049,
+            "sample_sd": 0.024623277003168728,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.8980487804878049,
+            "sample_sd": 0.024623277003168728,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7462454077234079,
+            "sample_sd": 0.050320963899981065,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.94785722627026,
+            "sample_sd": 0.005676824324254877,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/full/random_encoder": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__dblp__full__random_encoder__seed1",
+        "typed_owner_disjoint_local_features_v3__dblp__full__random_encoder__seed2",
+        "typed_owner_disjoint_local_features_v3__dblp__full__random_encoder__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.4702715693342946,
+            "sample_sd": 0.02046077886886664,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.4702715693342946,
+            "sample_sd": 0.02046077886886664,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.47172035368836474,
+            "sample_sd": 0.016838158300033428,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7597131462022895,
+            "sample_sd": 0.007585552258905537,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/full/raw_features": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__dblp__full__raw_features__seed1",
+        "typed_owner_disjoint_local_features_v3__dblp__full__raw_features__seed2",
+        "typed_owner_disjoint_local_features_v3__dblp__full__raw_features__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.522422494592646,
+            "sample_sd": 0.00014419610670513006,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.522422494592646,
+            "sample_sd": 0.00014419610670513006,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5188680341447827,
+            "sample_sd": 0.00012310206544763937,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7772521415753911,
+            "sample_sd": 5.618816894363925e-05,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/full/source_transfer": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__dblp__full__source_transfer__seed1",
+        "typed_owner_disjoint_local_features_v3__dblp__full__source_transfer__seed2",
+        "typed_owner_disjoint_local_features_v3__dblp__full__source_transfer__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.6358086998317712,
+            "sample_sd": 0.04963872870848057,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6358086998317712,
+            "sample_sd": 0.04963872870848057,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6272042501396409,
+            "sample_sd": 0.0464974571027649,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8387284103823539,
+            "sample_sd": 0.035978712630266814,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/full/target_only_reference": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__dblp__full__target_only_reference__seed1",
+        "typed_owner_disjoint_local_features_v3__dblp__full__target_only_reference__seed2",
+        "typed_owner_disjoint_local_features_v3__dblp__full__target_only_reference__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5804854602259073,
+            "sample_sd": 0.00857007010183162,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5804854602259073,
+            "sample_sd": 0.00857007010183162,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5573420409595964,
+            "sample_sd": 0.0115878335377162,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8202351189541814,
+            "sample_sd": 0.0015195388557577684,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/heco/source_transfer": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__dblp__heco__source_transfer__seed1",
+        "typed_owner_disjoint_local_features_v3__dblp__heco__source_transfer__seed2",
+        "typed_owner_disjoint_local_features_v3__dblp__heco__source_transfer__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5731795241528479,
+            "sample_sd": 0.00451635465417907,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5731795241528479,
+            "sample_sd": 0.00451635465417907,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5501569618166233,
+            "sample_sd": 0.010459964085361309,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.794221149757486,
+            "sample_sd": 0.0027020276838846144,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/heco/target_only_reference": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__dblp__heco__target_only_reference__seed1",
+        "typed_owner_disjoint_local_features_v3__dblp__heco__target_only_reference__seed2",
+        "typed_owner_disjoint_local_features_v3__dblp__heco__target_only_reference__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.6930064888248018,
+            "sample_sd": 0.007030207205911403,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6930064888248018,
+            "sample_sd": 0.007030207205911403,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.6703723936891176,
+            "sample_sd": 0.0077384597942709915,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.854966299240907,
+            "sample_sd": 0.013553962277706218,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/mp_aug/source_transfer": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__dblp__mp_aug__source_transfer__seed1",
+        "typed_owner_disjoint_local_features_v3__dblp__mp_aug__source_transfer__seed2",
+        "typed_owner_disjoint_local_features_v3__dblp__mp_aug__source_transfer__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.772170151405912,
+            "sample_sd": 0.048275340460759465,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.772170151405912,
+            "sample_sd": 0.048275340460759465,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7604304263917154,
+            "sample_sd": 0.045318867568017146,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9221698322685838,
+            "sample_sd": 0.026111923559619075,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/mp_aug/target_only_reference": {
+      "keys": [
+        "typed_owner_disjoint_local_features_v3__dblp__mp_aug__target_only_reference__seed1",
+        "typed_owner_disjoint_local_features_v3__dblp__mp_aug__target_only_reference__seed2",
+        "typed_owner_disjoint_local_features_v3__dblp__mp_aug__target_only_reference__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5789954337899543,
+            "sample_sd": 0.013560824195373165,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5789954337899543,
+            "sample_sd": 0.013560824195373165,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5432685231338511,
+            "sample_sd": 0.008499214711378671,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.7724176984010191,
+            "sample_sd": 0.005047496326948633,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    }
+  },
+  "adaptation_results": {
+    "acm/full/source": {
+      "keys": [
+        "retained_warmstart_followup_v2__acm__full__init_source__seed1",
+        "retained_warmstart_followup_v2__acm__full__init_source__seed2",
+        "retained_warmstart_followup_v2__acm__full__init_source__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9221138211382114,
+            "sample_sd": 0.003942879887148667,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9221138211382114,
+            "sample_sd": 0.003942879887148667,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7875987487169536,
+            "sample_sd": 0.022839430809387565,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.944043003595485,
+            "sample_sd": 0.013567764406820232,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "acm/full/target": {
+      "keys": [
+        "retained_warmstart_followup_v2__acm__full__init_target__seed1",
+        "retained_warmstart_followup_v2__acm__full__init_target__seed2",
+        "retained_warmstart_followup_v2__acm__full__init_target__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9130081300813009,
+            "sample_sd": 0.013433098895819746,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9130081300813009,
+            "sample_sd": 0.013433098895819746,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7783619858978439,
+            "sample_sd": 0.03448359643948322,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9342282761078697,
+            "sample_sd": 0.01502520713891739,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "acm/heco/source": {
+      "keys": [
+        "retained_warmstart_followup_v2__acm__heco__init_source__seed1",
+        "retained_warmstart_followup_v2__acm__heco__init_source__seed2",
+        "retained_warmstart_followup_v2__acm__heco__init_source__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.9178861788617887,
+            "sample_sd": 0.006138076776642833,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.9178861788617887,
+            "sample_sd": 0.006138076776642833,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7811333199356486,
+            "sample_sd": 0.024124067776083946,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.911448153547669,
+            "sample_sd": 0.016022360307971915,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/full/source": {
+      "keys": [
+        "retained_warmstart_followup_v2__dblp__full__init_source__seed1",
+        "retained_warmstart_followup_v2__dblp__full__init_source__seed2",
+        "retained_warmstart_followup_v2__dblp__full__init_source__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.780341264119202,
+            "sample_sd": 0.022105941957150915,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.780341264119202,
+            "sample_sd": 0.022105941957150915,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7658107273689665,
+            "sample_sd": 0.023316451898308287,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.9266880120111041,
+            "sample_sd": 0.011583207169212734,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/full/target": {
+      "keys": [
+        "retained_warmstart_followup_v2__dblp__full__init_target__seed1",
+        "retained_warmstart_followup_v2__dblp__full__init_target__seed2",
+        "retained_warmstart_followup_v2__dblp__full__init_target__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.5943282864695986,
+            "sample_sd": 0.04637677976506703,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.5943282864695986,
+            "sample_sd": 0.04637677976506703,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5708336775108651,
+            "sample_sd": 0.05107988881890163,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8232338205651774,
+            "sample_sd": 0.024130887305862662,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    },
+    "dblp/heco/source": {
+      "keys": [
+        "retained_warmstart_followup_v2__dblp__heco__init_source__seed1",
+        "retained_warmstart_followup_v2__dblp__heco__init_source__seed2",
+        "retained_warmstart_followup_v2__dblp__heco__init_source__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.7275174236962269,
+            "sample_sd": 0.018723481798109946,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.7275174236962269,
+            "sample_sd": 0.018723481798109946,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.7103513767020307,
+            "sample_sd": 0.009831119972215734,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8823080931689146,
+            "sample_sd": 0.003268441265960986,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    }
+  },
+  "budget_control_results": {
+    "dblp/full/fixed600": {
+      "keys": [
+        "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed1",
+        "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed2",
+        "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed3"
+      ],
+      "classification": {
+        "20": {
+          "acc": {
+            "mean": 0.6162460946887767,
+            "sample_sd": 0.04299277310042663,
+            "n_encoder_level_records": 3
+          },
+          "micro": {
+            "mean": 0.6162460946887767,
+            "sample_sd": 0.04299277310042663,
+            "n_encoder_level_records": 3
+          },
+          "macro": {
+            "mean": 0.5921835655641551,
+            "sample_sd": 0.04721648445613217,
+            "n_encoder_level_records": 3
+          },
+          "auc": {
+            "mean": 0.8390634986341258,
+            "sample_sd": 0.023941866118082578,
+            "n_encoder_level_records": 3
+          }
+        }
+      },
+      "clustering": {}
+    }
+  },
+  "limitations": [
+    "Counts include tuning runs and nested follow-ups; they are not independent graph samples.",
+    "One fixed graph partition per dataset; no zero-shot or cross-dataset transfer claim.",
+    "Two-stage initialization comparisons can differ in actual epochs and graph costs.",
+    "Fixed600 replay matches target updates, not equal total two-stage compute."
+  ]
+}

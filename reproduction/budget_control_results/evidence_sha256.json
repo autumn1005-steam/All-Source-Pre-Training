@@ -1,0 +1,9 @@
+{
+  "protocol": "dblp_target_repeat_fixed600_followup_v1",
+  "files": {
+    "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed1.json": "cd1e8ccfdb83626def48a2fc81f817d18f850704747eff4319d758067ba89443",
+    "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed2.json": "6a893989691e92f1c2e743301fa6c11b59ebc9fd68799a9eb918c52cdad5601e",
+    "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed3.json": "8cb7b32956fac756d15084e9224ca2b37c20f5e811491362e862ba11680deb2f",
+    "study_plan.json": "69441111c750c5e0e95bc1b205dd08dd37a9674fcb3c697344504f5fd3ea1c60"
+  }
+}

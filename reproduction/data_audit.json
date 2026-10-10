@@ -1,0 +1,300 @@
+[
+  {
+    "dataset": "acm",
+    "n": 4019,
+    "classes": 3,
+    "pos_nnz": 20053,
+    "pos_dtype": "float64",
+    "pos_values": [
+      1.0
+    ],
+    "pos_per_row_min_median_max": [
+      1,
+      5.0,
+      5
+    ],
+    "self_positive_count": 3096,
+    "offdiag_label_agreement_diagnostic": 0.8283894556820193,
+    "splits": [
+      {
+        "k": 20,
+        "sizes": {
+          "train": 60,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0.0": 20,
+          "1.0": 20,
+          "2.0": 20
+        }
+      },
+      {
+        "k": 40,
+        "sizes": {
+          "train": 120,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0.0": 40,
+          "1.0": 40,
+          "2.0": 40
+        }
+      },
+      {
+        "k": 60,
+        "sizes": {
+          "train": 180,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0.0": 60,
+          "1.0": 60,
+          "2.0": 60
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "n": 4057,
+    "classes": 4,
+    "pos_nnz": 4046685,
+    "pos_dtype": "float64",
+    "pos_values": [
+      1.0
+    ],
+    "pos_per_row_min_median_max": [
+      579,
+      1000.0,
+      1000
+    ],
+    "self_positive_count": 4057,
+    "offdiag_label_agreement_diagnostic": 0.6287531279158013,
+    "splits": [
+      {
+        "k": 20,
+        "sizes": {
+          "train": 80,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0": 20,
+          "1": 20,
+          "2": 20,
+          "3": 20
+        }
+      },
+      {
+        "k": 40,
+        "sizes": {
+          "train": 160,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0": 40,
+          "1": 40,
+          "2": 40,
+          "3": 40
+        }
+      },
+      {
+        "k": 60,
+        "sizes": {
+          "train": 240,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0": 60,
+          "1": 60,
+          "2": 60,
+          "3": 60
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "aminer",
+    "n": 6564,
+    "classes": 4,
+    "pos_nnz": 67730,
+    "pos_dtype": "float64",
+    "pos_values": [
+      1.0
+    ],
+    "pos_per_row_min_median_max": [
+      1,
+      13.0,
+      15
+    ],
+    "self_positive_count": 6564,
+    "offdiag_label_agreement_diagnostic": 0.8823856390805349,
+    "splits": [
+      {
+        "k": 20,
+        "sizes": {
+          "train": 80,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0": 20,
+          "1": 20,
+          "2": 20,
+          "3": 20
+        }
+      },
+      {
+        "k": 40,
+        "sizes": {
+          "train": 160,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0": 40,
+          "1": 40,
+          "2": 40,
+          "3": 40
+        }
+      },
+      {
+        "k": 60,
+        "sizes": {
+          "train": 240,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0": 60,
+          "1": 60,
+          "2": 60,
+          "3": 60
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "freebase",
+    "n": 3492,
+    "classes": 3,
+    "pos_nnz": 163294,
+    "pos_dtype": "float64",
+    "pos_values": [
+      1.0
+    ],
+    "pos_per_row_min_median_max": [
+      1,
+      44.0,
+      80
+    ],
+    "self_positive_count": 3492,
+    "offdiag_label_agreement_diagnostic": 0.6334964518591757,
+    "splits": [
+      {
+        "k": 20,
+        "sizes": {
+          "train": 60,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0": 20,
+          "1": 20,
+          "2": 20
+        }
+      },
+      {
+        "k": 40,
+        "sizes": {
+          "train": 120,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0": 40,
+          "1": 40,
+          "2": 40
+        }
+      },
+      {
+        "k": 60,
+        "sizes": {
+          "train": 180,
+          "val": 1000,
+          "test": 1000
+        },
+        "overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "train_per_class": {
+          "0": 60,
+          "1": 60,
+          "2": 60
+        }
+      }
+    ]
+  }
+]

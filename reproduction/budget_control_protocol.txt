@@ -1,0 +1,45 @@
+Post-adaptation optimization-budget fairness follow-up
+Protocol dblp_target_repeat_fixed600_followup_v1
+
+Reason and timing
+-----------------
+After inspecting the completed secondary adaptation study, the DBLP-L full
+source-initialized second phases used [600,600,600] updates, whereas the
+target-repeat controls stopped at [375,374,411]. This may mix source-content
+effects with unequal realized target-phase updates. This follow-up was fixed
+after those outcomes and before seeing any of its own test metrics. All three
+new outcomes remain reported; no seed is selected and no previous score changes.
+
+Exactly three new target phases
+-------------------------------
+Use DBLP-L/TriView-HCL encoder seeds 1/2/3 and the same locked graph/feature/
+positive/probe protocol. Reuse each target-repeat first-phase retained fc[0]/MP
+checkpoint from adaptation_results and verify its exact state hash against the
+already completed group's initialization-copy evidence. Load only trustworthy
+local saved weights with torch.load(weights_only=True). Do not rerun the first
+phase. Preserve its existing metadata and link its checkpoint/file SHA-256.
+
+Reset the seed and create the same fresh target-local model. Reuse the existing
+warmstart routine: copy only retained fc[0]/MP, initialize auxiliary identities,
+NG, SM, normalization, projector and Adam afresh, and verify auxiliary hashes
+match the original same-seed target-repeat initialization. Copying does not
+consume RNG draws. Run exactly 600 target optimizer updates by setting maximum
+epochs=600 and minimum epochs=600 (patience40 remains but cannot stop earlier).
+Use original fixed LR .0008. Select the minimum target-SSL-loss checkpoint,
+which may be earlier than update600. Do not choose a checkpoint using labels.
+
+Labels only enter the unchanged downstream probes after optimization and frozen
+inference. Reuse 20 training and 10 validation nodes/class plus all remaining
+test nodes, five probes/encoder, and the original validation-CE checkpoint rule.
+The existing three source-initialized DBLP-L final encoders are compared as
+previous evidence and are not additional jobs in this follow-up.
+
+Remaining budget limits
+-----------------------
+First-phase source update counts were [600,475,550], and target-repeat counts
+were [600,456,555]. These and the graphs' retained sizes/processing costs still
+differ. The new comparison matches second-phase optimizer updates, not total
+training time, all historical updates, or selected-checkpoint epoch. It cannot
+alone establish a causal source-knowledge effect. This follow-up adds three
+trial records and three new SSL optimization phases; reused first phases and
+source-initialized reference groups must not be counted as new runs.

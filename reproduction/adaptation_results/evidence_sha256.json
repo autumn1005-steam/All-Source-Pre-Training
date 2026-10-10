@@ -1,0 +1,24 @@
+{
+  "protocol": "retained_warmstart_followup_v2",
+  "files": {
+    "retained_warmstart_followup_v2__acm__full__init_source__seed1.json": "ce194c72c4db2847b35ae3294a867eacf4446e4c18230777f03ff1684935b793",
+    "retained_warmstart_followup_v2__acm__full__init_source__seed2.json": "d5bb74432f17632077ee8a8907f9c550462fd5c7377381cbcc781d83b7793349",
+    "retained_warmstart_followup_v2__acm__full__init_source__seed3.json": "32c3a381e23271644ee3aad69d6ae791e17019a133b7f7948ee39f3cfed96396",
+    "retained_warmstart_followup_v2__acm__full__init_target__seed1.json": "463eb136f5aebfc8cc5b072e7d3b81a46da943c44be8d666bae7e06c4b5cca93",
+    "retained_warmstart_followup_v2__acm__full__init_target__seed2.json": "da9399f348ef76f49543bd7d98f3386af9ab8d2b846390f2150b3c5ff273a047",
+    "retained_warmstart_followup_v2__acm__full__init_target__seed3.json": "c342e32a75ea001c0c51eead47b7e9dcc6523a04728ff94c745011d5b6927550",
+    "retained_warmstart_followup_v2__acm__heco__init_source__seed1.json": "66023c5105196b783d839af90f17921a2bd089fffe3001041a77dd21e121e081",
+    "retained_warmstart_followup_v2__acm__heco__init_source__seed2.json": "8a72e854e162387044b3f43247ea0c155fb83583a89d31802de43148313a465b",
+    "retained_warmstart_followup_v2__acm__heco__init_source__seed3.json": "0e08c1d76825d8ce0e8900777e506214beec1e36fe2edca268fee6b95841ac06",
+    "retained_warmstart_followup_v2__dblp__full__init_source__seed1.json": "4b01fdd06b1c29016904fdb42482652c169780af5042ead0dfdadc359d617855",
+    "retained_warmstart_followup_v2__dblp__full__init_source__seed2.json": "91a76a56b8506c9effe14a21d5e9515c1a2b38e384583d3dfb7db7cc2542f240",
+    "retained_warmstart_followup_v2__dblp__full__init_source__seed3.json": "7048f95ed9fbac8029a407fcf71805bdcd97bc54f3a775fd5a9b84da2de60abe",
+    "retained_warmstart_followup_v2__dblp__full__init_target__seed1.json": "1574e9ffb49261a5cd46f2ebcb435a990c282125e7cb85f1fc3f053050771128",
+    "retained_warmstart_followup_v2__dblp__full__init_target__seed2.json": "b967f10f5a3331690bf24c499609404c40ad18576d9f6ed66fd4a25e28f007af",
+    "retained_warmstart_followup_v2__dblp__full__init_target__seed3.json": "f9d15767205dab9a1f38b7a43293ed60d94552fef92b9609b5a875991d7b903a",
+    "retained_warmstart_followup_v2__dblp__heco__init_source__seed1.json": "b76ee5885bcefa7f916015835f24233de473a8d24be1b4336d56951878af5252",
+    "retained_warmstart_followup_v2__dblp__heco__init_source__seed2.json": "4d2de5936053d6d55a3d592c3197477a3cc7cfb445ec2eb60d736bae73d7b539",
+    "retained_warmstart_followup_v2__dblp__heco__init_source__seed3.json": "b4902eb0be7d9eba2c8d0ff3f2958561f3a29f796e5c73d70726302c16c290c6",
+    "study_plan.json": "5f0fc1d34fbc2092abfcb27271f46cc407f0c76e2702b35d0f3a60b1d7d2a8cc"
+  }
+}

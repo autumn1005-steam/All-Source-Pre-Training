@@ -1,0 +1,181 @@
+{
+  "protocol": "retained_warmstart_followup_v2",
+  "base_protocol": "typed_owner_disjoint_local_features_v3",
+  "status": "complete",
+  "jobs": [
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "seed": 1,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__acm__full__init_source__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "seed": 2,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__acm__full__init_source__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "seed": 3,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__acm__full__init_source__seed3"
+    },
+    {
+      "dataset": "acm",
+      "variant": "heco",
+      "seed": 1,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__acm__heco__init_source__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "heco",
+      "seed": 2,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__acm__heco__init_source__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "heco",
+      "seed": 3,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__acm__heco__init_source__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "seed": 1,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__dblp__full__init_source__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "seed": 2,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__dblp__full__init_source__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "seed": 3,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__dblp__full__init_source__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "heco",
+      "seed": 1,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__dblp__heco__init_source__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "heco",
+      "seed": 2,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__dblp__heco__init_source__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "heco",
+      "seed": 3,
+      "initial_graph": "source",
+      "key": "retained_warmstart_followup_v2__dblp__heco__init_source__seed3"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "seed": 1,
+      "initial_graph": "target",
+      "key": "retained_warmstart_followup_v2__acm__full__init_target__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "seed": 2,
+      "initial_graph": "target",
+      "key": "retained_warmstart_followup_v2__acm__full__init_target__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "seed": 3,
+      "initial_graph": "target",
+      "key": "retained_warmstart_followup_v2__acm__full__init_target__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "seed": 1,
+      "initial_graph": "target",
+      "key": "retained_warmstart_followup_v2__dblp__full__init_target__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "seed": 2,
+      "initial_graph": "target",
+      "key": "retained_warmstart_followup_v2__dblp__full__init_target__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "seed": 3,
+      "initial_graph": "target",
+      "key": "retained_warmstart_followup_v2__dblp__full__init_target__seed3"
+    }
+  ],
+  "adaptation_groups": 18,
+  "source_initialized_groups": 12,
+  "target_repeat_control_groups": 6,
+  "initial_phase_encoder_runs": 18,
+  "target_phase_encoder_runs": 18,
+  "encoder_seeds": [
+    1,
+    2,
+    3
+  ],
+  "probe_initializations_per_encoder": 5,
+  "workers": 2,
+  "hypothesis_timing": "Secondary follow-up after observed frozen-transfer results; not part of original frozen-transfer registration",
+  "transfer_parameters": "Only fc[0] and MP; target auxiliary branches and contrastive projector are fresh",
+  "target_phase_budget": "Same as completed target-only references: base LR .0008, epochs600, minimum60, patience40; additional source phase disclosed",
+  "hyperparameter_selection": "None; frozen v3 graph split, positive policies, features and probe split",
+  "old_study_sha256": "bc005cd51636336f9b8f8462750df6623f25b9ef488f5908d49a2186658bab22",
+  "graph_manifest_sha256": {
+    "acm": "f7f1e625a7f217dce5eb7ff233c8a52ac7bacaf24b79dab7b79d23c36a70b023",
+    "dblp": "a6c4f07aa81ba30a372c856217f2f78ecac4ae5d2da9dd2e5bcb08d504ce38c2"
+  },
+  "script_sha256": {
+    "transfer_adaptation.py": "7b4cc26b2660246e74e0c482b4e59bce7b606adb8587599ba72045a085cb8543",
+    "adaptation_protocol.txt": "5f2d51b2513d31fc3793ffcf3a7bcb3b61d31d04ed80587e7045e608438e83c4",
+    "transfer_study.py": "96a63fb3c0170831750dc410cd9c6563f26a34f78f75e1b705a9b94533ee9140"
+  },
+  "execution": "Two independent accuracy workers; elapsed timings are not isolated latency benchmarks",
+  "completed_keys": [
+    "retained_warmstart_followup_v2__acm__full__init_source__seed1",
+    "retained_warmstart_followup_v2__acm__full__init_source__seed2",
+    "retained_warmstart_followup_v2__acm__full__init_source__seed3",
+    "retained_warmstart_followup_v2__acm__heco__init_source__seed1",
+    "retained_warmstart_followup_v2__acm__heco__init_source__seed2",
+    "retained_warmstart_followup_v2__acm__heco__init_source__seed3",
+    "retained_warmstart_followup_v2__dblp__full__init_source__seed1",
+    "retained_warmstart_followup_v2__dblp__full__init_source__seed2",
+    "retained_warmstart_followup_v2__dblp__full__init_source__seed3",
+    "retained_warmstart_followup_v2__dblp__heco__init_source__seed1",
+    "retained_warmstart_followup_v2__dblp__heco__init_source__seed2",
+    "retained_warmstart_followup_v2__dblp__heco__init_source__seed3",
+    "retained_warmstart_followup_v2__acm__full__init_target__seed1",
+    "retained_warmstart_followup_v2__acm__full__init_target__seed2",
+    "retained_warmstart_followup_v2__acm__full__init_target__seed3",
+    "retained_warmstart_followup_v2__dblp__full__init_target__seed1",
+    "retained_warmstart_followup_v2__dblp__full__init_target__seed2",
+    "retained_warmstart_followup_v2__dblp__full__init_target__seed3"
+  ],
+  "wall_seconds": 544.9257553119678
+}

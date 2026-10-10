@@ -1,0 +1,55 @@
+{
+  "protocol": "dblp_target_repeat_fixed600_followup_v1",
+  "base_protocol": "retained_warmstart_followup_v2",
+  "status": "complete",
+  "jobs": [
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "seed": 1,
+      "key": "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "seed": 2,
+      "key": "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "seed": 3,
+      "key": "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed3"
+    }
+  ],
+  "new_groups": 3,
+  "new_training_phases": 3,
+  "reused_initial_phases": 3,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "probe_initializations_per_encoder": 5,
+  "workers": 2,
+  "hypothesis_timing": "New budget fairness follow-up after observed adaptation outcomes; no adaptation result is overwritten",
+  "target_epochs": 600,
+  "target_min_epochs": 600,
+  "patience": 40,
+  "learning_rate": 0.0008,
+  "checkpoint": "Minimum target SSL loss among the full600-update trajectory",
+  "old_adaptation_study_sha256": "5f0fc1d34fbc2092abfcb27271f46cc407f0c76e2702b35d0f3a60b1d7d2a8cc",
+  "script_sha256": {
+    "transfer_budget_control.py": "df1f7d510460545fd136686dfe688f4f0746b499040e46fa91e5f8c0d2e33bfa",
+    "budget_control_protocol.txt": "e1572f032d7d018d117a9ca20cfe4bbbd15be0d064af8911d2692eaa2560a29b",
+    "transfer_adaptation.py": "7b4cc26b2660246e74e0c482b4e59bce7b606adb8587599ba72045a085cb8543",
+    "transfer_study.py": "96a63fb3c0170831750dc410cd9c6563f26a34f78f75e1b705a9b94533ee9140"
+  },
+  "execution": "Two independent accuracy workers; not an isolated latency benchmark",
+  "completed_keys": [
+    "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed1",
+    "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed2",
+    "dblp_target_repeat_fixed600_followup_v1__dblp__full__seed3"
+  ],
+  "wall_seconds": 77.01264551398344
+}

@@ -1,0 +1,67 @@
+{
+  "jobs": [
+    {
+      "dataset": "aminer",
+      "mode": "simrank",
+      "seed": 1
+    },
+    {
+      "dataset": "aminer",
+      "mode": "simrank",
+      "seed": 2
+    },
+    {
+      "dataset": "aminer",
+      "mode": "simrank",
+      "seed": 3
+    },
+    {
+      "dataset": "aminer",
+      "mode": "random",
+      "seed": 1
+    },
+    {
+      "dataset": "aminer",
+      "mode": "random",
+      "seed": 2
+    },
+    {
+      "dataset": "aminer",
+      "mode": "random",
+      "seed": 3
+    },
+    {
+      "dataset": "freebase",
+      "mode": "simrank",
+      "seed": 1
+    },
+    {
+      "dataset": "freebase",
+      "mode": "simrank",
+      "seed": 2
+    },
+    {
+      "dataset": "freebase",
+      "mode": "simrank",
+      "seed": 3
+    },
+    {
+      "dataset": "freebase",
+      "mode": "random",
+      "seed": 1
+    },
+    {
+      "dataset": "freebase",
+      "mode": "random",
+      "seed": 2
+    },
+    {
+      "dataset": "freebase",
+      "mode": "random",
+      "seed": 3
+    }
+  ],
+  "workers": 2,
+  "purpose": "Assist the same preregistered jobs; exclusive result locks prevent duplicate encoder training",
+  "latency_claim": false
+}

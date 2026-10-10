@@ -1,0 +1,27 @@
+{
+  "protocol": "dblp_target_repeat_fixed600_followup_v1",
+  "hypothesis_timing": "Follow-up after examining completed adaptation outcomes and auditing unequal actual early-stop lengths; fixed before budget-control outcomes",
+  "dataset": "dblp",
+  "variant": "full",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "new_target_training_phases": 3,
+  "epochs": 600,
+  "min_epochs": 600,
+  "patience": 40,
+  "lr": 0.0008,
+  "probes": 5,
+  "probe_epochs": 200,
+  "first_phase_reused_without_training": true,
+  "initial_graph": "target",
+  "checkpoint_selection": "Minimum target SSL loss; not necessarily final epoch",
+  "reference": "Existing three source-initialized DBLP-L phases already execute exactly600 epochs; preserve those and all original18 outcomes",
+  "limitations": "Actual initial-graph epochs/content/cost remain different; one fixed partition, three encoder seeds; no equal-FLOP or zero-shot claim",
+  "old_adaptation_plan_sha256": "5f0fc1d34fbc2092abfcb27271f46cc407f0c76e2702b35d0f3a60b1d7d2a8cc",
+  "registration_alias": "fixed_target_steps_budget_check_v1",
+  "first_registration_file_created_utc": "2026-10-09T23:39:11.192343+00:00",
+  "naming_note": "Alias unified with script name before any budget-control run; all experimental conditions unchanged."
+}

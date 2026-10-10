@@ -1,0 +1,26 @@
+{
+  "acm": {
+    "retained_max_abs_difference": 1.1175870895385742e-08,
+    "repeated_legacy_max_abs_difference": 9.313225746154785e-09,
+    "tolerance": 1e-05,
+    "note": "CUDA sparse aggregation can vary at floating-point accumulation precision even for repeated unchanged forwards."
+  },
+  "dblp": {
+    "retained_max_abs_difference": 3.725290298461914e-08,
+    "repeated_legacy_max_abs_difference": 4.470348358154297e-08,
+    "tolerance": 1e-05,
+    "note": "CUDA sparse aggregation can vary at floating-point accumulation precision even for repeated unchanged forwards."
+  },
+  "aminer": {
+    "retained_max_abs_difference": 3.725290298461914e-09,
+    "repeated_legacy_max_abs_difference": 3.725290298461914e-09,
+    "tolerance": 1e-05,
+    "note": "CUDA sparse aggregation can vary at floating-point accumulation precision even for repeated unchanged forwards."
+  },
+  "freebase": {
+    "retained_max_abs_difference": 7.450580596923828e-09,
+    "repeated_legacy_max_abs_difference": 7.450580596923828e-09,
+    "tolerance": 1e-05,
+    "note": "CUDA sparse aggregation can vary at floating-point accumulation precision even for repeated unchanged forwards."
+  }
+}

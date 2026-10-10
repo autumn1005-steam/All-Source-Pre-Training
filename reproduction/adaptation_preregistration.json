@@ -1,0 +1,21 @@
+{
+  "version": "secondary_unlabelled_target_adaptation_v1",
+  "decision_timing": "Follow-up hypothesis after the frozen held-out graph results; fixed before any adaptation outcome is evaluated",
+  "motivation": "Frozen source-only transfer can lose accuracy under typed-owner graph and class-distribution shifts; test whether retained source parameters can initialize target-local SSL",
+  "original_frozen_results_retained": true,
+  "datasets": ["acm", "dblp"],
+  "source_then_target_variants": ["full", "heco"],
+  "target_then_target_control_variants": ["full"],
+  "seeds": [1, 2, 3],
+  "two_stage_trials": 18,
+  "additional_encoder_optimization_phases": 36,
+  "graph_protocol": "typed_owner_disjoint_local_features_v3",
+  "stage_one": "Source-only SSL for source-to-target condition; target-only SSL for repeated-target control. No labels. Fixed original base learning rate 0.0008, at most 600 epochs, minimum 60, patience 40, minimum training-loss checkpoint.",
+  "stage_two": "Reset the same encoder seed, initialize a new target-local model, copy only target-type input projection and retained meta-path encoder from stage one, reinitialize every auxiliary identity projection, NG, SM, and contrastive projector; fresh Adam; at most 600 epochs with the same rate and stopping rule. Target graph labels are excluded.",
+  "parameter_audit": "Transferred retained-parameter hashes equal stage-one hashes; all other parameter hashes equal an independently seeded target-only initialization; audit restores RNG states before training",
+  "positives": "Same v3 graph-local fixed normalized meta-path union ranking, at most eight nonself plus self; no new generator mode selected from results",
+  "evaluation": "After both phases, freeze the retained encoder. Use exactly the v3 target probe split, five probes, and one validation-cross-entropy-selected checkpoint for all metrics.",
+  "comparisons": "Report all source-to-target adaptation results relative to the original target-only reference. For full TriView-HCL, also compare a target-to-target two-stage control with the same phase budgets and auxiliary restart.",
+  "cost_scope": "Additional first-stage graph access and training cost are explicit; single-stage target-only reference is not a matched-total-compute baseline, while repeated-target full control tests the effect of additional SSL phases",
+  "prohibited": "No learning-rate grid, graph-split retry, test-dependent checkpoint, selective seed reporting, or replacement of the earlier frozen result table"
+}

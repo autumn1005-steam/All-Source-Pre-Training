@@ -1,0 +1,322 @@
+{
+  "version": "declared_simrank_union_v1",
+  "status": "complete",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "primary_learning_rate_source": "/root/autodl-tmp/triview_kbs_20261010/study_plan.json",
+  "primary_learning_rate_source_sha256": "009c74597678ca8c19ed8225a2433c8d39224741d0cf3620d9776b47c834cdf7",
+  "primary_full_lrscale": {
+    "acm": 1.0,
+    "dblp": 2.0,
+    "aminer": 1.0,
+    "freebase": 2.0
+  },
+  "jobs": [
+    {
+      "dataset": "acm",
+      "mode": "cosine",
+      "seed": 1,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_cosine__k8__lam0.5__lr1.0__seed1"
+    },
+    {
+      "dataset": "acm",
+      "mode": "cosine",
+      "seed": 2,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_cosine__k8__lam0.5__lr1.0__seed2"
+    },
+    {
+      "dataset": "acm",
+      "mode": "cosine",
+      "seed": 3,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_cosine__k8__lam0.5__lr1.0__seed3"
+    },
+    {
+      "dataset": "acm",
+      "mode": "simrank",
+      "seed": 1,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_simrank__k8__lam0.5__lr1.0__seed1"
+    },
+    {
+      "dataset": "acm",
+      "mode": "simrank",
+      "seed": 2,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_simrank__k8__lam0.5__lr1.0__seed2"
+    },
+    {
+      "dataset": "acm",
+      "mode": "simrank",
+      "seed": 3,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_simrank__k8__lam0.5__lr1.0__seed3"
+    },
+    {
+      "dataset": "acm",
+      "mode": "combined",
+      "seed": 1,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_combined__k8__lam0.5__lr1.0__seed1"
+    },
+    {
+      "dataset": "acm",
+      "mode": "combined",
+      "seed": 2,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_combined__k8__lam0.5__lr1.0__seed2"
+    },
+    {
+      "dataset": "acm",
+      "mode": "combined",
+      "seed": 3,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_combined__k8__lam0.5__lr1.0__seed3"
+    },
+    {
+      "dataset": "acm",
+      "mode": "random",
+      "seed": 1,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_random__k8__lam0.5__lr1.0__seed1"
+    },
+    {
+      "dataset": "acm",
+      "mode": "random",
+      "seed": 2,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_random__k8__lam0.5__lr1.0__seed2"
+    },
+    {
+      "dataset": "acm",
+      "mode": "random",
+      "seed": 3,
+      "lrscale": 1.0,
+      "key": "acm__full__generated_random__k8__lam0.5__lr1.0__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "cosine",
+      "seed": 1,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_cosine__k8__lam0.5__lr2.0__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "cosine",
+      "seed": 2,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_cosine__k8__lam0.5__lr2.0__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "cosine",
+      "seed": 3,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_cosine__k8__lam0.5__lr2.0__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "simrank",
+      "seed": 1,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_simrank__k8__lam0.5__lr2.0__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "simrank",
+      "seed": 2,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_simrank__k8__lam0.5__lr2.0__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "simrank",
+      "seed": 3,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_simrank__k8__lam0.5__lr2.0__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "combined",
+      "seed": 1,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_combined__k8__lam0.5__lr2.0__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "combined",
+      "seed": 2,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_combined__k8__lam0.5__lr2.0__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "combined",
+      "seed": 3,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_combined__k8__lam0.5__lr2.0__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "random",
+      "seed": 1,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_random__k8__lam0.5__lr2.0__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "random",
+      "seed": 2,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_random__k8__lam0.5__lr2.0__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "mode": "random",
+      "seed": 3,
+      "lrscale": 2.0,
+      "key": "dblp__full__generated_random__k8__lam0.5__lr2.0__seed3"
+    },
+    {
+      "dataset": "aminer",
+      "mode": "simrank",
+      "seed": 1,
+      "lrscale": 1.0,
+      "key": "aminer__full__generated_simrank__k8__lam0.5__lr1.0__seed1"
+    },
+    {
+      "dataset": "aminer",
+      "mode": "simrank",
+      "seed": 2,
+      "lrscale": 1.0,
+      "key": "aminer__full__generated_simrank__k8__lam0.5__lr1.0__seed2"
+    },
+    {
+      "dataset": "aminer",
+      "mode": "simrank",
+      "seed": 3,
+      "lrscale": 1.0,
+      "key": "aminer__full__generated_simrank__k8__lam0.5__lr1.0__seed3"
+    },
+    {
+      "dataset": "aminer",
+      "mode": "random",
+      "seed": 1,
+      "lrscale": 1.0,
+      "key": "aminer__full__generated_random__k8__lam0.5__lr1.0__seed1"
+    },
+    {
+      "dataset": "aminer",
+      "mode": "random",
+      "seed": 2,
+      "lrscale": 1.0,
+      "key": "aminer__full__generated_random__k8__lam0.5__lr1.0__seed2"
+    },
+    {
+      "dataset": "aminer",
+      "mode": "random",
+      "seed": 3,
+      "lrscale": 1.0,
+      "key": "aminer__full__generated_random__k8__lam0.5__lr1.0__seed3"
+    },
+    {
+      "dataset": "freebase",
+      "mode": "simrank",
+      "seed": 1,
+      "lrscale": 2.0,
+      "key": "freebase__full__generated_simrank__k8__lam0.5__lr2.0__seed1"
+    },
+    {
+      "dataset": "freebase",
+      "mode": "simrank",
+      "seed": 2,
+      "lrscale": 2.0,
+      "key": "freebase__full__generated_simrank__k8__lam0.5__lr2.0__seed2"
+    },
+    {
+      "dataset": "freebase",
+      "mode": "simrank",
+      "seed": 3,
+      "lrscale": 2.0,
+      "key": "freebase__full__generated_simrank__k8__lam0.5__lr2.0__seed3"
+    },
+    {
+      "dataset": "freebase",
+      "mode": "random",
+      "seed": 1,
+      "lrscale": 2.0,
+      "key": "freebase__full__generated_random__k8__lam0.5__lr2.0__seed1"
+    },
+    {
+      "dataset": "freebase",
+      "mode": "random",
+      "seed": 2,
+      "lrscale": 2.0,
+      "key": "freebase__full__generated_random__k8__lam0.5__lr2.0__seed2"
+    },
+    {
+      "dataset": "freebase",
+      "mode": "random",
+      "seed": 3,
+      "lrscale": 2.0,
+      "key": "freebase__full__generated_random__k8__lam0.5__lr2.0__seed3"
+    }
+  ],
+  "workers": 2,
+  "epochs_max": 600,
+  "minimum_epochs": 60,
+  "unsupervised_loss_patience": 40,
+  "linear_probes_per_encoder": 5,
+  "linear_probe_epochs": 200,
+  "kmeans_repeats_per_encoder": 3,
+  "kmeans_n_init": 10,
+  "ranking_selection": "All rules fixed before results; no validation/test selection of positive strategies or generator hyperparameters.",
+  "registration": "ACM/DBLP four modes; identity-feature AMiner/Freebase SR/random. This extends the study without replacing prior primary results.",
+  "generation_profiling": "Already completed before batch; do not overlap generation and training.",
+  "paired_seeds": "Encoder seeds and frozen positive files shared across compared modes; seed-dependent stochastic training streams may differ after divergent optimization histories.",
+  "completed_keys": [
+    "acm__full__generated_cosine__k8__lam0.5__lr1.0__seed1",
+    "acm__full__generated_cosine__k8__lam0.5__lr1.0__seed2",
+    "acm__full__generated_cosine__k8__lam0.5__lr1.0__seed3",
+    "acm__full__generated_simrank__k8__lam0.5__lr1.0__seed1",
+    "acm__full__generated_simrank__k8__lam0.5__lr1.0__seed2",
+    "acm__full__generated_simrank__k8__lam0.5__lr1.0__seed3",
+    "acm__full__generated_combined__k8__lam0.5__lr1.0__seed1",
+    "acm__full__generated_combined__k8__lam0.5__lr1.0__seed2",
+    "acm__full__generated_combined__k8__lam0.5__lr1.0__seed3",
+    "acm__full__generated_random__k8__lam0.5__lr1.0__seed1",
+    "acm__full__generated_random__k8__lam0.5__lr1.0__seed2",
+    "acm__full__generated_random__k8__lam0.5__lr1.0__seed3",
+    "dblp__full__generated_cosine__k8__lam0.5__lr2.0__seed1",
+    "dblp__full__generated_cosine__k8__lam0.5__lr2.0__seed2",
+    "dblp__full__generated_cosine__k8__lam0.5__lr2.0__seed3",
+    "dblp__full__generated_simrank__k8__lam0.5__lr2.0__seed1",
+    "dblp__full__generated_simrank__k8__lam0.5__lr2.0__seed2",
+    "dblp__full__generated_simrank__k8__lam0.5__lr2.0__seed3",
+    "dblp__full__generated_combined__k8__lam0.5__lr2.0__seed1",
+    "dblp__full__generated_combined__k8__lam0.5__lr2.0__seed2",
+    "dblp__full__generated_combined__k8__lam0.5__lr2.0__seed3",
+    "dblp__full__generated_random__k8__lam0.5__lr2.0__seed1",
+    "dblp__full__generated_random__k8__lam0.5__lr2.0__seed2",
+    "dblp__full__generated_random__k8__lam0.5__lr2.0__seed3",
+    "aminer__full__generated_simrank__k8__lam0.5__lr1.0__seed1",
+    "aminer__full__generated_simrank__k8__lam0.5__lr1.0__seed2",
+    "aminer__full__generated_simrank__k8__lam0.5__lr1.0__seed3",
+    "aminer__full__generated_random__k8__lam0.5__lr1.0__seed1",
+    "aminer__full__generated_random__k8__lam0.5__lr1.0__seed2",
+    "aminer__full__generated_random__k8__lam0.5__lr1.0__seed3",
+    "freebase__full__generated_simrank__k8__lam0.5__lr2.0__seed1",
+    "freebase__full__generated_simrank__k8__lam0.5__lr2.0__seed2",
+    "freebase__full__generated_simrank__k8__lam0.5__lr2.0__seed3",
+    "freebase__full__generated_random__k8__lam0.5__lr2.0__seed1",
+    "freebase__full__generated_random__k8__lam0.5__lr2.0__seed2",
+    "freebase__full__generated_random__k8__lam0.5__lr2.0__seed3"
+  ],
+  "wall_seconds": 1523.6125520360656
+}

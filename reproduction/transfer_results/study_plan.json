@@ -1,0 +1,411 @@
+{
+  "protocol": "typed_owner_disjoint_local_features_v3",
+  "status": "complete",
+  "jobs": [
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "source_transfer",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__source_transfer__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "source_transfer",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__source_transfer__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "source_transfer",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__source_transfer__seed3"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "target_only_reference",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__target_only_reference__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "target_only_reference",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__target_only_reference__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "target_only_reference",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__target_only_reference__seed3"
+    },
+    {
+      "dataset": "acm",
+      "variant": "heco",
+      "mode": "source_transfer",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__acm__heco__source_transfer__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "heco",
+      "mode": "source_transfer",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__acm__heco__source_transfer__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "heco",
+      "mode": "source_transfer",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__acm__heco__source_transfer__seed3"
+    },
+    {
+      "dataset": "acm",
+      "variant": "heco",
+      "mode": "target_only_reference",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__acm__heco__target_only_reference__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "heco",
+      "mode": "target_only_reference",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__acm__heco__target_only_reference__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "heco",
+      "mode": "target_only_reference",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__acm__heco__target_only_reference__seed3"
+    },
+    {
+      "dataset": "acm",
+      "variant": "mp_aug",
+      "mode": "source_transfer",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__acm__mp_aug__source_transfer__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "mp_aug",
+      "mode": "source_transfer",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__acm__mp_aug__source_transfer__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "mp_aug",
+      "mode": "source_transfer",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__acm__mp_aug__source_transfer__seed3"
+    },
+    {
+      "dataset": "acm",
+      "variant": "mp_aug",
+      "mode": "target_only_reference",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__acm__mp_aug__target_only_reference__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "mp_aug",
+      "mode": "target_only_reference",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__acm__mp_aug__target_only_reference__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "mp_aug",
+      "mode": "target_only_reference",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__acm__mp_aug__target_only_reference__seed3"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "random_encoder",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__random_encoder__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "random_encoder",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__random_encoder__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "random_encoder",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__random_encoder__seed3"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "raw_features",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__raw_features__seed1"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "raw_features",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__raw_features__seed2"
+    },
+    {
+      "dataset": "acm",
+      "variant": "full",
+      "mode": "raw_features",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__acm__full__raw_features__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "source_transfer",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__source_transfer__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "source_transfer",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__source_transfer__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "source_transfer",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__source_transfer__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "target_only_reference",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__target_only_reference__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "target_only_reference",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__target_only_reference__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "target_only_reference",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__target_only_reference__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "heco",
+      "mode": "source_transfer",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__heco__source_transfer__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "heco",
+      "mode": "source_transfer",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__heco__source_transfer__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "heco",
+      "mode": "source_transfer",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__heco__source_transfer__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "heco",
+      "mode": "target_only_reference",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__heco__target_only_reference__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "heco",
+      "mode": "target_only_reference",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__heco__target_only_reference__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "heco",
+      "mode": "target_only_reference",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__heco__target_only_reference__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "mp_aug",
+      "mode": "source_transfer",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__mp_aug__source_transfer__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "mp_aug",
+      "mode": "source_transfer",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__mp_aug__source_transfer__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "mp_aug",
+      "mode": "source_transfer",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__mp_aug__source_transfer__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "mp_aug",
+      "mode": "target_only_reference",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__mp_aug__target_only_reference__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "mp_aug",
+      "mode": "target_only_reference",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__mp_aug__target_only_reference__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "mp_aug",
+      "mode": "target_only_reference",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__mp_aug__target_only_reference__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "random_encoder",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__random_encoder__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "random_encoder",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__random_encoder__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "random_encoder",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__random_encoder__seed3"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "raw_features",
+      "seed": 1,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__raw_features__seed1"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "raw_features",
+      "seed": 2,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__raw_features__seed2"
+    },
+    {
+      "dataset": "dblp",
+      "variant": "full",
+      "mode": "raw_features",
+      "seed": 3,
+      "key": "typed_owner_disjoint_local_features_v3__dblp__full__raw_features__seed3"
+    }
+  ],
+  "trained_encoder_count": 36,
+  "untrained_encoder_controls": 6,
+  "raw_feature_probe_groups": 6,
+  "workers": 2,
+  "encoder_seeds": [
+    1,
+    2,
+    3
+  ],
+  "probe_initializations_per_encoder": 5,
+  "checkpoint": "minimum SSL loss; source-transfer never uses target SSL loss or labels",
+  "hyperparameter_selection": "none; fixed dataset base learning rate and registered graph-local positive ranking",
+  "execution": "independent accuracy jobs can overlap positive study; not latency evidence",
+  "script_sha256": {
+    "transfer_study.py": "96a63fb3c0170831750dc410cd9c6563f26a34f78f75e1b705a9b94533ee9140",
+    "transfer_batch.py": "832d20f56ea94718990fe84f9e893eb740f7fb96978e7176b946cb9a6a88fb5c",
+    "transfer_protocol.txt": "e66520922a5a42b7f9e0f1f20e562cd761cf8a9016a82f28cd0f4859aa326d0a"
+  },
+  "completed_keys": [
+    "typed_owner_disjoint_local_features_v3__acm__full__source_transfer__seed1",
+    "typed_owner_disjoint_local_features_v3__acm__full__source_transfer__seed2",
+    "typed_owner_disjoint_local_features_v3__acm__full__source_transfer__seed3",
+    "typed_owner_disjoint_local_features_v3__acm__full__target_only_reference__seed1",
+    "typed_owner_disjoint_local_features_v3__acm__full__target_only_reference__seed2",
+    "typed_owner_disjoint_local_features_v3__acm__full__target_only_reference__seed3",
+    "typed_owner_disjoint_local_features_v3__acm__heco__source_transfer__seed1",
+    "typed_owner_disjoint_local_features_v3__acm__heco__source_transfer__seed2",
+    "typed_owner_disjoint_local_features_v3__acm__heco__source_transfer__seed3",
+    "typed_owner_disjoint_local_features_v3__acm__heco__target_only_reference__seed1",
+    "typed_owner_disjoint_local_features_v3__acm__heco__target_only_reference__seed2",
+    "typed_owner_disjoint_local_features_v3__acm__heco__target_only_reference__seed3",
+    "typed_owner_disjoint_local_features_v3__acm__mp_aug__source_transfer__seed1",
+    "typed_owner_disjoint_local_features_v3__acm__mp_aug__source_transfer__seed2",
+    "typed_owner_disjoint_local_features_v3__acm__mp_aug__source_transfer__seed3",
+    "typed_owner_disjoint_local_features_v3__acm__mp_aug__target_only_reference__seed1",
+    "typed_owner_disjoint_local_features_v3__acm__mp_aug__target_only_reference__seed2",
+    "typed_owner_disjoint_local_features_v3__acm__mp_aug__target_only_reference__seed3",
+    "typed_owner_disjoint_local_features_v3__acm__full__random_encoder__seed1",
+    "typed_owner_disjoint_local_features_v3__acm__full__random_encoder__seed2",
+    "typed_owner_disjoint_local_features_v3__acm__full__random_encoder__seed3",
+    "typed_owner_disjoint_local_features_v3__acm__full__raw_features__seed1",
+    "typed_owner_disjoint_local_features_v3__acm__full__raw_features__seed2",
+    "typed_owner_disjoint_local_features_v3__acm__full__raw_features__seed3",
+    "typed_owner_disjoint_local_features_v3__dblp__full__source_transfer__seed1",
+    "typed_owner_disjoint_local_features_v3__dblp__full__source_transfer__seed2",
+    "typed_owner_disjoint_local_features_v3__dblp__full__source_transfer__seed3",
+    "typed_owner_disjoint_local_features_v3__dblp__full__target_only_reference__seed1",
+    "typed_owner_disjoint_local_features_v3__dblp__full__target_only_reference__seed2",
+    "typed_owner_disjoint_local_features_v3__dblp__full__target_only_reference__seed3",
+    "typed_owner_disjoint_local_features_v3__dblp__heco__source_transfer__seed1",
+    "typed_owner_disjoint_local_features_v3__dblp__heco__source_transfer__seed2",
+    "typed_owner_disjoint_local_features_v3__dblp__heco__source_transfer__seed3",
+    "typed_owner_disjoint_local_features_v3__dblp__heco__target_only_reference__seed1",
+    "typed_owner_disjoint_local_features_v3__dblp__heco__target_only_reference__seed2",
+    "typed_owner_disjoint_local_features_v3__dblp__heco__target_only_reference__seed3",
+    "typed_owner_disjoint_local_features_v3__dblp__mp_aug__source_transfer__seed1",
+    "typed_owner_disjoint_local_features_v3__dblp__mp_aug__source_transfer__seed2",
+    "typed_owner_disjoint_local_features_v3__dblp__mp_aug__source_transfer__seed3",
+    "typed_owner_disjoint_local_features_v3__dblp__mp_aug__target_only_reference__seed1",
+    "typed_owner_disjoint_local_features_v3__dblp__mp_aug__target_only_reference__seed2",
+    "typed_owner_disjoint_local_features_v3__dblp__mp_aug__target_only_reference__seed3",
+    "typed_owner_disjoint_local_features_v3__dblp__full__random_encoder__seed1",
+    "typed_owner_disjoint_local_features_v3__dblp__full__random_encoder__seed2",
+    "typed_owner_disjoint_local_features_v3__dblp__full__random_encoder__seed3",
+    "typed_owner_disjoint_local_features_v3__dblp__full__raw_features__seed1",
+    "typed_owner_disjoint_local_features_v3__dblp__full__raw_features__seed2",
+    "typed_owner_disjoint_local_features_v3__dblp__full__raw_features__seed3"
+  ],
+  "wall_seconds": 561.2407743639778
+}

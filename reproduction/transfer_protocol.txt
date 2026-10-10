@@ -1,0 +1,87 @@
+TriView-HCL held-out-graph transfer protocol
+(typed_owner_disjoint_local_features_v3)
+
+This protocol was fixed before any new test metric was available. It evaluates
+within-dataset held-out-graph transfer separately for ACM and DBLP. It does not
+evaluate cross-dataset transfer, graph foundation models, or transfer to an
+unseen feature vocabulary.
+
+Graph preparation and isolation
+--------------------------------
+Use one NumPy default_rng(20261010) and draw rng.integers(0,2,size) sequentially
+for each node type, in fixed order ACM [p,a,s] and DBLP [a,p,c,t]. Each original
+node receives an independent Bernoulli .5 owner: 0 source, 1 target, so assigned
+counts are approximately half and are not constrained to be exactly equal.
+This matches the original label-free feasibility audit. Every raw relation is
+retained only when both endpoints have the same owner. No typed node ID or raw
+relation edge is shared between the two graphs. Original released metapath and
+positive matrices are never loaded, sliced, or used to prepare either graph.
+
+Targets with no neighbors of any required NG type are structurally removed;
+labels never enter this filtering. Unused auxiliary nodes are pruned and all
+remaining IDs are remapped. ACM uses PAP and PSP; DBLP uses APA, APCPA, and
+APTPA, reconstructed by Booleanizing products of retained typed relations.
+The fixed split is not retried if retention or a class distribution is poor.
+An independent original-ID path traversal checks sample rows of each projection.
+Every split has a saved full original-ID manifest and reproducible SHA-256 hash.
+
+ACM node attributes use the fixed supplied paper-word feature columns. DBLP-L
+does not load the released 334-column author feature matrix: its upstream
+aggregation was undocumented and cannot establish strict graph-local inputs.
+Instead, reconstruct each retained author's feature support as the union of
+the 4231-column supplied paper-word supports of only its retained local papers:
+X_author = 1[PA_local.T @ 1[P_feat_local != 0] > 0]. Then row-normalize. Source
+and target therefore share a fixed paper-word vocabulary but no contributing
+paper or relation edge. This rule was chosen before test scores were available.
+All SSL models and cheap controls use these identical rebuilt 4231-column inputs.
+Call this dataset protocol DBLP-L and do not compare its scores directly to the
+original 334-column DBLP main table. Shared fixed vocabulary is an input schema,
+not a vocabulary trained on source data alone. The supplied paper-word vocabulary
+construction itself remains an inherited preprocessing assumption.
+
+Encoder conditions
+------------------
+For each dataset and each of full TriView-HCL, HeCo, and the MP-only augmentation
+control, use encoder seeds 1, 2, and 3. Conditions are (1) source graph SSL followed
+by frozen target inference; (2) target graph SSL followed by frozen target
+inference. Condition (2) is a target-only reference, not an oracle upper bound.
+This produces 36 trained encoders. Raw target attributes and untrained max-summary
+MP encoders provide cheap supplementary controls (3 seeds each dataset).
+
+All models use the existing architecture and the original fixed base dataset
+learning rate (ACM .0008, DBLP .0008), without using selected full-graph rates or
+source/target label tuning. Limit 600 epochs, minimum 60, patience 40; select the
+minimum source/target SSL training-loss checkpoint as appropriate. No evaluation
+label is loaded before encoder training and target inference are complete.
+The three variants use exactly the same graph-local positive generator: sum the
+symmetrically normalized reconstructed binary MP adjacencies; select up to eight
+off-diagonal nodes by descending affinity; include self. Released positives and
+new adaptive-positive study choices do not enter these experiments.
+
+Frozen source-to-target deployment executes only the target attribute projection
+and retained MP encoder. Source-only auxiliary identity features, NG, SM, and all
+auxiliary-type projections are not executed on target IDs. Runtime hooks reject
+accidental auxiliary module use and a model-state hash proves frozen inference
+does not mutate parameters. A source encoder can therefore run on a different
+number of target nodes without silently reusing source identity embeddings.
+
+Downstream evaluation
+---------------------
+After encoder optimization and frozen target inference finish, load labels solely
+for downstream linear probes. Fixed default_rng(20270010) shuffles each target
+class; its first 20 nodes train the probe, the next 10 validate it, and every
+remaining node tests it. (20270010 = 20261010 + 9000.) If any class has fewer than
+31 retained targets, report that the fixed split is unevaluable; do not retry it.
+Five probe initializations per encoder, 200 epochs, Adam .01 and no weight decay.
+Use a single epoch minimizing validation cross-entropy for accuracy, Micro-F1,
+Macro-F1, and AUC. The same target split and features apply to every variant,
+condition, and encoder seed. Report source/target class distributions, graph
+retention, overlaps, exact counts, seed-level/probe-level metrics, runtime,
+checkpoint histories, environment, feature provenance, and split hashes.
+
+The target's unlabeled graph is available at frozen inference and participates
+in target MP message passing and semantic attention. This is graph-level
+inductive transfer with transductive inference within the held-out graph; it is
+not node-by-node inference without access to other target nodes. Severe graph
+and class-distribution changes caused by strict typed-owner partitioning must
+be discussed alongside results. No post-test parameter selection is permitted.
